@@ -374,7 +374,7 @@ public class UIManager : MonoBehaviour
             {
                 checkName = "Present";
                 checkNum = 1;
-                if (dialogue.overrideStartNode == 0 || dialogue.overrideStartNode == -1)
+                if (dialogue.overrideStartNode > 0)
                 {
                     for (int i = 0; i < inventory.invSlot.Length; i++)
                     {
@@ -474,6 +474,7 @@ public class UIManager : MonoBehaviour
             for (int j = 0; j < word.Length; j++)
             {
                 NPC_Text.text = previousText + word.Substring(0, j + 1);
+                //audioSource.pitch = Random.Range(1f, 1.1f);
                 yield return new WaitForSeconds(time);
             }
         }
