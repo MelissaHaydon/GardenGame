@@ -7,6 +7,7 @@ public class ItemCheck : MonoBehaviour {
     private InventoryUI inventory;
     public string checkName;
     public int checkNum;
+    public GameObject item;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,12 @@ public class ItemCheck : MonoBehaviour {
                 if (inventory.itemName[i] == checkName && inventory.itemNum[i] == checkNum)
                 {
                     Debug.Log("Hey");
+                    GameObject.Destroy(inventory.invSlot[i].transform.GetChild(1).gameObject);
+                    inventory.itemNum[i] = 0;
+                    inventory.isFull[i] = false;
+                    inventory.itemDict.Remove(inventory.itemName[i]);
+                    inventory.itemAmount[i].gameObject.SetActive(false);
+                    inventory.itemName[i] = null;
                     break;
                 }
             }

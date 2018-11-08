@@ -24,6 +24,7 @@ public class PickUp : MonoBehaviour {
                     inventory.isFull[i] = true;
                     inventory.itemName[i] = itemName;
                     inventory.itemNum[i]++;
+                    inventory.itemAmount[i].gameObject.SetActive(true);
                     inventory.itemDict.Add(itemName, 1);
                     Instantiate(itemButton, inventory.invSlot[i].transform, false);             
                     Destroy(gameObject);
