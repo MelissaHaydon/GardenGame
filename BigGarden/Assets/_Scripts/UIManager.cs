@@ -43,6 +43,10 @@ public class UIManager : MonoBehaviour
     //With this we can start a coroutine and stop it. Used to animate text
     IEnumerator NPC_TextAnimator;
 
+    public InventoryUI inventory;
+    public string checkName;
+    public int checkNum;
+
     #endregion
 
     #region MAIN
@@ -54,6 +58,7 @@ public class UIManager : MonoBehaviour
 
         //Loads the saved state of VIDE_Assigns and dialogues.
         //VD.LoadState("VIDEDEMOScene1", true);
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryUI>();
     }
 
     //This begins the dialogue and progresses through it (Called by VIDEDemoPlayer.cs)
@@ -64,6 +69,8 @@ public class UIManager : MonoBehaviour
         //In such cases, the function will return true
         var doNotInteract = PreConditions(dialogue);
         if (doNotInteract) return;
+
+        //audioSource.Play();
 
         if (!VD.isActive)
         {
@@ -358,6 +365,28 @@ public class UIManager : MonoBehaviour
             //        return false;
             //    }
             //}
+            if (dialogue.alias == "Spider")
+            {
+                checkName = "Present";
+                checkNum = 1;
+                if (dialogue.overrideStartNode == 0 || dialogue.overrideStartNode == -1)
+                {
+                    for (int i = 0; i < inventory.invSlot.Length; i++)
+                    {
+                        if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                        {
+                            dialogue.overrideStartNode = 3;
+                            GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                            inventory.itemNum[i] = 0;
+                            inventory.itemDict.Remove(inventory.itemName[i]);
+                            inventory.itemAmount[i].gameObject.SetActive(false);
+                            inventory.isFull[i] = false;
+                            inventory.itemName[i] = null;
+                            return false;
+                        }
+                    }
+                }
+            }
         }
         return false;
     }
@@ -445,6 +474,7 @@ public class UIManager : MonoBehaviour
         }
         NPC_Text.text = text;
         animatingText = false;
+        audioSource.Stop();
     }
 
     void CutTextAnim()
@@ -452,6 +482,7 @@ public class UIManager : MonoBehaviour
         StopCoroutine(NPC_TextAnimator);
         NPC_Text.text = VD.nodeData.comments[VD.nodeData.commentIndex]; //Now just copy full text		
         animatingText = false;
+        audioSource.Stop();
     }
 
     //Check task progression
