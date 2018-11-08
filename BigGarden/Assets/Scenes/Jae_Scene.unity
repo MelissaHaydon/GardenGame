@@ -540,6 +540,8 @@ GameObject:
   - component: {fileID: 280393963}
   - component: {fileID: 280393962}
   - component: {fileID: 280393961}
+  - component: {fileID: 280393966}
+  - component: {fileID: 280393965}
   m_Layer: 0
   m_Name: Bee_NPC
   m_TagString: Untagged
@@ -559,17 +561,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diags:
+  - Bee
   - RandomCube
   - Snail
   - Spider
-  assignedIndex: -1
-  assignedID: 0
-  assignedDialogue: 
+  assignedIndex: 0
+  assignedID: 40325
+  assignedDialogue: Bee
   interactionCount: 0
-  alias: 
+  alias: Bee
   overrideStartNode: -1
-  defaultNPCSprite: {fileID: 0}
-  defaultPlayerSprite: {fileID: 0}
+  defaultNPCSprite: {fileID: 21300000, guid: f9113ca7761de234aa64a51efc1ae29b, type: 3}
+  defaultPlayerSprite: {fileID: 21300000, guid: 0e4021a804a6d0046b58b9896a08ad33,
+    type: 3}
   targetManager: {fileID: 0}
   preload: 0
   notuptodate: 0
@@ -654,6 +658,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &280393965
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 280393960}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.695
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &280393966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 280393960}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.91, y: 2.6, z: 0.4}
+  m_Center: {x: 0.05, y: 0.07, z: 0}
 --- !u!1 &282840810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,9 +1270,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diags:
+  - Bee
   - RandomCube
+  - Snail
   - Spider
-  assignedIndex: 0
+  assignedIndex: 1
   assignedID: 4935
   assignedDialogue: RandomCube
   interactionCount: 0
