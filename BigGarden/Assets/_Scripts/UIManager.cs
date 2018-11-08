@@ -372,7 +372,6 @@ public class UIManager : MonoBehaviour
             //}
             if (dialogue.alias == "Spider")
             {
-                audioSource.pitch = 0.8f;
                 checkName = "Present";
                 checkNum = 1;
                 if (dialogue.overrideStartNode == 0 || dialogue.overrideStartNode == -1)
