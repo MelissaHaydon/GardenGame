@@ -70,7 +70,7 @@ public class UIManager : MonoBehaviour
         var doNotInteract = PreConditions(dialogue);
         if (doNotInteract) return;
 
-        //audioSource.Play();
+        audioSource.Play();
 
         if (!VD.isActive)
         {
@@ -154,6 +154,11 @@ public class UIManager : MonoBehaviour
                     if (i == data.commentIndex) currentChoices[i].color = Color.yellow;
                 }
             }
+        }
+
+        if (animatingText == false)
+        {
+            audioSource.Stop();
         }
 
         //Note you could also use Unity's Navi system
@@ -272,7 +277,7 @@ public class UIManager : MonoBehaviour
         VD.OnEnd -= EndDialogue;
         dialogueContainer.SetActive(false);
         VD.EndDialogue();
-
+        audioSource.Stop();
         //VD.SaveState("VIDEDEMOScene1", true); //Saves VIDE stuff related to EVs and override start nodes
         //QuestChartDemo.SaveProgress(); //saves OUR custom game data
     }
@@ -367,6 +372,7 @@ public class UIManager : MonoBehaviour
             //}
             if (dialogue.alias == "Spider")
             {
+                audioSource.pitch = 0.8f;
                 checkName = "Present";
                 checkNum = 1;
                 if (dialogue.overrideStartNode == 0 || dialogue.overrideStartNode == -1)
