@@ -8,6 +8,8 @@ public class PickUp : MonoBehaviour {
     public GameObject itemButton;
     public string itemName;
 
+    public AudioSource pickUpSound;
+
 	// Use this for initialization
 	void Start () {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryUI>();
@@ -17,6 +19,7 @@ public class PickUp : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
+            pickUpSound.Play();
             for (int i = 0; i < inventory.invSlot.Length; i++)
             {
                 if(inventory.isFull[i] == false && inventory.itemDict.ContainsKey(itemName) == false)
