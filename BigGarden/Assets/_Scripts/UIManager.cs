@@ -372,6 +372,16 @@ public class UIManager : MonoBehaviour
             //}
             audioSource.pitch = 1;
 
+            if (dialogue.alias == "Bee")
+            {
+                audioSource.pitch = 0.6f;
+            }
+
+            if (dialogue.alias == "Snail")
+            {
+                audioSource.pitch = 0.4f;
+            }
+
             if (dialogue.alias == "Spider")
             {
                 audioSource.pitch = 2;

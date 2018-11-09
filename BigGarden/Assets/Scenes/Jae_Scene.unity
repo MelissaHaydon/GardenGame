@@ -1098,10 +1098,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diags:
+  - Bee
   - RandomCube
   - Snail
   - Spider
-  assignedIndex: 1
+  assignedIndex: 2
   assignedID: 74564
   assignedDialogue: Snail
   interactionCount: 0
