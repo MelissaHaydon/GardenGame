@@ -7,12 +7,14 @@ public class Jae_SpawnItem : MonoBehaviour {
     public GameObject itemToSpawn;
     public Vector3 spawnLocation;
 
-    public AudioSource audioSource;
+    public Jae_AudioManager audioManager;
     public bool playAudio;
+    public string soundName;
 
 	// Use this for initialization
 	void Start () {
-	}
+        audioManager = Jae_AudioManager.instance;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,7 +26,7 @@ public class Jae_SpawnItem : MonoBehaviour {
         Instantiate(itemToSpawn, spawnLocation, Quaternion.identity);
         if (playAudio)
         {
-            audioSource.Play();
+            audioManager.PlaySound(soundName);
         }
     }
 }
