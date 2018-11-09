@@ -7,6 +7,9 @@ public class Jae_SpawnItem : MonoBehaviour {
     public GameObject itemToSpawn;
     public Vector3 spawnLocation;
 
+    public AudioSource audioSource;
+    public bool playAudio;
+
 	// Use this for initialization
 	void Start () {
 	}
@@ -19,5 +22,9 @@ public class Jae_SpawnItem : MonoBehaviour {
     public void InstantiateItem()
     {
         Instantiate(itemToSpawn, spawnLocation, Quaternion.identity);
+        if (playAudio)
+        {
+            audioSource.Play();
+        }
     }
 }
