@@ -1805,8 +1805,9 @@ MonoBehaviour:
   itemToSpawn: {fileID: 1925184960252434, guid: 1efc5b85f4a4acc40a75c36ad05a78f1,
     type: 2}
   spawnLocation: {x: 9.5, y: 0, z: -3}
-  audioSource: {fileID: 76554222}
+  audioManager: {fileID: 0}
   playAudio: 1
+  soundName: Pop
 --- !u!1 &521218621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,7 +2398,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &876853707
 BoxCollider:
