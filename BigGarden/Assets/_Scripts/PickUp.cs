@@ -11,8 +11,9 @@ public class PickUp : MonoBehaviour {
     public AudioSource pickUpSound;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryUI>();
+        pickUpSound = GameObject.Find("SoundLibrary").GetComponent<AudioSource>();
 	}
 
     private void OnTriggerEnter(Collider other)
