@@ -8,19 +8,24 @@ public class PickUp : MonoBehaviour {
     public GameObject itemButton;
     public string itemName;
 
-    public AudioSource pickUpSound;
+    public Jae_AudioManager audioManager;
 
 	// Use this for initialization
 	void Awake () {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryUI>();
-        pickUpSound = GameObject.Find("SoundLibrary").GetComponent<AudioSource>();
+        
 	}
+    private void Start()
+    {
+        audioManager = Jae_AudioManager.instance;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
-            pickUpSound.Play();
+            //pickUpSound.Play();
+            audioManager.PlaySound("Pop");
             for (int i = 0; i < inventory.invSlot.Length; i++)
             {
                 if(inventory.isFull[i] == false && inventory.itemDict.ContainsKey(itemName) == false)

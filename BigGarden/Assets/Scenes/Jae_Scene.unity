@@ -1084,6 +1084,7 @@ GameObject:
   m_Component:
   - component: {fileID: 417548485}
   - component: {fileID: 417548484}
+  - component: {fileID: 417548486}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -1200,6 +1201,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &417548486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 417548483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3602e0a69119d42925b91c3ed9f77b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Pop
+    clip: {fileID: 8300000, guid: 3c9849c7ec1b95341adc3d437d130271, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.1
 --- !u!1 &418682983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,7 +1838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 1368276941270688, guid: 39fccd70f7bfa71409bbec3fa7e5bb92, type: 2}
   itemName: Present
-  pickUpSound: {fileID: 76554222}
+  audioManager: {fileID: 0}
 --- !u!135 &521218623
 SphereCollider:
   m_ObjectHideFlags: 0
