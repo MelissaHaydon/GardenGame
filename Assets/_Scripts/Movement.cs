@@ -4,30 +4,35 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
-    private float speed = 0.5f;
+    //private float speed = 0.5f;
+    public bool canMove;
+    public Camera plCam;
 
 	// Use this for initialization
 	void Start () {
-		
+        canMove = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.W))
+        if(canMove == true)
         {
-            transform.position += new Vector3(0, 0, speed);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position += new Vector3(0, 0, -speed);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position += new Vector3(-speed, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += new Vector3(speed, 0, 0);
+            if (Input.GetKey(KeyCode.W))
+            {
+                transform.position += plCam.transform.forward;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                transform.position -= plCam.transform.forward;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                this.transform.eulerAngles += new Vector3(0, -2, 0);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                this.transform.eulerAngles += new Vector3(0, 2, 0);
+            }
         }
     }
 }
