@@ -4496,6 +4496,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114735325960796610, guid: ad56ff055bbe5da4da92696b575e2894,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114017690862870820, guid: ad56ff055bbe5da4da92696b575e2894,
+        type: 2}
+      propertyPath: m_FontData.m_AlignByGeometry
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114017690862870820, guid: ad56ff055bbe5da4da92696b575e2894,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad56ff055bbe5da4da92696b575e2894, type: 2}
   m_IsPrefabParent: 0

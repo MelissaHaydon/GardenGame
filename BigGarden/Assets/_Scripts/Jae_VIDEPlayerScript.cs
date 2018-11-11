@@ -98,20 +98,30 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
                 moving = false;
             }
 
-            if (Input.GetKeyDown(leftKey))
+            //if (Input.GetKeyDown(leftKey))
+            //{
+            //    if (!GetComponent<SpriteRenderer>().flipX)
+            //    {
+            //        GetComponent<SpriteRenderer>().flipX = true;
+            //    }
+            //}
+
+            //if (Input.GetKeyDown(rightKey))
+            //{
+            //    if (GetComponent<SpriteRenderer>().flipX)
+            //    {
+            //        GetComponent<SpriteRenderer>().flipX = false;
+            //    }
+            //}
+
+            if (lastMove.x > 0 && GetComponent<SpriteRenderer>().flipX)
             {
-                if (!GetComponent<SpriteRenderer>().flipX)
-                {
-                    GetComponent<SpriteRenderer>().flipX = true;
-                }
+                GetComponent<SpriteRenderer>().flipX = false;
             }
 
-            if (Input.GetKeyDown(rightKey))
+            if (lastMove.x < 0 && !GetComponent<SpriteRenderer>().flipX)
             {
-                if (GetComponent<SpriteRenderer>().flipX)
-                {
-                    GetComponent<SpriteRenderer>().flipX = false;
-                }
+                GetComponent<SpriteRenderer>().flipX = true;
             }
         }
 
