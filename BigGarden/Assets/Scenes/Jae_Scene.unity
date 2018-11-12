@@ -196,6 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 30251805}
   - component: {fileID: 30251806}
+  - component: {fileID: 30251807}
   m_Layer: 0
   m_Name: Pebble (7)
   m_TagString: Untagged
@@ -261,6 +262,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &30251807
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 30251804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &30504497 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1367744412488016, guid: ad56ff055bbe5da4da92696b575e2894,
@@ -705,6 +718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153148440}
   - component: {fileID: 153148441}
+  - component: {fileID: 153148442}
   m_Layer: 0
   m_Name: Pebble (14)
   m_TagString: Untagged
@@ -770,6 +784,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &153148442
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153148439}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &166760301
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,6 +805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 166760302}
   - component: {fileID: 166760303}
+  - component: {fileID: 166760304}
   m_Layer: 0
   m_Name: Pebble (28)
   m_TagString: Untagged
@@ -844,6 +871,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &166760304
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 166760301}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 197326438}
   - component: {fileID: 197326439}
+  - component: {fileID: 197326440}
   m_Layer: 0
   m_Name: Pebble (12)
   m_TagString: Untagged
@@ -1079,6 +1119,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &197326440
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 197326437}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &213963407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,6 +1288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 252331620}
   - component: {fileID: 252331621}
+  - component: {fileID: 252331622}
   m_Layer: 0
   m_Name: Pebble (22)
   m_TagString: Untagged
@@ -1301,6 +1354,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &252331622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 252331619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &269430154 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114750679986104986, guid: ad56ff055bbe5da4da92696b575e2894,
@@ -2743,6 +2808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 474726723}
   - component: {fileID: 474726724}
+  - component: {fileID: 474726725}
   m_Layer: 0
   m_Name: Pebble (27)
   m_TagString: Untagged
@@ -2808,6 +2874,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &474726725
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 474726722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &484110965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,6 +3955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683497805}
   - component: {fileID: 683497806}
+  - component: {fileID: 683497807}
   m_Layer: 0
   m_Name: Pebble (3)
   m_TagString: Untagged
@@ -3942,6 +4021,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &683497807
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 683497804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705137189
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,6 +4385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 837069402}
   - component: {fileID: 837069403}
+  - component: {fileID: 837069404}
   m_Layer: 0
   m_Name: Pebble (20)
   m_TagString: Untagged
@@ -4359,6 +4451,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &837069404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 837069401}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &839945237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4368,6 +4472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 839945238}
   - component: {fileID: 839945239}
+  - component: {fileID: 839945240}
   m_Layer: 0
   m_Name: Pebble (25)
   m_TagString: Untagged
@@ -4433,6 +4538,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &839945240
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839945237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &854883739
 GameObject:
   m_ObjectHideFlags: 0
@@ -4442,7 +4559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 854883740}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Player_Null
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4647,6 +4764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 880694322}
   - component: {fileID: 880694323}
+  - component: {fileID: 880694324}
   m_Layer: 0
   m_Name: Pebble (6)
   m_TagString: Untagged
@@ -4712,6 +4830,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &880694324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880694321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &914978763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,6 +4953,7 @@ GameObject:
   m_Component:
   - component: {fileID: 969671604}
   - component: {fileID: 969671605}
+  - component: {fileID: 969671606}
   m_Layer: 0
   m_Name: Pebble (21)
   m_TagString: Untagged
@@ -4888,6 +5019,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &969671606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 969671603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &983795385
 GameObject:
   m_ObjectHideFlags: 0
@@ -4982,6 +5125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 986603153}
   - component: {fileID: 986603154}
+  - component: {fileID: 986603155}
   m_Layer: 0
   m_Name: Pebble (18)
   m_TagString: Untagged
@@ -5047,6 +5191,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &986603155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 986603152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &986988721
 GameObject:
   m_ObjectHideFlags: 0
@@ -5179,6 +5335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1048837113}
   - component: {fileID: 1048837114}
+  - component: {fileID: 1048837115}
   m_Layer: 0
   m_Name: Pebble (1)
   m_TagString: Untagged
@@ -5244,6 +5401,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1048837115
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1048837112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1066854109
 GameObject:
   m_ObjectHideFlags: 0
@@ -5253,6 +5422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066854110}
   - component: {fileID: 1066854111}
+  - component: {fileID: 1066854112}
   m_Layer: 0
   m_Name: Pebble (24)
   m_TagString: Untagged
@@ -5318,6 +5488,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1066854112
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1066854109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1097348996
 GameObject:
   m_ObjectHideFlags: 0
@@ -5395,6 +5577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1104293988}
   - component: {fileID: 1104293989}
+  - component: {fileID: 1104293990}
   m_Layer: 0
   m_Name: Pebble (15)
   m_TagString: Untagged
@@ -5460,6 +5643,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1104293990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104293987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1125062536
 GameObject:
   m_ObjectHideFlags: 0
@@ -5656,6 +5851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1162162052}
   - component: {fileID: 1162162053}
+  - component: {fileID: 1162162054}
   m_Layer: 0
   m_Name: Pebble (4)
   m_TagString: Untagged
@@ -5721,6 +5917,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1162162054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162162051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1178311859
 GameObject:
   m_ObjectHideFlags: 0
@@ -5730,6 +5938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1178311860}
   - component: {fileID: 1178311861}
+  - component: {fileID: 1178311862}
   m_Layer: 0
   m_Name: Pebble (8)
   m_TagString: Untagged
@@ -5795,6 +6004,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1178311862
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178311859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1188014424
 GameObject:
   m_ObjectHideFlags: 0
@@ -6531,6 +6752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1381429917}
   - component: {fileID: 1381429918}
+  - component: {fileID: 1381429919}
   m_Layer: 0
   m_Name: Pebble
   m_TagString: Untagged
@@ -6596,6 +6818,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1381429919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1381429916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2999997, y: 1.4499999, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1410085197
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,6 +6839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1410085198}
   - component: {fileID: 1410085199}
+  - component: {fileID: 1410085200}
   m_Layer: 0
   m_Name: Pebble (10)
   m_TagString: Untagged
@@ -6670,6 +6905,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1410085200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1410085197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1420836513
 GameObject:
   m_ObjectHideFlags: 0
@@ -6869,6 +7116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1455723833}
   - component: {fileID: 1455723834}
+  - component: {fileID: 1455723835}
   m_Layer: 0
   m_Name: Pebble (26)
   m_TagString: Untagged
@@ -6934,6 +7182,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1455723835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455723832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1472379313 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114489660071901660, guid: ad56ff055bbe5da4da92696b575e2894,
@@ -6983,6 +7243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1515599939}
   - component: {fileID: 1515599940}
+  - component: {fileID: 1515599941}
   m_Layer: 0
   m_Name: Pebble (9)
   m_TagString: Untagged
@@ -7048,6 +7309,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1515599941
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515599938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1521131481
 GameObject:
   m_ObjectHideFlags: 0
@@ -7057,6 +7330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521131482}
   - component: {fileID: 1521131483}
+  - component: {fileID: 1521131484}
   m_Layer: 0
   m_Name: Pebble (13)
   m_TagString: Untagged
@@ -7122,6 +7396,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1521131484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1521131481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1530972749
 GameObject:
   m_ObjectHideFlags: 0
@@ -7284,6 +7570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1531154007}
   - component: {fileID: 1531154008}
+  - component: {fileID: 1531154009}
   m_Layer: 0
   m_Name: Pebble (11)
   m_TagString: Untagged
@@ -7349,6 +7636,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1531154009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1531154006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1539905780
 GameObject:
   m_ObjectHideFlags: 0
@@ -7648,6 +7947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1593966293}
   - component: {fileID: 1593966294}
+  - component: {fileID: 1593966295}
   m_Layer: 0
   m_Name: Pebble (5)
   m_TagString: Untagged
@@ -7713,6 +8013,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1593966295
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1593966292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1615243192
 GameObject:
   m_ObjectHideFlags: 0
@@ -7882,6 +8194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1665532898}
   - component: {fileID: 1665532899}
+  - component: {fileID: 1665532900}
   m_Layer: 0
   m_Name: Pebble (17)
   m_TagString: Untagged
@@ -7947,6 +8260,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1665532900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1665532897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1672343547
 GameObject:
   m_ObjectHideFlags: 0
@@ -8097,6 +8422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1730819401}
   - component: {fileID: 1730819402}
+  - component: {fileID: 1730819403}
   m_Layer: 0
   m_Name: Pebble (19)
   m_TagString: Untagged
@@ -8162,6 +8488,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1730819403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1730819400}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1759184305 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1737544171353656, guid: ad56ff055bbe5da4da92696b575e2894,
@@ -8330,6 +8668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1847877559}
   - component: {fileID: 1847877560}
+  - component: {fileID: 1847877561}
   m_Layer: 0
   m_Name: Pebble (2)
   m_TagString: Untagged
@@ -8395,6 +8734,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1847877561
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1847877558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1850473749
 GameObject:
   m_ObjectHideFlags: 0
@@ -9225,6 +9576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2003094451}
   - component: {fileID: 2003094452}
+  - component: {fileID: 2003094453}
   m_Layer: 0
   m_Name: Pebble (16)
   m_TagString: Untagged
@@ -9290,6 +9642,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2003094453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2003094450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2007597763
 GameObject:
   m_ObjectHideFlags: 0
@@ -9630,6 +9994,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2106945981}
   - component: {fileID: 2106945982}
+  - component: {fileID: 2106945983}
   m_Layer: 0
   m_Name: Pebble (23)
   m_TagString: Untagged
@@ -9695,6 +10060,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2106945983
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106945980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 1.45, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2113476857
 GameObject:
   m_ObjectHideFlags: 0
