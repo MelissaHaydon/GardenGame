@@ -4652,7 +4652,7 @@ MonoBehaviour:
   actionKey: 32
   moveSpeed: 5
   moving: 0
-  lastMove: {x: 0, y: 0}
+  lastMove: {x: 1, y: -1}
 --- !u!212 &876853709
 SpriteRenderer:
   m_ObjectHideFlags: 0
