@@ -114,15 +114,15 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
             //    }
             //}
 
-            if (lastMove.x > 0 && GetComponent<SpriteRenderer>().flipX)
-            {
-                GetComponent<SpriteRenderer>().flipX = false;
-            }
+            //if (lastMove.x > 0 && GetComponent<SpriteRenderer>().flipX)
+            //{
+            //    GetComponent<SpriteRenderer>().flipX = false;
+            //}
 
-            if (lastMove.x < 0 && !GetComponent<SpriteRenderer>().flipX)
-            {
-                GetComponent<SpriteRenderer>().flipX = true;
-            }
+            //if (lastMove.x < 0 && !GetComponent<SpriteRenderer>().flipX)
+            //{
+            //    GetComponent<SpriteRenderer>().flipX = true;
+            //}
         }
 
         //Interact with NPCs when pressing E
@@ -132,6 +132,8 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
         }
 
         anim.SetBool("Moving", moving);
+        anim.SetFloat("LastMoveX", lastMove.x);
+        anim.SetFloat("LastMoveY", lastMove.y);
     }
 
     //Casts a ray to see if we hit an NPC and, if so, we interact
