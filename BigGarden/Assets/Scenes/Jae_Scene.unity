@@ -4650,9 +4650,13 @@ MonoBehaviour:
   leftKey: 276
   rightKey: 275
   actionKey: 32
+  runKey: 304
   moveSpeed: 5
   moving: 0
   lastMove: {x: 1, y: -1}
+  moveAnimSpeed: 0
+  isSprinting: 0
+  playerCamera: {fileID: 282840812}
 --- !u!212 &876853709
 SpriteRenderer:
   m_ObjectHideFlags: 0

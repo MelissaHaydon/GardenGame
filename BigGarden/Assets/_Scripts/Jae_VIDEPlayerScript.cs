@@ -27,10 +27,16 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
     public KeyCode leftKey;
     public KeyCode rightKey;
     public KeyCode actionKey;
+    public KeyCode runKey;
 
     public float moveSpeed;
     public bool moving;
     public Vector2 lastMove;
+    public float moveAnimSpeed;
+
+    public bool isSprinting;
+
+    public Jae_CameraTracker playerCamera;
 
     void OnTriggerEnter(Collider other)
     {
@@ -98,31 +104,31 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
                 moving = false;
             }
 
-            //if (Input.GetKeyDown(leftKey))
-            //{
-            //    if (!GetComponent<SpriteRenderer>().flipX)
-            //    {
-            //        GetComponent<SpriteRenderer>().flipX = true;
-            //    }
-            //}
+            if (Input.GetKey(runKey) && moving)
+            {
+                moveSpeed = 9;
+                playerCamera.defaultDistance.z = -10;
+                if (lastMove.x == 1 && Input.GetKey(rightKey))
+                {
+                    playerCamera.defaultDistance.x = 2;
+                }
+                else if (lastMove.x == -1 && Input.GetKey(leftKey))
+                {
+                    playerCamera.defaultDistance.x = -2;
+                }
+                else
+                {
+                    playerCamera.defaultDistance.x = 0;
+                }
+                //anim.GetComponent<AnimationState>().speed = 1.4f;
+            }
+            else
+            {
+                moveSpeed = 5;
+                playerCamera.defaultDistance.z = -8;
+                //anim.GetComponent<AnimationState>().speed = 1f;
+            }
 
-            //if (Input.GetKeyDown(rightKey))
-            //{
-            //    if (GetComponent<SpriteRenderer>().flipX)
-            //    {
-            //        GetComponent<SpriteRenderer>().flipX = false;
-            //    }
-            //}
-
-            //if (lastMove.x > 0 && GetComponent<SpriteRenderer>().flipX)
-            //{
-            //    GetComponent<SpriteRenderer>().flipX = false;
-            //}
-
-            //if (lastMove.x < 0 && !GetComponent<SpriteRenderer>().flipX)
-            //{
-            //    GetComponent<SpriteRenderer>().flipX = true;
-            //}
         }
 
         //Interact with NPCs when pressing E
