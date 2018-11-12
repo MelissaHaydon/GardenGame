@@ -107,7 +107,7 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
             if (Input.GetKey(runKey) && moving)
             {
                 moveSpeed = 9;
-                playerCamera.defaultDistance.z = -10;
+                playerCamera.defaultDistance.z = -9;
                 if (lastMove.x == 1 && Input.GetKey(rightKey))
                 {
                     playerCamera.defaultDistance.x = 2;
