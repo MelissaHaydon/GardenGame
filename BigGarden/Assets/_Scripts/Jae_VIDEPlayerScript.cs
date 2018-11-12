@@ -120,13 +120,11 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
                 {
                     playerCamera.defaultDistance.x = 0;
                 }
-                //anim.GetComponent<AnimationState>().speed = 1.4f;
             }
             else
             {
                 moveSpeed = 5;
                 playerCamera.defaultDistance.z = -8;
-                //anim.GetComponent<AnimationState>().speed = 1f;
             }
 
         }
