@@ -1650,7 +1650,7 @@ MonoBehaviour:
   alias: Bee
   overrideStartNode: -1
   defaultNPCSprite: {fileID: 21300000, guid: f9113ca7761de234aa64a51efc1ae29b, type: 3}
-  defaultPlayerSprite: {fileID: 21300000, guid: 0e4021a804a6d0046b58b9896a08ad33,
+  defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,
     type: 3}
   targetManager: {fileID: 0}
   preload: 0
@@ -2913,7 +2913,7 @@ MonoBehaviour:
   alias: Snail
   overrideStartNode: -1
   defaultNPCSprite: {fileID: 21300000, guid: 2dec660a421dca54fb03b270a57e413f, type: 3}
-  defaultPlayerSprite: {fileID: 21300000, guid: 0e4021a804a6d0046b58b9896a08ad33,
+  defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,
     type: 3}
   targetManager: {fileID: 0}
   preload: 0
@@ -3425,7 +3425,7 @@ GameObject:
   - component: {fileID: 502190374}
   - component: {fileID: 502190373}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube_NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3453,8 +3453,8 @@ MonoBehaviour:
   interactionCount: 0
   alias: Garden Boy
   overrideStartNode: -1
-  defaultNPCSprite: {fileID: 21300000, guid: 0e4021a804a6d0046b58b9896a08ad33, type: 3}
-  defaultPlayerSprite: {fileID: 21300000, guid: 0e4021a804a6d0046b58b9896a08ad33,
+  defaultNPCSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9, type: 3}
+  defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,
     type: 3}
   targetManager: {fileID: 0}
   preload: 0
@@ -3541,7 +3541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &515644206
 GameObject:
@@ -3610,7 +3610,7 @@ MonoBehaviour:
   alias: Spider
   overrideStartNode: -1
   defaultNPCSprite: {fileID: 21300000, guid: 80599b91753ba734f9a02209f7c8d9ac, type: 3}
-  defaultPlayerSprite: {fileID: 21300000, guid: 0e4021a804a6d0046b58b9896a08ad33,
+  defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,
     type: 3}
   targetManager: {fileID: 0}
   preload: 0
@@ -7219,7 +7219,7 @@ Transform:
   - {fileID: 650558147}
   - {fileID: 61449779}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1142871098
 GameObject:
