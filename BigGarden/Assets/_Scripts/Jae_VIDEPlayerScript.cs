@@ -135,7 +135,10 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
         //Interact with NPCs when pressing E
         if (Input.GetKeyDown(actionKey))
         {
-            TryInteract();
+            if (!moving)
+            {
+                TryInteract();
+            }
         }
 
         anim.SetBool("Moving", moving);
