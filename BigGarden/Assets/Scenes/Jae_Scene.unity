@@ -5371,6 +5371,7 @@ GameObject:
   - component: {fileID: 876853706}
   - component: {fileID: 876853711}
   - component: {fileID: 876853712}
+  - component: {fileID: 876853713}
   m_Layer: 0
   m_Name: Player_Sprite
   m_TagString: Player
@@ -5450,7 +5451,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5539,6 +5540,17 @@ MonoBehaviour:
   - {fileID: 1445221090}
   - {fileID: 213963409}
   - {fileID: 616605303}
+--- !u!114 &876853713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 876853705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &880694321
 GameObject:
   m_ObjectHideFlags: 0
