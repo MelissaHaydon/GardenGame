@@ -2816,6 +2816,7 @@ GameObject:
   - component: {fileID: 418682987}
   - component: {fileID: 418682989}
   - component: {fileID: 418682990}
+  - component: {fileID: 418682991}
   m_Layer: 0
   m_Name: Snail_NPC
   m_TagString: Untagged
@@ -2967,6 +2968,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &418682991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 418682983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d00f3c4c3405654a839123d27d7ecc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  playerDirection: 0
 --- !u!1 &441963392
 GameObject:
   m_ObjectHideFlags: 0
@@ -5401,6 +5415,7 @@ MonoBehaviour:
   lastMove: {x: 1, y: -1}
   moveAnimSpeed: 0
   isSprinting: 0
+  dustParts: {fileID: 1423209570}
   playerCamera: {fileID: 282840812}
 --- !u!212 &876853709
 SpriteRenderer:
@@ -9125,7 +9140,7 @@ GameObject:
   - component: {fileID: 1423209570}
   - component: {fileID: 1423209569}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: PlayerDust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9137,13 +9152,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1423209567}
-  m_LocalRotation: {x: -0.15072785, y: -0, z: -0, w: 0.9885753}
-  m_LocalPosition: {x: 0, y: -0.91999954, z: 0.99999964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.78, z: -0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 876853710}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -17.338001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!199 &1423209569
 ParticleSystemRenderer:
   serializedVersion: 5
@@ -9160,7 +9175,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 616a3e49b1f311c49a4e223b230fc5ee, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -9210,7 +9225,7 @@ ParticleSystem:
   lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -9269,7 +9284,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -9823,8 +9838,8 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 5
     enabled: 1
-    type: 4
-    angle: 37.842518
+    type: 0
+    angle: 0
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -9852,7 +9867,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.4062395
       mode: 0
       spread: 0
       speed:

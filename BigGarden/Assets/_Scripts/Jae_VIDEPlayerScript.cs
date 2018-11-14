@@ -35,6 +35,7 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
     public float moveAnimSpeed;
 
     public bool isSprinting;
+    public ParticleSystem dustParts;
 
     public Jae_CameraTracker playerCamera;
 
@@ -109,6 +110,7 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
                 moveSpeed = 9;
                 anim.speed = 2;
                 playerCamera.defaultDistance.z = -9;
+                dustParts.gameObject.SetActive(true);
                 if (lastMove.x == 1 && Input.GetKey(rightKey))
                 {
                     playerCamera.defaultDistance.x = 2;
@@ -126,6 +128,7 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
             {
                 moveSpeed = 5;
                 anim.speed = 1;
+                dustParts.gameObject.SetActive(false);
                 playerCamera.defaultDistance.z = -8;
                 playerCamera.defaultDistance.x = 0;
             }
