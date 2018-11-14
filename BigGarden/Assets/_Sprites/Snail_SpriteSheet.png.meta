@@ -4,6 +4,8 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: Snail_SpriteSheet_0
     21300002: Snail_SpriteSheet_1
+    21300004: Snail_SpriteSheet_2
+    21300006: Snail_SpriteSheet_3
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -143,6 +145,46 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 375
+        width: 439
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89d1321aa676c345a423f73aaf67dff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 375
+        width: 439
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68aa8a6786ac1b41ad53479fb557093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 439
         height: 375
@@ -153,13 +195,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe5ae79b2f2446b48b1f1261f602afff
+      spriteID: 3ec419b1e67eb554aa22229bbd9271bf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snail_SpriteSheet_1
+      name: Snail_SpriteSheet_3
       rect:
         serializedVersion: 2
         x: 439
@@ -173,7 +215,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 884975433cf9f5b48a46e89532d8b606
+      spriteID: 561c05c1867a4c04abd48b4b8af938ba
       vertices: []
       indices: 
       edges: []
