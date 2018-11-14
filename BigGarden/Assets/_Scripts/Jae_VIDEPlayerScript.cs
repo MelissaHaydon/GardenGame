@@ -144,6 +144,26 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
             }
         }
 
+        if (dustParts.gameObject.activeSelf)
+        {
+            if (Input.GetKeyDown(downKey))
+            {
+                dustParts.gameObject.transform.localEulerAngles = new Vector3(-25, 0, 0);
+            }
+            if (Input.GetKeyDown(leftKey))
+            {
+                dustParts.gameObject.transform.localEulerAngles = new Vector3(-25, 90, 0);
+            }
+            if (Input.GetKeyDown(upKey))
+            {
+                dustParts.gameObject.transform.localEulerAngles = new Vector3(-25, 180, 0);
+            }
+            if (Input.GetKeyDown(rightKey))
+            {
+                dustParts.gameObject.transform.localEulerAngles = new Vector3(-25, -90, 0);
+            }
+        }
+
         anim.SetBool("Moving", moving);
         anim.SetFloat("LastMoveX", lastMove.x);
         anim.SetFloat("LastMoveY", lastMove.y);
