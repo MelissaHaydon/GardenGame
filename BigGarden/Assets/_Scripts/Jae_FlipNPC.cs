@@ -16,15 +16,22 @@ public class Jae_FlipNPC : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (player.transform.position.x > transform.position.x)
-        {
-            playerDirection = 1;
-        }
-        else if (player.transform.position.x < transform.position.x)
-        {
-            playerDirection = -1;
-        }
-
         anim.SetInteger("PlayerDirection", playerDirection);
-	}
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            if (player.transform.position.x > transform.position.x)
+            {
+                playerDirection = 1;
+            }
+            else if (player.transform.position.x < transform.position.x)
+            {
+                playerDirection = -1;
+            }
+            
+        }
+    }
 }
