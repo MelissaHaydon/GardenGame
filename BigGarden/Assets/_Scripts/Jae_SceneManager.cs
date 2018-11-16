@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Jae_SceneManager : MonoBehaviour {
 
+    public Animator transitionAnim;
+    public string sceneName;
+    public Jae_VIDEPlayerScript player;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -17,6 +21,19 @@ public class Jae_SceneManager : MonoBehaviour {
 
     public void GoToBeeGame()
     {
-        Debug.Log("BEEBUG, HAHAHAHAHA");
+        sceneName = "Maze";
+        StartCoroutine(LoadScene());
+    }
+
+    public void ActivateSceneTransition()
+    {
+        StartCoroutine(LoadScene());
+    }
+
+    IEnumerator LoadScene()
+    {
+        transitionAnim.SetTrigger("end");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(sceneName);
     }
 }
