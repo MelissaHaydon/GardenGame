@@ -4124,7 +4124,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 643a67156307ed241a2203187f88e970, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18078,7 +18078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 274dcbd168616e54db0853e95fd3192f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 0}
+  transitionAnim: {fileID: 554949893}
   sceneName: 
   player: {fileID: 876853708}
   jaeCamera: {fileID: 282840812}

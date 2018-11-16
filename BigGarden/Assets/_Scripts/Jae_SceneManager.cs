@@ -38,7 +38,7 @@ public class Jae_SceneManager : MonoBehaviour {
 
     public void GoToBeeGame()
     {
-        sceneName = "Maze";
+        sceneName = "Bee Maze";
         StartCoroutine(LoadScene());
     }
 
