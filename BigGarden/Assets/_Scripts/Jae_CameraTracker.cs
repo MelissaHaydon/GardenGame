@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Jae_CameraTracker : MonoBehaviour {
 
-    [SerializeField] Transform target;
+    [SerializeField] public Transform target;
     [SerializeField] public Vector3 defaultDistance = new Vector3(0f, 2f, -10f);
     [SerializeField] float distanceDamp;
     [SerializeField] float rotationalDamp;

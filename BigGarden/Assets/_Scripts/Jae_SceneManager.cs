@@ -8,6 +8,9 @@ public class Jae_SceneManager : MonoBehaviour {
     public Animator transitionAnim;
     public string sceneName;
     public Jae_VIDEPlayerScript player;
+    public Jae_CameraTracker jaeCamera;
+    public Transform antTarget;
+    public Transform playerTransform;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +21,20 @@ public class Jae_SceneManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void ChangeAntCamera()
+    {
+        jaeCamera.target = antTarget;
+        jaeCamera.lookAt = true;
+    }
+
+    public void ResetPlayerCam()
+    {
+        jaeCamera.target = playerTransform;
+        jaeCamera.defaultDistance = new Vector3(0, 1.3f, -8);
+        jaeCamera.transform.localEulerAngles = new Vector3(0, 0, 0);
+        jaeCamera.lookAt = false;
+    }
 
     public void GoToBeeGame()
     {

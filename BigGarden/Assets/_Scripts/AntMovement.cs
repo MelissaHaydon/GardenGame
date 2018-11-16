@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AntMovement : MonoBehaviour {
+public class AntMovement : MonoBehaviour
+{
 
     public float sensorLength = 5.0f;
     public float speed = 5.0f;
@@ -12,9 +13,10 @@ public class AntMovement : MonoBehaviour {
     Collider myCol;
 
 
+
     void Start()
     {
-        myCol = GetComponent<Collider>();
+        myCol = transform.GetComponent<Collider>();
     }
 
     void Update()
@@ -24,63 +26,77 @@ public class AntMovement : MonoBehaviour {
         //Right Sensor
         if (Physics.Raycast(transform.position, transform.right, out hit, (sensorLength + transform.localScale.x)))
         {
-            if(hit.collider.tag != "Obstacle" || hit.collider == myCol)
+            if (hit.collider.tag != "Ant")
             {
-                return;
-            }
+                if (hit.collider.tag != "Obstacle" || hit.collider == myCol)
+                {
+                    return;
+                }
 
-            turnValue -= 1;
-            flag++;
+                turnValue -= 1;
+                flag++;
+            }
         }
 
         //Left Sensor
         if (Physics.Raycast(transform.position, -transform.right, out hit, (sensorLength + transform.localScale.x)))
         {
-            if (hit.collider.tag != "Obstacle" || hit.collider == myCol)
+            if (hit.collider.tag != "Ant")
             {
-                return;
-            }
+                if (hit.collider.tag != "Obstacle" || hit.collider == myCol)
+                {
+                    return;
+                }
 
-            turnValue += 1;
-            flag++;
+                turnValue += 1;
+                flag++;
+            }
         }
 
         //Front Sensor
         if (Physics.Raycast(transform.position, transform.forward, out hit, (sensorLength + transform.localScale.z)))
         {
-            if (hit.collider.tag != "Obstacle" || hit.collider == myCol)
+            if (hit.collider.tag != "Ant")
             {
-                return;
-            }
+                if (hit.collider.tag != "Obstacle" || hit.collider == myCol)
+                {
+                    return;
+                }
 
-            if(directionValue == 1.0f)
-            {
-                directionValue = -1;
+                if (directionValue == 1.0f)
+                {
+                    directionValue = -1;
+                }
+                flag++;
             }
-            flag++;
         }
 
         //Back Sensor
         if (Physics.Raycast(transform.position, -transform.forward, out hit, (sensorLength + transform.localScale.z)))
         {
-            if (hit.collider.tag != "Obstacle" || hit.collider == myCol)
+            if (hit.collider.tag != "Ant")
             {
-                return;
-            }
+                if (hit.collider.tag != "Obstacle" || hit.collider == myCol)
+                {
+                    return;
+                }
 
-            if (directionValue == -1.0f)
-            {
-                directionValue = 1;
+                if (directionValue == -1.0f)
+                {
+                    directionValue = 1;
+                }
+                flag++;
             }
-            flag++;
         }
-        if(flag == 0){
+        if (flag == 0)
+        {
             turnValue = 0;
         }
 
         transform.Rotate(Vector3.up * (turnSpeed * turnValue) * Time.deltaTime);
 
         transform.position += transform.forward * (speed * directionValue) * Time.deltaTime;
+
     }
 
     private void OnDrawGizmos()
