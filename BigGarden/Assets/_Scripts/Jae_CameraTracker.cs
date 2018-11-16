@@ -8,6 +8,7 @@ public class Jae_CameraTracker : MonoBehaviour {
     [SerializeField] public Vector3 defaultDistance = new Vector3(0f, 2f, -10f);
     [SerializeField] float distanceDamp;
     [SerializeField] float rotationalDamp;
+    public bool lookAt;
 
     //public Transform followTarget;
 
@@ -41,6 +42,10 @@ public class Jae_CameraTracker : MonoBehaviour {
         Vector3 toPos = target.position + (target.rotation * defaultDistance);
         Vector3 curPos = Vector3.SmoothDamp(myT.position, toPos, ref velocity, distanceDamp);
         myT.position = curPos;
-        //myT.LookAt(target, target.up);
+
+        if (lookAt)
+        {
+            myT.LookAt(target, target.up);
+        }
     }
 }
