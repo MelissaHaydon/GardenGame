@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
     private static bool created = false;
     public static GameController instance = null;
+    public Jae_SceneManager sceneManager;
 
     float timeLeft = 60.0f;
     float timeRounded;
@@ -22,7 +24,7 @@ public class GameController : MonoBehaviour {
     {
         if (!created)
         {
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
             created = true;
         }
         Time.timeScale = 1;
@@ -53,6 +55,11 @@ public class GameController : MonoBehaviour {
         if (timeLeft <= 0)
         {
             Debug.Log("GAME OVER");
+            if (timerText != null)
+            {
+                timerText.text = "0";
+            }
+            sceneManager.GoToZoneOne();
         }
         pollenHeld = bee.GetComponent<PlayerController>().pollenHeld;
         if (pollenHeld >= 5)

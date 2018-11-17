@@ -36,6 +36,12 @@ public class Jae_SceneManager : MonoBehaviour {
         jaeCamera.lookAt = false;
     }
 
+    public void GoToZoneOne()
+    {
+        sceneName = "Jae_Scene";
+        StartCoroutine(LoadScene());
+    }
+
     public void GoToBeeGame()
     {
         sceneName = "Bee Maze";
