@@ -7,10 +7,27 @@ public class Jae_GameManager : MonoBehaviour {
 
     public Jae_VIDEPlayerScript player;
     public GameObject exitConfirmationScreen;
+    public GameController mazeController;
+    public GameObject present;
+    public bool mazeCleared;
 
-	// Use this for initialization
-	void Start () {
-		
+    private void Awake()
+    {
+        mazeController = FindObjectOfType<GameController>();
+        if (mazeController == null)
+        {
+            return;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
+		if (mazeController != null && mazeController.clearedGame)
+        {
+            mazeCleared = true;
+            Destroy(present);
+            GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
+        }
 	}
 	
 	// Update is called once per frame

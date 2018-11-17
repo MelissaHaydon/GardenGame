@@ -9,6 +9,8 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
 
     public string playerName;
 
+    public Jae_GameManager gameManager;
+
     //Reference to our diagUI script for quick access
     public UIManager diagUI;
     //public QuestChartDemo questUI;

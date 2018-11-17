@@ -20,11 +20,14 @@ public class GameController : MonoBehaviour {
     int pollenTotal = 0;
     int pollenHeld;
 
+    public static bool goodGift;
+    public bool clearedGame;
+
     void Awake()
     {
         if (!created)
         {
-            //DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);
             created = true;
         }
         Time.timeScale = 1;
@@ -54,10 +57,14 @@ public class GameController : MonoBehaviour {
         }
         if (timeLeft <= 0)
         {
-            Debug.Log("GAME OVER");
+            clearedGame = true;
             if (timerText != null)
             {
                 timerText.text = "0";
+            }
+            if (pollenTotal >= 20)
+            {
+                goodGift = true;
             }
             sceneManager.GoToZoneOne();
         }
