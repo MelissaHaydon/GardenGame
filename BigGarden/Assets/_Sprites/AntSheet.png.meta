@@ -142,18 +142,18 @@ TextureImporter:
       name: AntSheet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 12
         y: 0
-        width: 488
-        height: 327
+        width: 554
+        height: 361
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68556075c62990a4d8d38dba39e3a153
+      spriteID: 3a3a45a47bec82745b4b17b3dd563d60
       vertices: []
       indices: 
       edges: []
@@ -162,18 +162,18 @@ TextureImporter:
       name: AntSheet_1
       rect:
         serializedVersion: 2
-        x: 488
+        x: 542
         y: 0
-        width: 488
-        height: 327
+        width: 554
+        height: 361
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4196c3f2640a8314a8126feb14b0abd5
+      spriteID: b8b0174c65774ba438e71eff60e4f089
       vertices: []
       indices: 
       edges: []
