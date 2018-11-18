@@ -375,9 +375,13 @@ public class UIManager : MonoBehaviour
             if (dialogue.alias == "Bee")
             {
                 audioSource.pitch = 0.6f;
-                if (player.gameManager.mazeCleared)
+                if (player.gameManager.mazeCleared && dialogue.overrideStartNode != 13)
                 {
                     dialogue.overrideStartNode = 6;
+                }
+                else if (player.gameManager.mazeCleared)
+                {
+                    dialogue.overrideStartNode = 13;
                 }
             }
 
