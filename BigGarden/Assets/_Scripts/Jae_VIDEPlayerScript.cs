@@ -166,6 +166,11 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
             }
         }
 
+        if (transform.position.y <= -10)
+        {
+            transform.position = new Vector3(-11.95f, 0, 0);
+        }
+
         anim.SetBool("Moving", moving);
         anim.SetFloat("LastMoveX", lastMove.x);
         anim.SetFloat("LastMoveY", lastMove.y);
