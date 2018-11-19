@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     Vector2 _dir = Vector2.zero;
     Vector2 _nextDir = Vector2.zero;
 
+    public ParticleSystem particles;
+
     [Serializable]
     public class PointSprites
     {
@@ -115,6 +117,10 @@ public class PlayerController : MonoBehaviour
         }
         else if (col.tag == "beehive")
         {
+            if (pollenHeld > 0)
+            {
+                particles.Play();
+            }
             GameController.instance.AddPollen(pollenHeld);
             pollenHeld = 0;
         }
