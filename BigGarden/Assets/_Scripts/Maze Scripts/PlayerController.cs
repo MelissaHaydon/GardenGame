@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
             {
                 pollenHeld++;
                 Destroy(col.gameObject);
-                //heldAnimator.SetTrigger("Update");
+                heldAnimator.SetTrigger("Update");
             }
         }
         else if (col.tag == "beehive")

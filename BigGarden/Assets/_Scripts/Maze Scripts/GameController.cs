@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour {
 
     private void Start()
     {
-        pollenCount.text = "Total Pollen Collected: " + 0;
+        pollenCount.text = "Pollen Stored: " + 0;
         message.text = "";
         timerText.text = "";
     }
@@ -73,7 +73,7 @@ public class GameController : MonoBehaviour {
         if (pollenHeld >= 5)
         {
             message.text = "Maximum Pollen Held Return to the Hive";
-            heldAnimator.SetTrigger("Update");
+            heldAnimator.SetTrigger("MaxPollen");
         }
         else
         {
@@ -87,7 +87,7 @@ public class GameController : MonoBehaviour {
     public void AddPollen(int pollen)
     {
         pollenTotal += pollen;
-        pollenCount.text = "Pollen Collected: " + pollenTotal.ToString();
+        pollenCount.text = "Pollen Stored: " + pollenTotal.ToString();
     }
 
 }
