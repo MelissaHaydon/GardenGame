@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour {
     public GameObject bee;
     public Text pollenCount;
     public Text message;
+    public Animator heldAnimator;
     int pollenTotal = 0;
     int pollenHeld;
 
@@ -72,6 +73,7 @@ public class GameController : MonoBehaviour {
         if (pollenHeld >= 5)
         {
             message.text = "Maximum Pollen Held Return to the Hive";
+            heldAnimator.SetTrigger("Update");
         }
         else
         {

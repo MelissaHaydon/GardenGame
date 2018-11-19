@@ -2843,6 +2843,7 @@ GameObject:
   - component: {fileID: 241709336}
   - component: {fileID: 241709338}
   - component: {fileID: 241709337}
+  - component: {fileID: 241709339}
   m_Layer: 5
   m_Name: message
   m_TagString: Untagged
@@ -2907,6 +2908,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241709335}
+--- !u!95 &241709339
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 241709335}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd1db1b9ba8361e46aa6e93297b16ad5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &246161907
 GameObject:
   m_ObjectHideFlags: 0
@@ -8944,6 +8963,9 @@ MonoBehaviour:
   particles: {fileID: 1910332844}
   points:
     pointSprites: []
+  heldAnimator: {fileID: 241709339}
+  totalAnimator: {fileID: 1155149067}
+  beehiveAnimator: {fileID: 2097541349}
   pollenHeld: 0
 --- !u!50 &508745665
 Rigidbody2D:
@@ -12107,6 +12129,7 @@ MonoBehaviour:
   bee: {fileID: 508745660}
   pollenCount: {fileID: 1155149065}
   message: {fileID: 241709337}
+  heldAnimator: {fileID: 241709339}
   clearedGame: 0
 --- !u!1 &743038213
 GameObject:
@@ -17536,6 +17559,7 @@ GameObject:
   - component: {fileID: 1155149064}
   - component: {fileID: 1155149066}
   - component: {fileID: 1155149065}
+  - component: {fileID: 1155149067}
   m_Layer: 5
   m_Name: pollen total
   m_TagString: Untagged
@@ -17600,6 +17624,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1155149063}
+--- !u!95 &1155149067
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1155149063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd1db1b9ba8361e46aa6e93297b16ad5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1183649005
 GameObject:
   m_ObjectHideFlags: 0
@@ -34835,6 +34877,7 @@ GameObject:
   - component: {fileID: 2097541347}
   - component: {fileID: 2097541346}
   - component: {fileID: 2097541348}
+  - component: {fileID: 2097541349}
   m_Layer: 0
   m_Name: Beehive
   m_TagString: beehive
@@ -34926,6 +34969,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9, y: 2.52}
   m_EdgeRadius: 0
+--- !u!95 &2097541349
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2097541345}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f150ec27c30819945a571001ad61dd1b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2113445505
 GameObject:
   m_ObjectHideFlags: 0

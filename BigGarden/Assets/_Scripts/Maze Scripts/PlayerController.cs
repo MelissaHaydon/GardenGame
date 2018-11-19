@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class PlayerController : MonoBehaviour
     public PointSprites points;
 
     public static int killstreak = 0;
+    
+    public Animator heldAnimator;
+    public Animator totalAnimator;
+    public Animator beehiveAnimator;
 
     // script handles
     //private GameGUINavigation GUINav;
@@ -113,6 +118,7 @@ public class PlayerController : MonoBehaviour
             {
                 pollenHeld++;
                 Destroy(col.gameObject);
+                //heldAnimator.SetTrigger("Update");
             }
         }
         else if (col.tag == "beehive")
@@ -120,6 +126,8 @@ public class PlayerController : MonoBehaviour
             if (pollenHeld > 0)
             {
                 particles.Play();
+                totalAnimator.SetTrigger("Update");
+                beehiveAnimator.SetTrigger("Bounce");
             }
             GameController.instance.AddPollen(pollenHeld);
             pollenHeld = 0;
