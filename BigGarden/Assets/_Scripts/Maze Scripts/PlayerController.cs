@@ -11,7 +11,8 @@ public class PlayerController : MonoBehaviour
     Vector2 _dir = Vector2.zero;
     Vector2 _nextDir = Vector2.zero;
 
-    public ParticleSystem particles;
+    public ParticleSystem beehiveParticles;
+    public ParticleSystem pollenParticles;
 
     [Serializable]
     public class PointSprites
@@ -126,7 +127,7 @@ public class PlayerController : MonoBehaviour
         {
             if (pollenHeld > 0)
             {
-                particles.Play();
+                beehiveParticles.Play();
                 totalAnimator.SetTrigger("Update");
                 beehiveAnimator.SetTrigger("Bounce");
             }
@@ -139,7 +140,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void OnTriggerStay(Collider2D col)
+    public void OnTriggerStay2D(Collider2D col)
     {
         if (col.tag == "wasp")
         {
@@ -153,6 +154,10 @@ public class PlayerController : MonoBehaviour
     public void InitiateHit()
     {
         damageBoost = true;
+        if (pollenHeld > 0)
+        {
+            pollenParticles.Play();
+        }
         GetComponent<Animator>().SetTrigger("Hit");
         pollenHeld = 0;
     }
