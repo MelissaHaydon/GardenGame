@@ -54,6 +54,7 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
     {
         inTrigger = null;
         attentionBubble.SetActive(false);
+        
     }
 
     void Start()

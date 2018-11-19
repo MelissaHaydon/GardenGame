@@ -135,6 +135,7 @@ public class PlayerController : MonoBehaviour
         else if (col.tag == "wasp")
         {
             pollenHeld = 0;
+            GetComponent<Animator>().SetTrigger("Hit");
         }
     }
 
