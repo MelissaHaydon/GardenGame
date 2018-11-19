@@ -63,6 +63,7 @@ public class Jae_SceneManager : MonoBehaviour {
 
     IEnumerator LoadScene()
     {
+        yield return new WaitForSeconds(3f);
         transitionAnim.SetTrigger("end");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneName);

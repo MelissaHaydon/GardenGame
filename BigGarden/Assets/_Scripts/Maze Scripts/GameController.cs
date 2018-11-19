@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour {
     private static bool created = false;
     public static GameController instance = null;
     public Jae_SceneManager sceneManager;
+    //public PlayerController player;
 
     float timeLeft = 60.0f;
     float timeRounded;
@@ -58,6 +59,7 @@ public class GameController : MonoBehaviour {
         }
         if (timeLeft <= 0)
         {
+            bee.GetComponent<PlayerController>().speed = 0;
             clearedGame = true;
             if (timerText != null)
             {
