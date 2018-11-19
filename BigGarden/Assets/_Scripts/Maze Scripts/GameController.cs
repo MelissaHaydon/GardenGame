@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour {
     public GameObject bee;
     public Text pollenCount;
     public Text message;
+    public Text timeUp;
     public Animator heldAnimator;
     int pollenTotal = 0;
     int pollenHeld;
@@ -52,14 +53,15 @@ public class GameController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        timeLeft -= Time.deltaTime;
+        
         if (timeLeft > 0)
         {
-
+            timeLeft -= Time.deltaTime;
         }
         if (timeLeft <= 0)
         {
             bee.GetComponent<PlayerController>().speed = 0;
+            timeUp.gameObject.SetActive(true);
             clearedGame = true;
             if (timerText != null)
             {
