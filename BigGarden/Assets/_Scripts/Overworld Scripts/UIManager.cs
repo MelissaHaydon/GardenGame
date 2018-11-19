@@ -455,12 +455,12 @@ public class UIManager : MonoBehaviour
                 checkNum = 1;
                 if (dialogue.overrideStartNode == 4)
                 {
-                    spiderGone = true;
                     for (int i = 0; i < inventory.invSlot.Length; i++)
                     {
                         if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
                         {
                             dialogue.overrideStartNode = 3;
+                            spiderGone = true;
                             GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
                             inventory.itemNum[i] = 0;
                             inventory.itemDict.Remove(inventory.itemName[i]);
