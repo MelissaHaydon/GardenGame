@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     //private ScoreManager SM;
 
     public int pollenHeld;
+    public bool damageBoost;
 
     // Use this for initialization
     void Start()
@@ -132,11 +133,32 @@ public class PlayerController : MonoBehaviour
             GameController.instance.AddPollen(pollenHeld);
             pollenHeld = 0;
         }
-        else if (col.tag == "wasp")
+        else if (col.tag == "wasp" && !damageBoost)
         {
-            pollenHeld = 0;
-            GetComponent<Animator>().SetTrigger("Hit");
+            InitiateHit();
         }
     }
 
+    public void OnTriggerStay(Collider2D col)
+    {
+        if (col.tag == "wasp")
+        {
+            if (!damageBoost)
+            {
+                InitiateHit();
+            }
+        }
+    }
+
+    public void InitiateHit()
+    {
+        damageBoost = true;
+        GetComponent<Animator>().SetTrigger("Hit");
+        pollenHeld = 0;
+    }
+
+    public void TurnDamageBoostOff()
+    {
+        damageBoost = false;
+    }
 }
