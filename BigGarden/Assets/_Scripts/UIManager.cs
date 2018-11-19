@@ -47,6 +47,10 @@ public class UIManager : MonoBehaviour
     public string checkName;
     public int checkNum;
 
+    int antStartNode = 0;
+    bool spiderGone = false;
+    bool antsCounted = false;
+
     #endregion
 
     #region MAIN
@@ -370,7 +374,61 @@ public class UIManager : MonoBehaviour
             //        return false;
             //    }
             //}
+
             audioSource.pitch = 1;
+            
+            if (dialogue.alias == "Ant")
+            {
+                audioSource.pitch = 1.2f;
+                if (dialogue.overrideStartNode >= 0)
+                {
+                    antStartNode = 4;
+                    Debug.Log(antStartNode);
+                }
+                if (antsCounted)
+                {
+                    dialogue.overrideStartNode = 13;
+                }
+            }
+
+            if (dialogue.alias == "AntField")
+            {
+                if (antStartNode == 4)
+                {
+                    dialogue.overrideStartNode = 1;
+                }
+                if (dialogue.overrideStartNode >= 0)
+                {
+                    checkName = "Boombox";
+                    checkNum = 1;
+                    if (dialogue.overrideStartNode == 1)
+                    {
+                        antsCounted = true;
+                        for (int i = 0; i < inventory.invSlot.Length; i++)
+                        {
+                            if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                            {
+                                dialogue.overrideStartNode = 2;
+                                GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                                inventory.itemNum[i] = 0;
+                                inventory.itemDict.Remove(inventory.itemName[i]);
+                                inventory.itemAmount[i].gameObject.SetActive(false);
+                                inventory.isFull[i] = false;
+                                inventory.itemName[i] = null;
+                                return false;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (dialogue.alias == "Boombox")
+            {
+                if (spiderGone)
+                {
+                    dialogue.overrideStartNode = 4;
+                }
+            }
 
             if (dialogue.alias == "Bee")
             {
@@ -395,8 +453,9 @@ public class UIManager : MonoBehaviour
                 audioSource.pitch = 2;
                 checkName = "Present";
                 checkNum = 1;
-                if (dialogue.overrideStartNode > 0)
+                if (dialogue.overrideStartNode == 4)
                 {
+                    spiderGone = true;
                     for (int i = 0; i < inventory.invSlot.Length; i++)
                     {
                         if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
@@ -519,6 +578,11 @@ public class UIManager : MonoBehaviour
             //QuestChartDemo.SetQuest(2, false);
 
         //QuestChartDemo.CheckTaskCompletion(VD.nodeData);
+    }
+
+    public void SetAntCount()
+    {
+        antStartNode = 4;
     }
 
     #endregion

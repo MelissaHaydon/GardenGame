@@ -279,7 +279,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &20649157
 GameObject:
@@ -629,7 +629,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.7925974, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &61449778
 GameObject:
@@ -1876,7 +1876,7 @@ Transform:
   - {fileID: 415469454}
   - {fileID: 780754581}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &252331619
 GameObject:
@@ -2266,7 +2266,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &280393965
 SphereCollider:
@@ -2840,7 +2840,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351399295
 GameObject:
@@ -3228,7 +3228,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &384329855
 MonoBehaviour:
@@ -3804,7 +3804,7 @@ Transform:
   m_Children:
   - {fileID: 1911779139}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &418682987
 SphereCollider:
@@ -4531,6 +4531,7 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Tap
   assignedIndex: 8
   assignedID: 28226
   assignedDialogue: Spider
@@ -4602,8 +4603,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.55, y: 2.3, z: 14.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1232076319}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5538,7 +5538,7 @@ Transform:
   - {fileID: 1321873149}
   - {fileID: 471946394}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683497804
 GameObject:
@@ -6019,7 +6019,7 @@ Transform:
   - {fileID: 1277187021}
   - {fileID: 817338069}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &752950851
 GameObject:
@@ -10306,7 +10306,7 @@ Transform:
   - {fileID: 650558147}
   - {fileID: 61449779}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1142265475
 GameObject:
@@ -11347,8 +11347,9 @@ GameObject:
   - component: {fileID: 1232076324}
   - component: {fileID: 1232076323}
   - component: {fileID: 1232076322}
+  - component: {fileID: 1232076325}
   m_Layer: 0
-  m_Name: Boombox
+  m_Name: Boombox_NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11361,11 +11362,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1232076318}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3099995, y: -2.57, z: 0}
+  m_LocalPosition: {x: -22.859999, y: -0.26999998, z: 14.33}
   m_LocalScale: {x: 0.70812404, y: 0.70812404, z: 0.70812404}
   m_Children: []
-  m_Father: {fileID: 515644211}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1232076320
 MonoBehaviour:
@@ -11468,11 +11469,12 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Tap
   assignedIndex: 3
   assignedID: 82888
   assignedDialogue: Boombox
   interactionCount: 0
-  alias: Garden Boy
+  alias: Boombox
   overrideStartNode: -1
   defaultNPCSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9, type: 3}
   defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,
@@ -11485,6 +11487,21 @@ MonoBehaviour:
   langs: []
   S_playerDiags: []
   S_actionNodes: []
+--- !u!114 &1232076325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1232076318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af6c92989791fa4aaaa634f3fadd701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemButton: {fileID: 1947209126132152, guid: 876b98cbc3aa91543b67a238d08f2358, type: 2}
+  itemName: Boombox
+  audioManager: {fileID: 0}
+  canTouch: 0
 --- !u!1 &1240218432
 GameObject:
   m_ObjectHideFlags: 0
@@ -18200,7 +18217,7 @@ Transform:
   - {fileID: 351399296}
   - {fileID: 752950852}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -15.951001, z: 0}
 --- !u!1 &1441891879
 GameObject:
@@ -20369,7 +20386,7 @@ Transform:
   - {fileID: 1313133180}
   - {fileID: 706038967}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1664702646
 GameObject:
@@ -21461,7 +21478,7 @@ Transform:
   - {fileID: 468655411}
   - {fileID: 1375986829}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1870480405
 GameObject:
@@ -22264,6 +22281,7 @@ GameObject:
   - component: {fileID: 1919809411}
   - component: {fileID: 1919809410}
   - component: {fileID: 1919809409}
+  - component: {fileID: 1919809413}
   m_Layer: 0
   m_Name: AntField_NPC
   m_TagString: Untagged
@@ -22292,11 +22310,12 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Tap
   assignedIndex: 1
   assignedID: 59439
   assignedDialogue: AntBabies
   interactionCount: 0
-  alias: Garden Boy
+  alias: AntField
   overrideStartNode: -1
   defaultNPCSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9, type: 3}
   defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,
@@ -22344,8 +22363,19 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1919809413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1919809408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 959638179bf81114eb0caea1acb0f312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1923730617
 GameObject:
   m_ObjectHideFlags: 0

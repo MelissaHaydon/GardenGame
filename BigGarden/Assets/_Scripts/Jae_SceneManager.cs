@@ -13,9 +13,13 @@ public class Jae_SceneManager : MonoBehaviour {
     public Transform playerTransform;
 
 	// Use this for initialization
-	void Start () {
-		
-	}
+	void Awake () {
+        transitionAnim = GameObject.Find("SceneTransition").GetComponent<Animator>();
+        player = GameObject.Find("Player_Sprite").GetComponent<Jae_VIDEPlayerScript>();
+        jaeCamera = GameObject.Find("Main Camera").GetComponent<Jae_CameraTracker>();
+        antTarget = GameObject.Find("AntTransformPoint").transform;
+        playerTransform = player.transform;
+    }
 	
 	// Update is called once per frame
 	void Update () {
