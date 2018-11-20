@@ -47,9 +47,9 @@ public class UIManager : MonoBehaviour
     public string checkName;
     public int checkNum;
 
-    int antStartNode = 0;
-    bool spiderGone = false;
-    bool antsCounted = false;
+    public int antStartNode = 0;
+    public bool spiderGone = false;
+    public bool antsCounted = false;
 
     #endregion
 
@@ -380,9 +380,10 @@ public class UIManager : MonoBehaviour
             if (dialogue.alias == "Ant")
             {
                 audioSource.pitch = 1.2f;
-                if (dialogue.overrideStartNode >= 0)
+                
+                if (antStartNode == 4)
                 {
-                    antStartNode = 4;
+                    dialogue.overrideStartNode = 4;
                 }
                 if (antStartNode == 13)
                 {
@@ -580,6 +581,11 @@ public class UIManager : MonoBehaviour
             //QuestChartDemo.SetQuest(2, false);
 
         //QuestChartDemo.CheckTaskCompletion(VD.nodeData);
+    }
+
+    public void AntCountFlagActivate()
+    {
+        antStartNode = 4;
     }
 
     public void SetAntCount()
