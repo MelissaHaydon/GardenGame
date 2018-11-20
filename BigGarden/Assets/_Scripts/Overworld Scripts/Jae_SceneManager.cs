@@ -11,6 +11,7 @@ public class Jae_SceneManager : MonoBehaviour {
     public Jae_CameraTracker jaeCamera;
     public Transform antTarget;
     public Transform playerTransform;
+    public float sceneDelay;
 
 	// Use this for initialization
 	void Start () {
@@ -45,6 +46,12 @@ public class Jae_SceneManager : MonoBehaviour {
         jaeCamera.lookAt = false;
     }
 
+    public void PlayGame()
+    {
+        sceneName = "Jae_Scene";
+        StartCoroutine(LoadScene());
+    }
+
     public void GoToZoneOne()
     {
         sceneName = "Jae_Scene";
@@ -64,7 +71,21 @@ public class Jae_SceneManager : MonoBehaviour {
 
     IEnumerator LoadScene()
     {
-        yield return new WaitForSeconds(3f);
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Jae_Scene")
+        {
+            sceneDelay = 0f;
+        }
+        else if (scene.name == "Bee Maze")
+        {
+            sceneDelay = 3f;
+        }
+        else if (scene.name == "MainMenu")
+        {
+            sceneDelay = 0f;
+        }
+
+        yield return new WaitForSeconds(sceneDelay);
         transitionAnim.SetTrigger("end");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneName);

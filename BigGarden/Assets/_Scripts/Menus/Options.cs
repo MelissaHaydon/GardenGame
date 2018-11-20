@@ -31,7 +31,7 @@ public class Options : MonoBehaviour {
 	void Update () {
         volume = Mathf.RoundToInt(volumeS.value);
         volumeT.text = "" + volume;
-        AudioListener.volume = volume;
+        AudioListener.volume = volume / 100;
 
         if(controlPanel.activeSelf == true)
         {
