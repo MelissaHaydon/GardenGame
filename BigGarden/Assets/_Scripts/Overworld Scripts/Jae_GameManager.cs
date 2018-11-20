@@ -10,6 +10,7 @@ public class Jae_GameManager : MonoBehaviour {
     public GameController mazeController;
     public GameObject present;
     public bool mazeCleared;
+    public GameObject spiderNPC;
 
     private void Awake()
     {
@@ -56,5 +57,10 @@ public class Jae_GameManager : MonoBehaviour {
     {
         exitConfirmationScreen.SetActive(false);
         //player.canMove = true;
+    }
+
+    public void SpiderBeGone()
+    {
+        spiderNPC.SetActive(false);
     }
 }

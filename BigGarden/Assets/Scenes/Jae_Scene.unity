@@ -3132,6 +3132,7 @@ MonoBehaviour:
   - AntBabies
   - Bee
   - Boombox
+  - BoomboxAnts
   - NotFinishedYet
   - RandomCube
   - SlimePuddles
@@ -3728,13 +3729,14 @@ MonoBehaviour:
   - AntBabies
   - Bee
   - Boombox
+  - BoomboxAnts
   - NotFinishedYet
   - RandomCube
   - SlimePuddles
   - Snail
   - Spider
   - Tap
-  assignedIndex: 7
+  assignedIndex: 8
   assignedID: 74564
   assignedDialogue: Snail
   interactionCount: 0
@@ -4561,13 +4563,14 @@ MonoBehaviour:
   - AntBabies
   - Bee
   - Boombox
+  - BoomboxAnts
   - NotFinishedYet
   - RandomCube
   - SlimePuddles
   - Snail
   - Spider
   - Tap
-  assignedIndex: 8
+  assignedIndex: 9
   assignedID: 28226
   assignedDialogue: Spider
   interactionCount: 0
@@ -7929,6 +7932,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252dc119a21691843b40a8f8e7adb716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &916629487
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.26999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 14.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837547478605118, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &928159340
 GameObject:
   m_ObjectHideFlags: 0
@@ -9645,6 +9694,67 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3, y: 1.45, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1069246287
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -22.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.26999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 14.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837547478605118, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+      propertyPath: m_Name
+      value: Boombox_NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382844854452804, guid: 2e05284e31f9e39498d8788977a2236a,
+        type: 2}
+      propertyPath: assignedIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382844854452804, guid: 2e05284e31f9e39498d8788977a2236a,
+        type: 2}
+      propertyPath: assignedID
+      value: 82888
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382844854452804, guid: 2e05284e31f9e39498d8788977a2236a,
+        type: 2}
+      propertyPath: assignedDialogue
+      value: Boombox
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1093187995
 GameObject:
   m_ObjectHideFlags: 0
@@ -11369,174 +11479,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1232076318
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1232076319}
-  - component: {fileID: 1232076321}
-  - component: {fileID: 1232076320}
-  - component: {fileID: 1232076324}
-  - component: {fileID: 1232076323}
-  - component: {fileID: 1232076322}
-  - component: {fileID: 1232076325}
-  m_Layer: 0
-  m_Name: Boombox_NPC
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1232076319
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1232076318}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.859999, y: -0.26999998, z: 14.33}
-  m_LocalScale: {x: 0.70812404, y: 0.70812404, z: 0.70812404}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1232076320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1232076318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!212 &1232076321
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1232076318}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bfa5146971ed8bc43841cec8b85926a1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.07, y: 2.96}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!135 &1232076322
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1232076318}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.035
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &1232076323
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1232076318}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.07, y: 2.96, z: 0.4}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1232076324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1232076318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b8b99d8a12e39e4b94d2d7162c7c978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diags:
-  - Ant
-  - AntBabies
-  - Bee
-  - Boombox
-  - NotFinishedYet
-  - RandomCube
-  - SlimePuddles
-  - Snail
-  - Spider
-  - Tap
-  assignedIndex: 3
-  assignedID: 82888
-  assignedDialogue: Boombox
-  interactionCount: 0
-  alias: Boombox
-  overrideStartNode: -1
-  defaultNPCSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9, type: 3}
-  defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,
-    type: 3}
-  targetManager: {fileID: 0}
-  preload: 0
-  notuptodate: 0
-  startp: 0
-  loadtag: 
-  langs: []
-  S_playerDiags: []
-  S_actionNodes: []
---- !u!114 &1232076325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1232076318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1af6c92989791fa4aaaa634f3fadd701, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 1947209126132152, guid: 876b98cbc3aa91543b67a238d08f2358, type: 2}
-  itemName: Boombox
-  audioManager: {fileID: 0}
-  canTouch: 0
 --- !u!1 &1240218432
 GameObject:
   m_ObjectHideFlags: 0
@@ -13424,6 +13366,7 @@ MonoBehaviour:
   mazeController: {fileID: 0}
   present: {fileID: 0}
   mazeCleared: 0
+  spiderNPC: {fileID: 515644206}
 --- !u!4 &1420836515
 Transform:
   m_ObjectHideFlags: 0
@@ -21385,10 +21328,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 554949893}
   sceneName: 
-  player: {fileID: 876853708}
-  jaeCamera: {fileID: 282840812}
-  antTarget: {fileID: 1313717013}
-  playerTransform: {fileID: 876853710}
+  player: {fileID: 0}
+  jaeCamera: {fileID: 0}
+  antTarget: {fileID: 0}
+  playerTransform: {fileID: 0}
 --- !u!1 &1850533758
 GameObject:
   m_ObjectHideFlags: 0
@@ -22340,6 +22283,7 @@ GameObject:
   - component: {fileID: 1919809409}
   - component: {fileID: 1919809413}
   - component: {fileID: 1919809410}
+  - component: {fileID: 1919809411}
   m_Layer: 0
   m_Name: AntField_NPC
   m_TagString: Obstacle
@@ -22363,6 +22307,7 @@ MonoBehaviour:
   - AntBabies
   - Bee
   - Boombox
+  - BoomboxAnts
   - NotFinishedYet
   - RandomCube
   - SlimePuddles
@@ -22399,6 +22344,23 @@ CapsuleCollider:
   m_Height: 7
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1919809411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1919809408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711f80f4f864fe4488a8a80cb5ecd569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToSpawn: {fileID: 1837547478605118, guid: 2e05284e31f9e39498d8788977a2236a,
+    type: 2}
+  spawnLocation: {x: 16.5, y: -0.5, z: 15}
+  audioManager: {fileID: 0}
+  playAudio: 0
+  soundName: 
 --- !u!4 &1919809412
 Transform:
   m_ObjectHideFlags: 0

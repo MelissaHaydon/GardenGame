@@ -383,11 +383,14 @@ public class UIManager : MonoBehaviour
                 if (dialogue.overrideStartNode >= 0)
                 {
                     antStartNode = 4;
-                    Debug.Log(antStartNode);
                 }
-                if (antsCounted)
+                if (antStartNode == 13)
                 {
                     dialogue.overrideStartNode = 13;
+                }
+                if (antStartNode == 7)
+                {
+                    dialogue.overrideStartNode = 7;
                 }
             }
 
@@ -403,7 +406,6 @@ public class UIManager : MonoBehaviour
                     checkNum = 1;
                     if (dialogue.overrideStartNode == 1)
                     {
-                        antsCounted = true;
                         for (int i = 0; i < inventory.invSlot.Length; i++)
                         {
                             if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
@@ -582,7 +584,12 @@ public class UIManager : MonoBehaviour
 
     public void SetAntCount()
     {
-        antStartNode = 4;
+        antStartNode = 13;
+    }
+
+    public void SetAntRun()
+    {
+        antStartNode = 7;
     }
 
     #endregion

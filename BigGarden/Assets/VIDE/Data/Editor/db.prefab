@@ -40,26 +40,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268dc70b105993846a123be43345df63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileIndex: 0
+  fileIndex: 9
   skinIndex: 0
   loadTag: 
   startID: 0
   curFocusID: 0
-  currentID: 68597
+  currentID: 28226
   autosave: 1
   previewPanning: 0
-  currentDiag: 0
+  currentDiag: 9
   locEdit: 0
   pNodeID: 18
   aNodeID: 2
   S_playerDiags:
-  - commentCount: 5
+  - commentCount: 11
     s_comment:
-    - text: Huh? You need me out of here?
+    - text: Psssssssst psst psst psst.
       extraData: ExtraData
       inputSetIndex: 0
-      outputNodeIndex: -1
-      outActionIndex: 1
+      outputNodeIndex: 1
+      outActionIndex: -1
       showmore: 0
       outRect:
         serializedVersion: 2
@@ -70,7 +70,7 @@ MonoBehaviour:
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
-    - text: Sorry, pal, no can do. Need to make sure I've--
+    - text: Hey, you!!! Haven't seen you around here before!
       extraData: ExtraData
       inputSetIndex: 0
       outputNodeIndex: -1
@@ -85,7 +85,7 @@ MonoBehaviour:
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
-    - text: KIDS! Settle down. Your old man can't keep up with ya.
+    - text: Oh, sorry, did I scare you? Sorry sorry sorry sorry!
       extraData: ExtraData
       inputSetIndex: 0
       outputNodeIndex: -1
@@ -100,8 +100,7 @@ MonoBehaviour:
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
-    - text: I need to do a headcount before we leave. Y'all're more hyper than lightning
-        bolts with legs.
+    - text: '...You need me to leave? God, I wish I could!'
       extraData: ExtraData
       inputSetIndex: 0
       outputNodeIndex: -1
@@ -116,7 +115,98 @@ MonoBehaviour:
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
-    - text: You there, with the young eyes and the youthful spirit. And the youngness.
+    - text: It's almost Valentwine's Day and I'm, uh... Uuuuhhhh...
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: Up the presentless creek without a gift paddle. Or a gift.
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: And I'm kind of freaking out!!! I don't know what to get my mate!
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: Wait. Wait! Wait!!!
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: I can just play her my mixtape! Of course!
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: Do you maybe... wanna listen? Just to make sure it's good?
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: Not that I'm doubting my personal blend of Christian polka and techno
+        music could be good.
       extraData: ExtraData
       inputSetIndex: 0
       outputNodeIndex: -1
@@ -134,10 +224,10 @@ MonoBehaviour:
     ID: 0
     rect:
       serializedVersion: 2
-      x: -840
-      y: 80
+      x: 170
+      y: 230
       width: 349
-      height: 267
+      height: 426
     pTag: 
     expand: 0
     sprite: {fileID: 0}
@@ -146,7 +236,7 @@ MonoBehaviour:
     isPlayer: 0
   - commentCount: 2
     s_comment:
-    - text: '>It''s like, 45, or something.'
+    - text: '>No.'
       extraData: ExtraData
       inputSetIndex: 1
       outputNodeIndex: 2
@@ -161,11 +251,11 @@ MonoBehaviour:
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
-    - text: '>I don''t know!'
+    - text: '>Nnnno thank you.'
       extraData: ExtraData
       inputSetIndex: 1
-      outputNodeIndex: -1
-      outActionIndex: 0
+      outputNodeIndex: 2
+      outActionIndex: -1
       showmore: 0
       outRect:
         serializedVersion: 2
@@ -179,8 +269,8 @@ MonoBehaviour:
     ID: 1
     rect:
       serializedVersion: 2
-      x: -10
-      y: -20
+      x: 610
+      y: 240
       width: 349
       height: 143
     pTag: 
@@ -189,9 +279,9 @@ MonoBehaviour:
     vars: []
     varKeys: []
     isPlayer: 1
-  - commentCount: 4
+  - commentCount: 1
     s_comment:
-    - text: '...You just guessed that number, didn''t you?'
+    - text: :(
       extraData: ExtraData
       inputSetIndex: 2
       outputNodeIndex: -1
@@ -202,105 +292,30 @@ MonoBehaviour:
         x: 302
         y: 59
         width: 30
-        height: 29
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: I knew it! I could hear it in your voice!
-      extraData: ExtraData
-      inputSetIndex: 2
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: Pah, kids these days. Come back with some glasses.
-      extraData: ExtraData
-      inputSetIndex: 2
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: Or one of them fancy schmancy internet walkthroughs.
-      extraData: ExtraData
-      inputSetIndex: 2
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
+        height: 21
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
     ID: 2
     rect:
       serializedVersion: 2
-      x: 510
-      y: 90
+      x: 1030
+      y: 200
       width: 349
-      height: 219
+      height: 121
     pTag: 
     expand: 0
     sprite: {fileID: 0}
     vars: []
     varKeys: []
     isPlayer: 0
-  - commentCount: 1
+  - commentCount: 10
     s_comment:
-    - text: How many kids have I got, can you help me out?
+    - text: Aw geez aw geez aw-
       extraData: ExtraData
       inputSetIndex: 3
-      outputNodeIndex: 4
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 302
-        y: 59
-        width: 30
-        height: 29
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 4
-    rect:
-      serializedVersion: 2
-      x: -280
-      y: 540
-      width: 349
-      height: 129
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 2
-    s_comment:
-    - text: '>Like, at least two.'
-      extraData: ExtraData
-      inputSetIndex: 4
-      outputNodeIndex: 5
-      outActionIndex: -1
+      outputNodeIndex: -1
+      outActionIndex: 1
       showmore: 0
       outRect:
         serializedVersion: 2
@@ -311,9 +326,264 @@ MonoBehaviour:
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
-    - text: '>I don''t know!'
+    - text: Wait...
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: For me?? Awwwwwwww, man, you shouldn't have!
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: I can take this gift you gave to me...
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: And give it to my friend so he can help me think of a gift for my mate!
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: '...'
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: Or, uh.
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: I could give this to my mate. Good thinking.
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: Ugh, I can't believe I didn't think of that!
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: I'm just so embarrassed, I could just... I could just...!
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 3
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 410
+      width: 349
+      height: 380
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 3
+    s_comment:
+    - text: Aw geez aw geez aw geez aw geez.
       extraData: ExtraData
       inputSetIndex: 4
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: Oh no oh no oh no oh no.
+      extraData: ExtraData
+      inputSetIndex: 4
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: I still don't have a gift! What am I going to do!?
+      extraData: ExtraData
+      inputSetIndex: 4
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 4
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 670
+      width: 349
+      height: 181
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 4
+    s_comment:
+    - text: '...'
+      extraData: ExtraData
+      inputSetIndex: 5
+      outputNodeIndex: -1
+      outActionIndex: 2
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 302
+        y: 59
+        width: 30
+        height: 21
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: I'm, uh.
+      extraData: ExtraData
+      inputSetIndex: 5
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: Gonna pretend I didn't just poop out web.
+      extraData: ExtraData
+      inputSetIndex: 5
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: Byyyeeeee.
+      extraData: ExtraData
+      inputSetIndex: 5
       outputNodeIndex: -1
       outActionIndex: -1
       showmore: 0
@@ -329,401 +599,10 @@ MonoBehaviour:
     ID: 5
     rect:
       serializedVersion: 2
-      x: 150
-      y: 470
+      x: 1080
+      y: 570
       width: 349
-      height: 143
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 1
-  - commentCount: 2
-    s_comment:
-    - text: Real funny. Come back when you know for sure.
-      extraData: ExtraData
-      inputSetIndex: 5
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: I'm not goin' anywhere until I make sure everyone's here.
-      extraData: ExtraData
-      inputSetIndex: 5
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 6
-    rect:
-      serializedVersion: 2
-      x: 560
-      y: 470
-      width: 349
-      height: 159
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 1
-    s_comment:
-    - text: How many kids have I got, can you help me out?
-      extraData: ExtraData
-      inputSetIndex: 6
-      outputNodeIndex: 7
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 302
-        y: 59
-        width: 30
-        height: 29
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 7
-    rect:
-      serializedVersion: 2
-      x: -300
-      y: 750
-      width: 349
-      height: 129
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 1
-    s_comment:
-    - text: '>All 18 of them are trying to swim...'
-      extraData: ExtraData
-      inputSetIndex: 7
-      outputNodeIndex: 8
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 302
-        y: 59
-        width: 30
-        height: 29
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 8
-    rect:
-      serializedVersion: 2
-      x: 120
-      y: 720
-      width: 349
-      height: 129
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 1
-  - commentCount: 2
-    s_comment:
-    - text: Say what??
-      extraData: ExtraData
-      inputSetIndex: 8
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: Hang on, kids, papa's coming!!
-      extraData: ExtraData
-      inputSetIndex: 8
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 9
-    rect:
-      serializedVersion: 2
-      x: 540
-      y: 720
-      width: 349
-      height: 143
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 1
-    s_comment:
-    - text: Need a helping antenna over here. How many kids've I got?
-      extraData: ExtraData
-      inputSetIndex: 9
-      outputNodeIndex: -1
-      outActionIndex: 2
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 302
-        y: 59
-        width: 30
-        height: 29
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 11
-    rect:
-      serializedVersion: 2
-      x: -230
-      y: 320
-      width: 349
-      height: 129
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 1
-    s_comment:
-    - text: How many kids have I got, can you help me out?
-      extraData: ExtraData
-      inputSetIndex: 10
-      outputNodeIndex: 11
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 302
-        y: 59
-        width: 30
-        height: 29
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 13
-    rect:
-      serializedVersion: 2
-      x: -270
-      y: 970
-      width: 349
-      height: 129
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 1
-    s_comment:
-    - text: '>18!'
-      extraData: ExtraData
-      inputSetIndex: 11
-      outputNodeIndex: 12
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 302
-        y: 59
-        width: 30
-        height: 21
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 14
-    rect:
-      serializedVersion: 2
-      x: 110
-      y: 960
-      width: 349
-      height: 121
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 1
-  - commentCount: 4
-    s_comment:
-    - text: Perfect, thank ya very much, son.
-      extraData: ExtraData
-      inputSetIndex: 12
-      outputNodeIndex: 13
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 302
-        y: 59
-        width: 30
-        height: 29
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: Alright, kids, let's-
-      extraData: ExtraData
-      inputSetIndex: 12
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: KIDS! Are you grooving over there??
-      extraData: ExtraData
-      inputSetIndex: 12
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: Let your old man come on over and teach you some old tricks!
-      extraData: ExtraData
-      inputSetIndex: 12
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 15
-    rect:
-      serializedVersion: 2
-      x: 520
-      y: 970
-      width: 349
-      height: 211
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 2
-    s_comment:
-    - text: (Oh, no, is he going to think he's teaching us how to dab?)
-      extraData: ExtraData
-      inputSetIndex: 13
-      outputNodeIndex: 14
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 302
-        y: 59
-        width: 30
-        height: 29
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: (Let's skedaddle, guys.)
-      extraData: ExtraData
-      inputSetIndex: 13
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 16
-    rect:
-      serializedVersion: 2
-      x: 880
-      y: 970
-      width: 349
-      height: 151
-    pTag: Ant Babies
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 1
-    s_comment:
-    - text: Wait for me! I'll show you how to really throw down some dabs on them
-        haters!!
-      extraData: ExtraData
-      inputSetIndex: 14
-      outputNodeIndex: -1
-      outActionIndex: 3
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 302
-        y: 59
-        width: 30
-        height: 42
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 17
-    rect:
-      serializedVersion: 2
-      x: 1230
-      y: 970
-      width: 349
-      height: 142
+      height: 195
     pTag: 
     expand: 0
     sprite: {fileID: 0}
@@ -732,15 +611,84 @@ MonoBehaviour:
     isPlayer: 0
   S_actionNodes:
   - pauseHere: 0
-    gameObjectName: UIManager
-    methodName: SetAntCount
-    nameIndex: 11
-    methodIndex: 2
+    gameObjectName: '[NONE]'
+    methodName: '[NONE]'
+    nameIndex: 0
+    methodIndex: 0
+    paramIndex: -1
+    opts:
+    - '[No method]'
+    nameOpts:
+    - '[No object]'
+    - Cube
+    - Spider_NPC
+    - UIManager
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    rect:
+      serializedVersion: 2
+      x: 1240
+      y: 340
+      width: 200
+      height: 154
+    ID: 6
+    outPlayerIndex: -1
+    outActionIndex: -1
+    more: 1
+    ovrStartNode: 4
+    renameDialogue: 
+  - pauseHere: 0
+    gameObjectName: Spider_NPC
+    methodName: InstantiateItem
+    nameIndex: 4
+    methodIndex: 7
     paramIndex: 0
     opts:
     - '[No method]'
-    - CallNext
-    - SetAntCount
+    - GetAssigned
+    - AssignNew
+    - SaveState
+    - LoadState
+    - OnBeforeSerialize
+    - OnAfterDeserialize
+    - InstantiateItem
+    nameOpts:
+    - '[No object]'
+    - Bee_NPC
+    - Snail_NPC
+    - Cube
+    - Spider_NPC
+    - UIManager
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    rect:
+      serializedVersion: 2
+      x: 990
+      y: 330
+      width: 200
+      height: 154
+    ID: 7
+    outPlayerIndex: 5
+    outActionIndex: -1
+    more: 1
+    ovrStartNode: 5
+    renameDialogue: 
+  - pauseHere: 0
+    gameObjectName: GameManager
+    methodName: SpiderBeGone
+    nameIndex: 9
+    methodIndex: 4
+    paramIndex: 0
+    opts:
+    - '[No method]'
+    - GoToQuitButton
+    - QuitGame
+    - BackToGame
+    - SpiderBeGone
     nameOpts:
     - '[No object]'
     - ToThree_NPC
@@ -762,121 +710,11 @@ MonoBehaviour:
     param_float: 0
     rect:
       serializedVersion: 2
-      x: 930
-      y: 140
-      width: 200
-      height: 154
-    ID: 3
-    outPlayerIndex: -1
-    outActionIndex: -1
-    more: 1
-    ovrStartNode: 4
-    renameDialogue: 
-  - pauseHere: 0
-    gameObjectName: SceneManager
-    methodName: ChangeAntCamera
-    nameIndex: 11
-    methodIndex: 1
-    paramIndex: 0
-    opts:
-    - '[No method]'
-    - ChangeAntCamera
-    - ResetPlayerCam
-    - GoToBeeGame
-    - ActivateSceneTransition
-    nameOpts:
-    - '[No object]'
-    - Boombox
-    - ToThree_NPC
-    - Bee_NPC
-    - Ant_NPC
-    - SoundManager
-    - Snail_NPC
-    - Spider_NPC
-    - GameManager
-    - Slime_NPC
-    - UIManager
-    - SceneManager
-    - AntField_NPC
-    param_bool: 0
-    param_string: 
-    param_int: 0
-    param_float: 0
-    rect:
-      serializedVersion: 2
-      x: -460
-      y: 140
+      x: 1470
+      y: 590
       width: 200
       height: 158
-    ID: 10
-    outPlayerIndex: 9
-    outActionIndex: -1
-    more: 0
-    ovrStartNode: -1
-    renameDialogue: 
-  - pauseHere: 0
-    gameObjectName: SceneManager
-    methodName: ResetPlayerCam
-    nameIndex: 11
-    methodIndex: 2
-    paramIndex: 0
-    opts:
-    - '[No method]'
-    - ChangeAntCamera
-    - ResetPlayerCam
-    - GoToBeeGame
-    - ActivateSceneTransition
-    nameOpts:
-    - '[No object]'
-    - Boombox
-    - ToThree_NPC
-    - Bee_NPC
-    - Ant_NPC
-    - SoundManager
-    - Snail_NPC
-    - Spider_NPC
-    - GameManager
-    - Slime_NPC
-    - UIManager
-    - SceneManager
-    - AntField_NPC
-    param_bool: 0
-    param_string: 
-    param_int: 0
-    param_float: 0
-    rect:
-      serializedVersion: 2
-      x: 120
-      y: 240
-      width: 200
-      height: 158
-    ID: 12
-    outPlayerIndex: 1
-    outActionIndex: -1
-    more: 0
-    ovrStartNode: 4
-    renameDialogue: 
-  - pauseHere: 0
-    gameObjectName: '[No object]'
-    methodName: '[No method]'
-    nameIndex: 0
-    methodIndex: 0
-    paramIndex: -1
-    opts:
-    - '[No method]'
-    nameOpts:
-    - '[No object]'
-    param_bool: 0
-    param_string: 
-    param_int: 0
-    param_float: 0
-    rect:
-      serializedVersion: 2
-      x: 1670
-      y: 990
-      width: 200
-      height: 158
-    ID: 18
+    ID: 8
     outPlayerIndex: -1
     outActionIndex: -1
     more: 0

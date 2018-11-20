@@ -23,4 +23,17 @@ public class Jae_StopAnts : MonoBehaviour {
             antArray[i].speed = 0;
         }
     }
+
+    public void RunAway()
+    {
+        for (int i = 0; i < antArray.Length; i++)
+        {
+            antArray[i].gameObject.SetActive(false);
+        }
+    }
+
+    public void AntGoAway()
+    {
+        GameObject.Find("Ant_NPC").SetActive(false);
+    }
 }
