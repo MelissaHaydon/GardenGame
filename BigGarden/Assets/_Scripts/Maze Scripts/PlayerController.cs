@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public Jae_AudioManager audioManager;
 
     public float speed = 0.4f;
     Vector2 _dest = Vector2.zero;
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour
         //SM = GameObject.Find("Game Manager").GetComponent<ScoreManager>();
         _dest = transform.position;
         pollenHeld = 0;
+        audioManager = Jae_AudioManager.instance;
     }
 
     // Update is called once per frame
@@ -121,6 +123,7 @@ public class PlayerController : MonoBehaviour
                 pollenHeld++;
                 Destroy(col.gameObject);
                 heldAnimator.SetTrigger("Update");
+                audioManager.PlaySound("Pop");
             }
         }
         else if (col.tag == "beehive")

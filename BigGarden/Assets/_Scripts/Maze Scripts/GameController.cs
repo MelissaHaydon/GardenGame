@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour {
     private static bool created = false;
     public static GameController instance = null;
     public Jae_SceneManager sceneManager;
+    public GameManager gameManager;
     //public PlayerController player;
 
     float timeLeft = 60.0f;
@@ -23,8 +24,8 @@ public class GameController : MonoBehaviour {
     int pollenTotal = 0;
     int pollenHeld;
 
-    public static bool goodGift;
-    public bool clearedGame;
+    //public static bool goodGift;
+    //public bool clearedGame;
 
     void Awake()
     {
@@ -44,7 +45,7 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    private void Start()
+    public void SetUp()
     {
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "Bee Maze")
@@ -62,6 +63,11 @@ public class GameController : MonoBehaviour {
         timerText.text = "";
     }
 
+    private void Start()
+    {
+        SetUp();
+    }
+
     // Update is called once per frame
     void Update () {
         
@@ -73,14 +79,14 @@ public class GameController : MonoBehaviour {
         {
             bee.GetComponent<PlayerController>().speed = 0;
             timeUp.gameObject.SetActive(true);
-            clearedGame = true;
+            gameManager.clearedGame = true;
             if (timerText != null)
             {
                 timerText.text = "0";
             }
             if (pollenTotal >= 20)
             {
-                goodGift = true;
+                gameManager.goodGift = true;
             }
             sceneManager.GoToZoneOne();
         }

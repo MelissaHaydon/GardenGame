@@ -23,7 +23,8 @@ public class GameManager : MonoBehaviour {
 	public float scareLength;
 	private float _timeToCalm;
 
-    
+    public bool goodGift;
+    public bool clearedGame;
 
     private static GameManager _instance;
 

@@ -7,15 +7,15 @@ public class Jae_GameManager : MonoBehaviour {
 
     public Jae_VIDEPlayerScript player;
     public GameObject exitConfirmationScreen;
-    public GameController mazeController;
+    public GameManager mazeManager;
     public GameObject present;
     public bool mazeCleared;
     public GameObject spiderNPC;
 
     private void Awake()
     {
-        mazeController = FindObjectOfType<GameController>();
-        if (mazeController == null)
+        mazeManager = FindObjectOfType<GameManager>();
+        if (mazeManager == null)
         {
             return;
         }
@@ -23,7 +23,7 @@ public class Jae_GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		if (mazeController != null && mazeController.clearedGame)
+		if (mazeManager != null && mazeManager.clearedGame)
         {
             mazeCleared = true;
             Destroy(present);

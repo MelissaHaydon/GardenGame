@@ -43,18 +43,23 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<VIDE_Assign>() != null)
+        if (other.tag != "Obstacle")
         {
-            inTrigger = other.GetComponent<VIDE_Assign>();
-            attentionBubble.SetActive(true);
+            if (other.GetComponent<VIDE_Assign>() != null)
+            {
+                inTrigger = other.GetComponent<VIDE_Assign>();
+                attentionBubble.SetActive(true);
+            }
         }
     }
 
-    void OnTriggerExit()
+    void OnTriggerExit(Collider other)
     {
-        inTrigger = null;
-        attentionBubble.SetActive(false);
-        
+        if (other.tag != "Obstacle")
+        {
+            inTrigger = null;
+            attentionBubble.SetActive(false);
+        }
     }
 
     void Start()
@@ -64,6 +69,10 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
 
     void Update()
     {
+        if (inTrigger == null)
+        {
+            attentionBubble.SetActive(false);
+        }
 
         //Only allow player to move and turn if there are no dialogs loaded
         if (!VD.isActive)
