@@ -36,22 +36,27 @@ public class Sound
 
 public class Jae_AudioManager : MonoBehaviour {
 
-    public static Jae_AudioManager instance;
+    private static bool created = false;
+    public static Jae_AudioManager instance = null;
 
     [SerializeField]
     Sound[] sounds;
 
     private void Awake()
     {
-        if (instance != null)
+        if (!created)
         {
-            Debug.LogError("More than one AudioManager in the scene.");
+            DontDestroyOnLoad(gameObject);
+            created = true;
         }
-        else
+        if (instance == null)
         {
             instance = this;
         }
-        instance = this;
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
