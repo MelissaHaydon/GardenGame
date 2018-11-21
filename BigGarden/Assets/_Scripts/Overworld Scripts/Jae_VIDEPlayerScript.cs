@@ -186,6 +186,12 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
         anim.SetFloat("LastMoveY", lastMove.y);
     }
 
+    public void NoInteraction()
+    {
+        inTrigger = null;
+        attentionBubble.SetActive(false);
+    }
+
     //Casts a ray to see if we hit an NPC and, if so, we interact
     void TryInteract()
     {

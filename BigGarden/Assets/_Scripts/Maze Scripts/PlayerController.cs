@@ -163,6 +163,7 @@ public class PlayerController : MonoBehaviour
         }
         GetComponent<Animator>().SetTrigger("Hit");
         pollenHeld = 0;
+        audioManager.PlaySound("Punch");
     }
 
     public void TurnDamageBoostOff()

@@ -50,7 +50,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d290acbb6200ae54a8985d0a2381c85a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2411d3f69f7628746a0c9ac775a66f80, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -150,6 +150,12 @@ MonoBehaviour:
   sounds:
   - name: Pop
     clip: {fileID: 8300000, guid: 3c9849c7ec1b95341adc3d437d130271, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.1
+  - name: Punch
+    clip: {fileID: 8300000, guid: 2411d3f69f7628746a0c9ac775a66f80, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
