@@ -46,6 +46,17 @@ public class GameController : MonoBehaviour {
 
     private void Start()
     {
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Bee Maze")
+        {
+            sceneManager = FindObjectOfType<Jae_SceneManager>();
+            timerText = GameObject.Find("timer").GetComponent<Text>();
+            bee = GameObject.Find("bee");
+            pollenCount = GameObject.Find("pollen total").GetComponent<Text>();
+            message = GameObject.Find("message").GetComponent<Text>();
+            timeUp = GameObject.Find("time up").GetComponent<Text>();
+            heldAnimator = GameObject.Find("message").GetComponent<Animator>();
+        }
         pollenCount.text = "Pollen Stored: " + 0;
         message.text = "";
         timerText.text = "";
