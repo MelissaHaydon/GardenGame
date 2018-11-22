@@ -27,7 +27,14 @@ public class Jae_GameManager : MonoBehaviour {
         {
             mazeCleared = true;
             Destroy(present);
-            GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
+            if (mazeManager.goodGift)
+            {
+                GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
+            }
+            else
+            {
+                GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
+            }
         }
 	}
 	

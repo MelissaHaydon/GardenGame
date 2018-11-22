@@ -442,6 +442,7 @@ public class UIManager : MonoBehaviour
                 }
                 else if (player.gameManager.mazeCleared)
                 {
+                    //Work on which gift you have
                     dialogue.overrideStartNode = 13;
                 }
             }
