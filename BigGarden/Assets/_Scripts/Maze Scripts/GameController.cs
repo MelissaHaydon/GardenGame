@@ -80,6 +80,7 @@ public class GameController : MonoBehaviour {
             bee.GetComponent<PlayerController>().speed = 0;
             timeUp.gameObject.SetActive(true);
             gameManager.clearedGame = true;
+            Destroy(gameObject);
             if (timerText != null)
             {
                 timerText.text = "0";

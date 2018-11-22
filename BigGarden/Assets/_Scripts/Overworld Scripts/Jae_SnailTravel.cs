@@ -25,8 +25,8 @@ public class Jae_SnailTravel : MonoBehaviour {
 
     public void StartTravel()
     {
-        flipNPC.enabled = false;
         playerDirection = 1;
+        flipNPC.enabled = false;
         anim.SetInteger("PlayerDirection", playerDirection);
         moving = true;
     }
