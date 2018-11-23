@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour {
     public GameManager gameManager;
     //public PlayerController player;
 
-    float timeLeft = 60.0f;
+    public float timeLeft = 60.0f;
     float timeRounded;
     public Text timerText;
 
@@ -51,6 +51,7 @@ public class GameController : MonoBehaviour {
         if (scene.name == "Bee Maze")
         {
             sceneManager = FindObjectOfType<Jae_SceneManager>();
+            gameManager = FindObjectOfType<GameManager>();
             timerText = GameObject.Find("timer").GetComponent<Text>();
             bee = GameObject.Find("bee");
             pollenCount = GameObject.Find("pollen total").GetComponent<Text>();
@@ -80,6 +81,8 @@ public class GameController : MonoBehaviour {
             bee.GetComponent<PlayerController>().speed = 0;
             timeUp.gameObject.SetActive(true);
             gameManager.clearedGame = true;
+            created = false;
+            instance = null;
             Destroy(gameObject);
             if (timerText != null)
             {

@@ -86,6 +86,7 @@ public class Jae_SceneManager : MonoBehaviour {
         }
 
         yield return new WaitForSeconds(sceneDelay);
+        transitionAnim = GameObject.Find("SceneTransition").GetComponent<Animator>();
         transitionAnim.SetTrigger("end");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneName);

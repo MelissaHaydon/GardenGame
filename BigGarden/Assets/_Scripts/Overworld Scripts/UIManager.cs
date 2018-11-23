@@ -445,6 +445,10 @@ public class UIManager : MonoBehaviour
                     //Work on which gift you have
                     dialogue.overrideStartNode = 13;
                 }
+                if (spiderGone)
+                {
+                    dialogue.overrideStartNode = 19;
+                }
             }
 
             if (dialogue.alias == "Snail")
