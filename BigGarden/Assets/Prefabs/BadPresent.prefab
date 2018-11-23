@@ -73,8 +73,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af6c92989791fa4aaaa634f3fadd701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 1368276941270688, guid: 39fccd70f7bfa71409bbec3fa7e5bb92, type: 2}
-  itemName: GoodPresent
+  itemButton: {fileID: 1368276941270688, guid: 441c89d8551542c4f8932986b4327a95, type: 2}
+  itemName: BadPresent
   audioManager: {fileID: 0}
   canTouch: 1
 --- !u!114 &114901311868774206
