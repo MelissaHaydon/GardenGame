@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 9551032}
   - component: {fileID: 5851032}
   - component: {fileID: 5051032}
-  - component: {fileID: 11451032}
-  - component: {fileID: 11451030}
   m_Layer: 0
   m_Name: clyde
   m_TagString: Untagged
@@ -87,36 +85,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &11451030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c85a1caad85295498b35713c85d3d7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  ghost: {fileID: 11451032}
---- !u!114 &11451032
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8141d65fc0d2c604fa67b382f6f5c73c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _direction: {x: 0, y: 0, z: 0}
-  speed: 0.15
-  scatterLength: 3
-  waitLength: 3
-  GUINav: {fileID: 0}
-  pacman: {fileID: 0}
 --- !u!212 &21251032
 SpriteRenderer:
   m_ObjectHideFlags: 1
