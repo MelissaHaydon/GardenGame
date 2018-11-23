@@ -2478,6 +2478,7 @@ MonoBehaviour:
   - AntBabies
   - Bee
   - Boombox
+  - BoomboxAnts
   - NotFinishedYet
   - RandomCube
   - SlimePuddles
@@ -14436,7 +14437,9 @@ MonoBehaviour:
   player: {fileID: 876853708}
   exitConfirmationScreen: {fileID: 441963392}
   mazeManager: {fileID: 0}
-  present: {fileID: 0}
+  goodPresent: {fileID: 1675240963124000, guid: 63830c2fdf052364c95957854b98bfa2,
+    type: 2}
+  badPresent: {fileID: 1675240963124000, guid: ab51eda61529ad54ba91a4e25e5fc77d, type: 2}
   mazeCleared: 0
   spiderNPC: {fileID: 515644206}
 --- !u!4 &1420836515
@@ -15688,6 +15691,7 @@ MonoBehaviour:
   NPC_Container: {fileID: 30504497}
   playerContainer: {fileID: 1759184305}
   itemPopUp: {fileID: 0}
+  gameManager: {fileID: 1420836514}
   NPC_Text: {fileID: 1472379313}
   NPC_label: {fileID: 1844881631}
   NPCSprite: {fileID: 653012171}

@@ -8,7 +8,8 @@ public class Jae_GameManager : MonoBehaviour {
     public Jae_VIDEPlayerScript player;
     public GameObject exitConfirmationScreen;
     public GameManager mazeManager;
-    public GameObject present;
+    public GameObject goodPresent;
+    public GameObject badPresent;
     public bool mazeCleared;
     public GameObject spiderNPC;
 
@@ -26,14 +27,15 @@ public class Jae_GameManager : MonoBehaviour {
 		if (mazeManager != null && mazeManager.clearedGame)
         {
             mazeCleared = true;
-            Destroy(present);
             if (mazeManager.goodGift)
             {
-                GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
+                //GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
+                Instantiate(goodPresent, new Vector3(-21.8f, 0, 9.8f), Quaternion.identity);
             }
             else
             {
-                GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
+                Instantiate(badPresent, new Vector3(-21.8f, -0.8f, 9.8f), Quaternion.identity);
+                //GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
             }
         }
 	}

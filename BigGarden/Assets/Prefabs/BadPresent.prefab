@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 95869394891619104}
   - component: {fileID: 114901311868774206}
   m_Layer: 0
-  m_Name: Present
+  m_Name: BadPresent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 1368276941270688, guid: 39fccd70f7bfa71409bbec3fa7e5bb92, type: 2}
-  itemName: Present
+  itemName: GoodPresent
   audioManager: {fileID: 0}
   canTouch: 1
 --- !u!114 &114901311868774206
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: feb93e57ef071f54c9a26cdf9420ec77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: feb93e57ef071f54c9a26cdf9420ec77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

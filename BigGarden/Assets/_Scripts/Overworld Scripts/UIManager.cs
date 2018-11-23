@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
     public GameObject NPC_Container;
     public GameObject playerContainer;
     public GameObject itemPopUp;
+    public Jae_GameManager gameManager;
 
     public Text NPC_Text;
     public Text NPC_label;
@@ -438,11 +439,17 @@ public class UIManager : MonoBehaviour
                 audioSource.pitch = 0.6f;
                 if (player.gameManager.mazeCleared && dialogue.overrideStartNode != 13)
                 {
-                    dialogue.overrideStartNode = 6;
+                    if (gameManager.mazeManager.goodGift)
+                    {
+                        dialogue.overrideStartNode = 6;
+                    } else if (!gameManager.mazeManager.goodGift)
+                    {
+                        dialogue.overrideStartNode = 17;
+                    }
                 }
                 else if (player.gameManager.mazeCleared)
                 {
-                    //Work on which gift you have
+                    
                     dialogue.overrideStartNode = 13;
                 }
                 if (spiderGone)
@@ -459,7 +466,7 @@ public class UIManager : MonoBehaviour
             if (dialogue.alias == "Spider")
             {
                 audioSource.pitch = 2;
-                checkName = "Present";
+                checkName = "GoodPresent";
                 checkNum = 1;
                 if (dialogue.overrideStartNode == 4)
                 {
