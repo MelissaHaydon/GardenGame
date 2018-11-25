@@ -16055,6 +16055,16 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 1f14ee48259cf9f43b8547338f9b85e7,
         type: 3}
+    - target: {fileID: 114636615451863570, guid: edd3ae1fa5e074846b1974422b655ec1,
+        type: 2}
+      propertyPath: lastMove.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114636615451863570, guid: edd3ae1fa5e074846b1974422b655ec1,
+        type: 2}
+      propertyPath: lastMove.y
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: edd3ae1fa5e074846b1974422b655ec1, type: 2}
   m_IsPrefabParent: 0
@@ -18862,6 +18872,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3, y: 1.45, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1521265177 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1332599654831366, guid: edd3ae1fa5e074846b1974422b655ec1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1318033226}
+--- !u!114 &1521265184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1521265177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9873934a4a8e7f4897775c7033a4463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  player: {fileID: 0}
+  spawnPointArray:
+  - {x: -7.855, y: 0.27, z: 13.61}
+  - {x: -19.4, y: 0.27, z: 7.47}
+  - {x: -7.855, y: 0.27, z: 13.61}
 --- !u!1 &1530972749
 GameObject:
   m_ObjectHideFlags: 0
