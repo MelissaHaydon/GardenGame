@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour {
     public GameObject options;
     public GameObject credits;
     public GameObject exit;
+    public GameObject instructions;
 
     public void PlayGame()
     {
@@ -55,5 +56,10 @@ public class MainMenu : MonoBehaviour {
     public void YesExit()
     {
         Application.Quit();
+    }
+
+    public void Instructions()
+    {
+        instructions.SetActive(true);
     }
 }

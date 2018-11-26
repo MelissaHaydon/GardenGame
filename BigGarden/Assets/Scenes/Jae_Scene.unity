@@ -8853,8 +8853,10 @@ MonoBehaviour:
   - Ant
   - AntBabies
   - Bee
+  - Beehive
   - Boombox
   - BoomboxAnts
+  - HoneyPot
   - NotFinishedYet
   - RandomCube
   - SlimePuddles
@@ -22353,7 +22355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &840482034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33980,7 +33982,7 @@ GameObject:
   - component: {fileID: 1163833219}
   m_Layer: 0
   m_Name: GoToZone2
-  m_TagString: Untagged
+  m_TagString: MoveZones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33992,7 +33994,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1163833217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.64, y: -0.957, z: 1.508}
+  m_LocalPosition: {x: 27.46, y: -0.957, z: 1.508}
   m_LocalScale: {x: 2.4904232, y: 2.0643227, z: 3.618685}
   m_Children: []
   m_Father: {fileID: 1494478149}
@@ -42404,7 +42406,7 @@ Prefab:
     - target: {fileID: 224831845497569794, guid: d1e25a9be23f2da4983b3e94eaf66917,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224831845497569794, guid: d1e25a9be23f2da4983b3e94eaf66917,
         type: 2}
