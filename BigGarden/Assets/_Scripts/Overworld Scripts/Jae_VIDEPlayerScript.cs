@@ -51,14 +51,29 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
                 attentionBubble.SetActive(true);
             }
         }
+        if (other.tag == "MoveZones")
+        {
+            Jae_PlayerSpawn playerSpawn = GameObject.Find("Player_Sprite").GetComponent<Jae_PlayerSpawn>();
+            if (other.transform.position.z < 40)
+            {
+                playerSpawn.SpawnFromZone1();
+            }
+            else
+            {
+                playerSpawn.SpawnFromZone2();
+            }
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
         if (other.tag != "Obstacle")
         {
-            inTrigger = null;
-            attentionBubble.SetActive(false);
+            if (inTrigger != null)
+            {
+                inTrigger = null;
+                attentionBubble.SetActive(false);
+            }
         }
     }
 
