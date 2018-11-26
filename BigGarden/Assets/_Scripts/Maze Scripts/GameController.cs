@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour {
     private static bool created = false;
     public static GameController instance = null;
     public Jae_SceneManager sceneManager;
+    public Jae_AudioManager audioManager;
     public GameManager gameManager;
     //public PlayerController player;
 
@@ -58,6 +59,7 @@ public class GameController : MonoBehaviour {
             message = GameObject.Find("message").GetComponent<Text>();
             timeUp = GameObject.Find("time up").GetComponent<Text>();
             heldAnimator = GameObject.Find("message").GetComponent<Animator>();
+            audioManager = Jae_AudioManager.instance;
         }
         pollenCount.text = "Pollen Stored: " + 0;
         message.text = "";
@@ -79,6 +81,8 @@ public class GameController : MonoBehaviour {
         if (timeLeft <= 0)
         {
             bee.GetComponent<PlayerController>().speed = 0;
+            audioManager = Jae_AudioManager.instance;
+            audioManager.PlaySound("Whistle");
             timeUp.gameObject.SetActive(true);
             gameManager.clearedGame = true;
             created = false;

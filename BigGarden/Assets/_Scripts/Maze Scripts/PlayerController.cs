@@ -133,6 +133,7 @@ public class PlayerController : MonoBehaviour
                 beehiveParticles.Play();
                 totalAnimator.SetTrigger("Update");
                 beehiveAnimator.SetTrigger("Bounce");
+                audioManager.PlaySound("Chime");
             }
             GameController.instance.AddPollen(pollenHeld);
             pollenHeld = 0;

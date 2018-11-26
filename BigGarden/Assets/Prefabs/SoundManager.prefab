@@ -160,3 +160,15 @@ MonoBehaviour:
     pitch: 1
     randomVolume: 0
     randomPitch: 0.1
+  - name: Whistle
+    clip: {fileID: 8300000, guid: b465f4c3181f85d4c84a08063e2fc74a, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+  - name: Chime
+    clip: {fileID: 8300000, guid: 784ad03c8dc71d64fb24f107fb6dd236, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.2

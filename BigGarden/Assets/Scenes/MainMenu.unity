@@ -478,7 +478,7 @@ MonoBehaviour:
   diagUI: {fileID: 0}
   anim: {fileID: 0}
   inTrigger: {fileID: 0}
-  attentionBubble: {fileID: 0}
+  attentionBubble: {fileID: 1323319329}
   z: 0
   x: 0
   upKey: 0
@@ -4191,6 +4191,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1084753337 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1390393884862356, guid: f0d34e73aa88be448829f2ce6f9a2485,
+    type: 2}
+  m_PrefabInternal: {fileID: 318436315}
 --- !u!1 &1086941779
 GameObject:
   m_ObjectHideFlags: 0
@@ -4292,7 +4297,7 @@ MonoBehaviour:
   options: {fileID: 1226863624}
   credits: {fileID: 1207105679}
   exit: {fileID: 775055217}
-  instructions: {fileID: 0}
+  instructions: {fileID: 1084753337}
 --- !u!4 &1093811573
 Transform:
   m_ObjectHideFlags: 0
@@ -5187,6 +5192,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1316228797}
+--- !u!1 &1323319329 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1717977260114718, guid: edd3ae1fa5e074846b1974422b655ec1,
+    type: 2}
+  m_PrefabInternal: {fileID: 292014045}
 --- !u!1 &1382509875
 GameObject:
   m_ObjectHideFlags: 0
