@@ -171,4 +171,10 @@ MonoBehaviour:
     volume: 0.7
     pitch: 1
     randomVolume: 0
+    randomPitch: 0.1
+  - name: Alert
+    clip: {fileID: 8300000, guid: aaa8b81052d2f9145bb0c3ab090d2bed, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0
     randomPitch: 0.2
