@@ -124,6 +124,10 @@ public class PlayerController : MonoBehaviour
                 Destroy(col.gameObject);
                 heldAnimator.SetTrigger("Update");
                 audioManager.PlaySound("Pop");
+                if (pollenHeld == 5)
+                {
+                    audioManager.PlaySound("Alert");
+                }
             }
         }
         else if (col.tag == "beehive")
