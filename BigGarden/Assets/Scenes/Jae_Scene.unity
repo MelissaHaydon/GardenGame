@@ -522,7 +522,7 @@ Transform:
   m_LocalScale: {x: 2.10797, y: 16.83296, z: 5.68563}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &30108943
 BoxCollider:
@@ -542,7 +542,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 30108941}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5887,7 +5887,7 @@ Transform:
   m_LocalScale: {x: 6.841586, y: 6.841587, z: 9.165048}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -25.373001, z: 0}
 --- !u!1 &330350423
 GameObject:
@@ -7795,7 +7795,7 @@ Transform:
   m_LocalScale: {x: 19.436604, y: 6.84159, z: 2.9595406}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 122.037, z: 0}
 --- !u!65 &440273951
 BoxCollider:
@@ -17254,11 +17254,11 @@ Transform:
   - {fileID: 418560209}
   - {fileID: 1277187021}
   - {fileID: 817338069}
+  - {fileID: 1876269443}
+  - {fileID: 30108942}
   - {fileID: 324262770}
   - {fileID: 1403188961}
   - {fileID: 440273950}
-  - {fileID: 1876269443}
-  - {fileID: 30108942}
   m_Father: {fileID: 1867563952}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36584,7 +36584,7 @@ Transform:
   m_LocalScale: {x: 8.231546, y: 6.84159, z: 2.9595406}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 135.733, z: 0}
 --- !u!65 &1403188962
 BoxCollider:
@@ -43675,7 +43675,7 @@ Transform:
   m_LocalScale: {x: 4.13689, y: 16.83296, z: 1.35478}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1876269444
 BoxCollider:
@@ -43695,7 +43695,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1876269442}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

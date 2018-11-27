@@ -3753,8 +3753,8 @@ RectTransform:
   m_Father: {fileID: 1456248613}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.09110097, y: 0.5457875}
-  m_AnchorMax: {x: 0.9116289, y: 0.9292437}
+  m_AnchorMin: {x: 0.09617982, y: 0.54237556}
+  m_AnchorMax: {x: 0.91670775, y: 0.9258317}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4704,7 +4704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1207105680
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6042,10 +6042,10 @@ RectTransform:
   m_Father: {fileID: 597912196}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.024226345, y: 0.32699928}
-  m_AnchorMax: {x: 0.9747737, y: 0.44524467}
-  m_AnchoredPosition: {x: 0, y: -35.5}
-  m_SizeDelta: {x: 0, y: 71}
+  m_AnchorMin: {x: 0.023016958, y: 0.037665393}
+  m_AnchorMax: {x: 0.9735643, y: 0.15591079}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648396897
 MonoBehaviour:
@@ -7707,8 +7707,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Hackbeat Kevin MacLeod\n(incompetech.com)\r\nLicensed under Creative Commons:
-    By Attribution 3.0 License\r"
+  m_Text: "Hackbeat - Kevin MacLeod\n(incompetech.com)\r\nLicensed under Creative
+    Commons: By Attribution 3.0 License\r"
 --- !u!222 &2145970400
 CanvasRenderer:
   m_ObjectHideFlags: 0
