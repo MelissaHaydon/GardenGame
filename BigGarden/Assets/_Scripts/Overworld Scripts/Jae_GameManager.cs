@@ -12,6 +12,8 @@ public class Jae_GameManager : MonoBehaviour {
     public GameObject badPresent;
     public bool mazeCleared;
     public GameObject spiderNPC;
+    public GameObject charToClear;
+    public ParticleSystem vanishPartSys;
 
     private void Awake()
     {
@@ -70,6 +72,15 @@ public class Jae_GameManager : MonoBehaviour {
 
     public void SpiderBeGone()
     {
-        spiderNPC.SetActive(false);
+        charToClear = GameObject.Find("Spider_NPC");
+        //spiderNPC.SetActive(false);
+        RemoveCharacter();
+    }
+
+    public void RemoveCharacter()
+    {
+        vanishPartSys.transform.position = charToClear.transform.position;
+        vanishPartSys.Play();
+        charToClear.SetActive(false);
     }
 }

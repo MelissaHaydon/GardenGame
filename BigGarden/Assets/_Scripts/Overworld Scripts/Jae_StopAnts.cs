@@ -5,10 +5,12 @@ using UnityEngine;
 public class Jae_StopAnts : MonoBehaviour {
 
     AntMovement[] antArray;
+    public Jae_GameManager gameManager;
 
 	// Use this for initialization
 	void Start () {
         antArray = FindObjectsOfType<AntMovement>();
+        gameManager = FindObjectOfType<Jae_GameManager>();
 	}
 	
 	// Update is called once per frame
@@ -30,10 +32,14 @@ public class Jae_StopAnts : MonoBehaviour {
         {
             antArray[i].gameObject.SetActive(false);
         }
+        gameManager.vanishPartSys.transform.position = GameObject.Find("AntTransformPoint").transform.position;
+        gameManager.vanishPartSys.transform.position -= new Vector3(0,3,0);
+        gameManager.vanishPartSys.Play();
     }
 
     public void AntGoAway()
     {
-        GameObject.Find("Ant_NPC").SetActive(false);
+        gameManager.charToClear = GameObject.Find("Ant_NPC");
+        gameManager.RemoveCharacter();
     }
 }

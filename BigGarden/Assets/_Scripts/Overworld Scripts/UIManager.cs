@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour
     public GameObject playerContainer;
     public GameObject itemPopUp;
     public Jae_GameManager gameManager;
+    public Jae_AudioManager audioManager;
 
     public Text NPC_Text;
     public Text NPC_label;

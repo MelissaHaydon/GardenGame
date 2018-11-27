@@ -4084,7 +4084,7 @@ Transform:
   - {fileID: 415469454}
   - {fileID: 780754581}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &252331619
 GameObject:
@@ -6563,7 +6563,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351399295
 GameObject:
@@ -29166,7 +29166,7 @@ Transform:
   - {fileID: 650558147}
   - {fileID: 61449779}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1140953001
 GameObject:
@@ -32758,7 +32758,7 @@ ParticleSystem:
   stopAction: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -32878,7 +32878,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 3.37
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -32994,7 +32994,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
+      scalar: 3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -33370,7 +33370,7 @@ ParticleSystem:
     serializedVersion: 5
     enabled: 1
     type: 4
-    angle: 80.355385
+    angle: 42.364017
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -38598,6 +38598,7 @@ MonoBehaviour:
   mazeCleared: 0
   spiderNPC: {fileID: 515644206}
   charToClear: {fileID: 0}
+  vanishPartSys: {fileID: 1368031598}
 --- !u!4 &1420836515
 Transform:
   m_ObjectHideFlags: 0
@@ -46937,6 +46938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 959638179bf81114eb0caea1acb0f312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1 &1923730617
 GameObject:
   m_ObjectHideFlags: 0
