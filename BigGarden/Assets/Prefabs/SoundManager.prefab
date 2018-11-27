@@ -50,7 +50,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2411d3f69f7628746a0c9ac775a66f80, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d290acbb6200ae54a8985d0a2381c85a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -178,3 +178,21 @@ MonoBehaviour:
     pitch: 1
     randomVolume: 0
     randomPitch: 0.2
+  - name: GrassRustle
+    clip: {fileID: 8300000, guid: cb2e4a94997a3e744a5e8ad436ebae71, type: 3}
+    volume: 0.8
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.2
+  - name: Static
+    clip: {fileID: 8300000, guid: 66369da612a831c44acbf9019989373f, type: 3}
+    volume: 0.5
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+  - name: Poof
+    clip: {fileID: 8300000, guid: c6e1f93f7e4e193498a385a0c2ec8320, type: 3}
+    volume: 0.5
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0

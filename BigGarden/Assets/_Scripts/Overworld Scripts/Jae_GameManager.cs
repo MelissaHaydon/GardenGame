@@ -14,6 +14,7 @@ public class Jae_GameManager : MonoBehaviour {
     public GameObject spiderNPC;
     public GameObject charToClear;
     public ParticleSystem vanishPartSys;
+    public Jae_AudioManager audioManager;
 
     private void Awake()
     {
@@ -81,6 +82,9 @@ public class Jae_GameManager : MonoBehaviour {
     {
         vanishPartSys.transform.position = charToClear.transform.position;
         vanishPartSys.Play();
+        audioManager = Jae_AudioManager.instance;
+        audioManager.PlaySound("Poof");
         charToClear.SetActive(false);
+
     }
 }

@@ -437,7 +437,7 @@ public class UIManager : MonoBehaviour
 
             if (dialogue.alias == "Bee")
             {
-                audioSource.pitch = 0.7f;
+                audioSource.pitch = 1.3f;
                 if (player.gameManager.mazeCleared && dialogue.overrideStartNode != 13)
                 {
                     if (gameManager.mazeManager.goodGift)
@@ -467,23 +467,49 @@ public class UIManager : MonoBehaviour
             if (dialogue.alias == "Spider")
             {
                 audioSource.pitch = 1.6f;
-                checkName = "GoodPresent";
-                checkNum = 1;
-                if (dialogue.overrideStartNode == 4)
+                if (gameManager.mazeManager.goodGift)
                 {
-                    for (int i = 0; i < inventory.invSlot.Length; i++)
+                    checkName = "GoodPresent";
+                    checkNum = 1;
+                    if (dialogue.overrideStartNode == 4)
                     {
-                        if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                        for (int i = 0; i < inventory.invSlot.Length; i++)
                         {
-                            dialogue.overrideStartNode = 3;
-                            spiderGone = true;
-                            GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
-                            inventory.itemNum[i] = 0;
-                            inventory.itemDict.Remove(inventory.itemName[i]);
-                            inventory.itemAmount[i].gameObject.SetActive(false);
-                            inventory.isFull[i] = false;
-                            inventory.itemName[i] = null;
-                            return false;
+                            if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                            {
+                                dialogue.overrideStartNode = 3;
+                                spiderGone = true;
+                                GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                                inventory.itemNum[i] = 0;
+                                inventory.itemDict.Remove(inventory.itemName[i]);
+                                inventory.itemAmount[i].gameObject.SetActive(false);
+                                inventory.isFull[i] = false;
+                                inventory.itemName[i] = null;
+                                return false;
+                            }
+                        }
+                    }
+                }
+                else if (gameManager.mazeCleared && !gameManager.mazeManager.goodGift)
+                {
+                    checkName = "BadPresent";
+                    checkNum = 1;
+                    if (dialogue.overrideStartNode == 4)
+                    {
+                        for (int i = 0; i < inventory.invSlot.Length; i++)
+                        {
+                            if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                            {
+                                dialogue.overrideStartNode = 10;
+                                spiderGone = true;
+                                GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                                inventory.itemNum[i] = 0;
+                                inventory.itemDict.Remove(inventory.itemName[i]);
+                                inventory.itemAmount[i].gameObject.SetActive(false);
+                                inventory.isFull[i] = false;
+                                inventory.itemName[i] = null;
+                                return false;
+                            }
                         }
                     }
                 }

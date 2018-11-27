@@ -6,12 +6,14 @@ public class Jae_StopAnts : MonoBehaviour {
 
     AntMovement[] antArray;
     public Jae_GameManager gameManager;
+    public Jae_AudioManager audioManager;
 
 	// Use this for initialization
 	void Start () {
         antArray = FindObjectsOfType<AntMovement>();
         gameManager = FindObjectOfType<Jae_GameManager>();
-	}
+        audioManager = Jae_AudioManager.instance;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -35,6 +37,7 @@ public class Jae_StopAnts : MonoBehaviour {
         gameManager.vanishPartSys.transform.position = GameObject.Find("AntTransformPoint").transform.position;
         gameManager.vanishPartSys.transform.position -= new Vector3(0,3,0);
         gameManager.vanishPartSys.Play();
+        audioManager.PlaySound("Poof");
     }
 
     public void AntGoAway()
