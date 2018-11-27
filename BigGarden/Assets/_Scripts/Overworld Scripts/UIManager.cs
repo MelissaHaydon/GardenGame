@@ -59,11 +59,11 @@ public class UIManager : MonoBehaviour
 
     void Awake()
     {
-        // VD.LoadDialogues(); //Load all dialogues to memory so that we dont spend time doing so later
+        VD.LoadDialogues(); //Load all dialogues to memory so that we dont spend time doing so later
         //An alternative to this can be preloading dialogues from the VIDE_Assign component!
 
         //Loads the saved state of VIDE_Assigns and dialogues.
-        //VD.LoadState("VIDEDEMOScene1", true);
+        VD.LoadState("VIDEDEMOScene1", true);
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryUI>();
     }
 
@@ -284,7 +284,7 @@ public class UIManager : MonoBehaviour
         dialogueContainer.SetActive(false);
         VD.EndDialogue();
         audioSource.Stop();
-        //VD.SaveState("VIDEDEMOScene1", true); //Saves VIDE stuff related to EVs and override start nodes
+        VD.SaveState("VIDEDEMOScene1", true); //Saves VIDE stuff related to EVs and override start nodes
         //QuestChartDemo.SaveProgress(); //saves OUR custom game data
     }
 
@@ -467,7 +467,7 @@ public class UIManager : MonoBehaviour
             if (dialogue.alias == "Spider")
             {
                 audioSource.pitch = 1.6f;
-                if (gameManager.mazeManager.goodGift)
+                if (gameManager.mazeManager != null && gameManager.mazeManager.goodGift)
                 {
                     checkName = "GoodPresent";
                     checkNum = 1;
