@@ -437,7 +437,7 @@ public class UIManager : MonoBehaviour
 
             if (dialogue.alias == "Bee")
             {
-                audioSource.pitch = 0.6f;
+                audioSource.pitch = 0.7f;
                 if (player.gameManager.mazeCleared && dialogue.overrideStartNode != 13)
                 {
                     if (gameManager.mazeManager.goodGift)
@@ -461,12 +461,12 @@ public class UIManager : MonoBehaviour
 
             if (dialogue.alias == "Snail")
             {
-                audioSource.pitch = 0.4f;
+                audioSource.pitch = 0.6f;
             }
 
             if (dialogue.alias == "Spider")
             {
-                audioSource.pitch = 2;
+                audioSource.pitch = 1.6f;
                 checkName = "GoodPresent";
                 checkNum = 1;
                 if (dialogue.overrideStartNode == 4)
