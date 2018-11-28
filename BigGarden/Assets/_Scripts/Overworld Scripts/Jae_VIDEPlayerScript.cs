@@ -54,13 +54,21 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
         if (other.tag == "MoveZones")
         {
             Jae_PlayerSpawn playerSpawn = GameObject.Find("Player_Sprite").GetComponent<Jae_PlayerSpawn>();
-            if (other.transform.position.x < 400)
+            if (other.name == "GoToZone2")
             {
                 playerSpawn.SpawnFromZone1();
             }
-            else
+            else if (other.name == "GoToZone1")
             {
                 playerSpawn.SpawnFromZone2();
+            }
+            else if (other.name == "GoToZone3")
+            {
+                playerSpawn.SpawnAtZone3();
+            }
+            else if (other.name == "MoveTo2From3")
+            {
+                playerSpawn.From3To2();
             }
         }
     }
