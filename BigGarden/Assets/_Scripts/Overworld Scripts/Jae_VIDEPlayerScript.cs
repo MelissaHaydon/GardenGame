@@ -89,6 +89,47 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
             attentionBubble.SetActive(false);
         }
 
+        if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.UpArrow))
+        {
+            upKey = KeyCode.W;
+        }
+        if (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.W))
+        {
+            upKey = KeyCode.UpArrow;
+        }
+        if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.LeftArrow))
+        {
+            leftKey = KeyCode.A;
+        }
+        if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.A))
+        {
+            leftKey = KeyCode.LeftArrow;
+        }
+        if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.DownArrow))
+        {
+            downKey = KeyCode.S;
+        }
+        if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.S))
+        {
+            downKey = KeyCode.DownArrow;
+        }
+        if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.RightArrow))
+        {
+            rightKey = KeyCode.D;
+        }
+        if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.D))
+        {
+            rightKey = KeyCode.RightArrow;
+        }
+        if (Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.E))
+        {
+            actionKey = KeyCode.Space;
+        }
+        if (Input.GetKey(KeyCode.E) && !Input.GetKey(KeyCode.Space))
+        {
+            actionKey = KeyCode.E;
+        }
+
         //Only allow player to move and turn if there are no dialogs loaded
         if (!VD.isActive)
         {
