@@ -7374,7 +7374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _direction: {x: 0, y: 0, z: 0}
-  speed: 0.15
+  speed: 0.05
   scatterLength: 3
   waitLength: 3
   pacman: {fileID: 508745664}
@@ -9063,7 +9063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioManager: {fileID: 0}
-  speed: 0.2
+  speed: 0.13
   beehiveParticles: {fileID: 1910332844}
   pollenParticles: {fileID: 763337825}
   points:
@@ -20001,7 +20001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _direction: {x: 0, y: 0, z: 0}
-  speed: 0.15
+  speed: 0.05
   scatterLength: 1
   waitLength: 5
   pacman: {fileID: 508745664}

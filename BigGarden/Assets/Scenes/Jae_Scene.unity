@@ -4459,6 +4459,7 @@ MonoBehaviour:
   - Beehive
   - Boombox
   - BoomboxAnts
+  - BugBarInspect
   - HoneyPot
   - NotFinishedYet
   - RandomCube
@@ -9266,6 +9267,7 @@ MonoBehaviour:
   - Beehive
   - Boombox
   - BoomboxAnts
+  - BugBarInspect
   - HoneyPot
   - NotFinishedYet
   - RandomCube
@@ -9273,7 +9275,7 @@ MonoBehaviour:
   - Snail
   - Spider
   - Tap
-  assignedIndex: 11
+  assignedIndex: 12
   assignedID: 28226
   assignedDialogue: Spider
   interactionCount: 0
@@ -21831,6 +21833,16 @@ Prefab:
     - target: {fileID: 4295335748570112, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382844854452804, guid: 2e05284e31f9e39498d8788977a2236a,
+        type: 2}
+      propertyPath: interactionCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382844854452804, guid: 2e05284e31f9e39498d8788977a2236a,
+        type: 2}
+      propertyPath: overrideStartNode
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e05284e31f9e39498d8788977a2236a, type: 2}

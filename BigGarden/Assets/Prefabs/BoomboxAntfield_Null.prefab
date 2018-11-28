@@ -149,6 +149,7 @@ MonoBehaviour:
   - Beehive
   - Boombox
   - BoomboxAnts
+  - BugBarInspect
   - HoneyPot
   - NotFinishedYet
   - RandomCube
@@ -160,7 +161,7 @@ MonoBehaviour:
   assignedID: 98544
   assignedDialogue: BoomboxAnts
   interactionCount: 0
-  alias: Boombox
+  alias: BoomboxAnts
   overrideStartNode: -1
   defaultNPCSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9, type: 3}
   defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,

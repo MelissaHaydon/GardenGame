@@ -26,11 +26,6 @@ public class DialogueManager : MonoBehaviour {
                 System.IO.Directory.Delete(Application.dataPath + "/VIDE/saves", true);
             }
     }
-
-    // Use this for initialization
-    void Start () {
-        
-    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -49,6 +49,11 @@ public class Jae_SceneManager : MonoBehaviour {
     public void PlayGame()
     {
         sceneName = "Jae_Scene";
+        PlayerPrefs.DeleteAll();
+        if (System.IO.Directory.Exists(Application.dataPath + "/VIDE/saves"))
+        {
+            System.IO.Directory.Delete(Application.dataPath + "/VIDE/saves", true);
+        }
         StartCoroutine(LoadScene());
     }
 
