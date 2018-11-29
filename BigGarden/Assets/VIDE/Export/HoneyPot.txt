@@ -1,0 +1,62 @@
+Edit the dialogue on the go.
+You can edit and add comments, edit the tags, and set node type.
+Do not attempt to add more nodes: the number of nodes must match when importing the text file.
+Do not modify the IDs.
+Do not add or remove empty lines.
+Do not restructure the data.
+
+Dialogue name: HoneyPot
+---------------------------------
+#NODEID#
+0
+#TAG#
+Garden Boy
+#ISPLAYER#
+False
+---
+#COMMENT#
+H-... "Hozey"?
+---------------------------------
+#NODEID#
+1
+#TAG#
+Bee
+#ISPLAYER#
+False
+---
+#COMMENT#
+Hozney.
+---------------------------------
+#NODEID#
+2
+#TAG#
+Garden Boy
+#ISPLAYER#
+False
+---
+#COMMENT#
+(But there's only five letters...?)
+#COMMENT#
+I am getting kind of hungry, though, do you think I could have a pot?
+---------------------------------
+#NODEID#
+3
+#TAG#
+Bee
+#ISPLAYER#
+False
+---
+#COMMENT#
+Abzzzolutely out of the queztion.
+---------------------------------
+#NODEID#
+4
+#TAG#
+Garden Boy
+#ISPLAYER#
+False
+---
+#COMMENT#
+Well, if there are no beez to tell me not to borrow their honey...
+---------------------------------
+#END#

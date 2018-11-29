@@ -52,6 +52,7 @@ public class UIManager : MonoBehaviour
     public int antStartNode = 0;
     public bool spiderGone = false;
     public bool antsCounted = false;
+    public bool beeGone = false;
 
     #endregion
 
@@ -456,6 +457,34 @@ public class UIManager : MonoBehaviour
                 if (spiderGone)
                 {
                     dialogue.overrideStartNode = 19;
+                    checkName = "CoolFlower";
+                    checkNum = 1;
+                    if (dialogue.overrideStartNode == 19)
+                    {
+                        for (int i = 0; i < inventory.invSlot.Length; i++)
+                        {
+                            if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                            {
+                                dialogue.overrideStartNode = 3;
+                                beeGone = true;
+                                GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                                inventory.itemNum[i] = 0;
+                                inventory.itemDict.Remove(inventory.itemName[i]);
+                                inventory.itemAmount[i].gameObject.SetActive(false);
+                                inventory.isFull[i] = false;
+                                inventory.itemName[i] = null;
+                                return false;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (dialogue.alias == "HoneyPot")
+            {
+                if (beeGone)
+                {
+                    dialogue.overrideStartNode = 4;
                 }
             }
 

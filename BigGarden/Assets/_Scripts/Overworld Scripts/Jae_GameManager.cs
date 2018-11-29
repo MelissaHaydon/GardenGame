@@ -93,6 +93,12 @@ public class Jae_GameManager : MonoBehaviour {
         RemoveCharacter();
     }
 
+    public void BeeBeGone()
+    {
+        charToClear = GameObject.Find("Bee_NPC");
+        RemoveCharacter();
+    }
+
     public void FireflyBeGone()
     {
         charToClear = GameObject.Find("Firefly_NPC");
