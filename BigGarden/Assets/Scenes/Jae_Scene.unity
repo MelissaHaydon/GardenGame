@@ -2557,7 +2557,7 @@ Transform:
   - {fileID: 2089484074}
   - {fileID: 780318885}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &119670973
 GameObject:
@@ -18471,7 +18471,7 @@ Transform:
   - {fileID: 1919809412}
   - {fileID: 247854778}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &649742747
 GameObject:
@@ -20427,7 +20427,7 @@ Transform:
   - {fileID: 1440756726}
   - {fileID: 667023278}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &764004614
 GameObject:
@@ -41225,13 +41225,18 @@ MonoBehaviour:
   - Boombox
   - BoomboxAnts
   - BugBarInspect
+  - Firefly
   - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
   - NotFinishedYet
+  - Silkworm
   - SlimePuddles
   - Snail
   - Spider
   - Tap
-  assignedIndex: 12
+  - TermiteDrowning
+  assignedIndex: 16
   assignedID: 881
   assignedDialogue: Tap
   interactionCount: 0
@@ -45213,6 +45218,7 @@ Transform:
   - {fileID: 1788099691}
   - {fileID: 2029935198}
   - {fileID: 445467783}
+  - {fileID: 1853347219}
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46885,7 +46891,7 @@ Transform:
   - {fileID: 954433504}
   - {fileID: 814247378}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1603884787
 GameObject:
@@ -48858,6 +48864,8 @@ MonoBehaviour:
   - BugBarInspect
   - Firefly
   - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
   - NotFinishedYet
   - Silkworm
   - SlimePuddles
@@ -48865,7 +48873,7 @@ MonoBehaviour:
   - Spider
   - Tap
   - TermiteDrowning
-  assignedIndex: 10
+  assignedIndex: 12
   assignedID: 78820
   assignedDialogue: Silkworm
   interactionCount: 0
@@ -51411,6 +51419,191 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1853347218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1853347219}
+  - component: {fileID: 1853347224}
+  - component: {fileID: 1853347223}
+  - component: {fileID: 1853347222}
+  - component: {fileID: 1853347221}
+  - component: {fileID: 1853347220}
+  - component: {fileID: 1853347225}
+  m_Layer: 0
+  m_Name: Furnace_NPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1853347219
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853347218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.39, y: 1.46, z: 1.47}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1530304115}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1853347220
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853347218}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b49f910413e724b4dae46a3300da1c6b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1853347221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853347218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8b99d8a12e39e4b94d2d7162c7c978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diags:
+  - Ant
+  - AntBabies
+  - Bee
+  - Beehive
+  - Boombox
+  - BoomboxAnts
+  - BugBarInspect
+  - Firefly
+  - Furnace
+  - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
+  - NotFinishedYet
+  - Silkworm
+  - SlimePuddles
+  - Snail
+  - Spider
+  - Tap
+  - TermiteDrowning
+  assignedIndex: 8
+  assignedID: 81712
+  assignedDialogue: Furnace
+  interactionCount: 0
+  alias: Mr. Furnace
+  overrideStartNode: -1
+  defaultNPCSprite: {fileID: 21300000, guid: 7032ba5a218f976428f18fd9aa93bf39, type: 3}
+  defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,
+    type: 3}
+  targetManager: {fileID: 0}
+  preload: 0
+  notuptodate: 0
+  startp: 0
+  loadtag: 
+  langs: []
+  S_playerDiags: []
+  S_actionNodes: []
+--- !u!135 &1853347222
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853347218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.665
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1853347223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853347218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &1853347224
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853347218}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c2d17203887da8a498492845ae1b6f59, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4.11, y: 5.33}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!114 &1853347225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853347218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711f80f4f864fe4488a8a80cb5ecd569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToSpawn: {fileID: 1010402010091824, guid: 88b370a7f894d244881abb2d5799acfd,
+    type: 2}
+  spawnLocation: {x: 515, y: 0, z: 1}
+  audioManager: {fileID: 0}
+  playAudio: 1
+  soundName: Pop
 --- !u!1 &1853420802
 GameObject:
   m_ObjectHideFlags: 0

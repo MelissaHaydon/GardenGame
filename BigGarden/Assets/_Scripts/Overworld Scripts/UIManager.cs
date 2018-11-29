@@ -597,6 +597,26 @@ public class UIManager : MonoBehaviour
                     }
                 }
             }
+
+            if (dialogue.alias == "Mr. Furnace")
+            {
+                checkName = "Pickaxe";
+                checkNum = 1;
+                for (int i = 0; i < inventory.invSlot.Length; i++)
+                {
+                    if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                    {
+                        dialogue.overrideStartNode = 1;
+                        GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                        inventory.itemNum[i] = 0;
+                        inventory.itemDict.Remove(inventory.itemName[i]);
+                        inventory.itemAmount[i].gameObject.SetActive(false);
+                        inventory.isFull[i] = false;
+                        inventory.itemName[i] = null;
+                        return false;
+                    }
+                }
+            }
         }
         return false;
     }

@@ -81,6 +81,12 @@ public class Jae_GameManager : MonoBehaviour {
         //player.canMove = true;
     }
 
+    public void FurnaceFireUpgrade()
+    {
+        Animator furnaceAnim = GameObject.Find("Furnace_NPC").GetComponent<Animator>();
+        furnaceAnim.SetTrigger("FireIncrease");
+    }
+
     public void SpiderBeGone()
     {
         charToClear = GameObject.Find("Spider_NPC");
