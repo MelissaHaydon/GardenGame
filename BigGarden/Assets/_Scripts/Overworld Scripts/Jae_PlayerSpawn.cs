@@ -84,7 +84,7 @@ public class Jae_PlayerSpawn : MonoBehaviour {
         player.transform.position = spawnPointArray[goTo];
         if (changeToTreeCam)
         {
-            cameraTracker.target = treeTransform;
+            //cameraTracker.target = treeTransform;
         } else
         {
             cameraTracker.target = playerTransform;
