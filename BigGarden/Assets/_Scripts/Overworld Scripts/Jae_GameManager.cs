@@ -74,7 +74,12 @@ public class Jae_GameManager : MonoBehaviour {
     public void SpiderBeGone()
     {
         charToClear = GameObject.Find("Spider_NPC");
-        //spiderNPC.SetActive(false);
+        RemoveCharacter();
+    }
+
+    public void FireflyBeGone()
+    {
+        charToClear = GameObject.Find("Firefly_NPC");
         RemoveCharacter();
     }
 
