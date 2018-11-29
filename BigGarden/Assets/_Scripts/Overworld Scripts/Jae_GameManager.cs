@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class Jae_GameManager : MonoBehaviour {
 
     public Jae_VIDEPlayerScript player;
-    public GameObject exitConfirmationScreen;
+    public GameObject pauseMenu;
+    public GameObject options;
     public GameManager mazeManager;
     public GameObject goodPresent;
     public GameObject badPresent;
@@ -45,29 +46,38 @@ public class Jae_GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (exitConfirmationScreen.activeSelf == true)
+        if (pauseMenu.activeSelf == true)
         {
             if (Input.GetKey(player.actionKey) || Input.GetKey(player.upKey) || Input.GetKey(player.downKey) || Input.GetKey(player.leftKey) || Input.GetKey(player.rightKey))
             {
                 BackToGame();
             }
         }
-	}
+        if (pauseMenu.activeSelf == false)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                GoToPauseButton();
+            }
+        }
+    }
 
-    public void GoToQuitButton()
+    public void GoToPauseButton()
     {
-        exitConfirmationScreen.SetActive(true);
+        pauseMenu.SetActive(true);
         //player.canMove = false;
     }
 
-    public void QuitGame()
+    public void ToControls()
     {
-        Application.Quit();
+        pauseMenu.SetActive(false);
+        options.SetActive(true);
     }
 
     public void BackToGame()
     {
-        exitConfirmationScreen.SetActive(false);
+        pauseMenu.SetActive(false);
+        options.SetActive(false);
         //player.canMove = true;
     }
 

@@ -69,6 +69,12 @@ public class Jae_SceneManager : MonoBehaviour {
         StartCoroutine(LoadScene());
     }
 
+    public void GoToMainMenu()
+    {
+        sceneName = "MainMenu";
+        StartCoroutine(LoadScene());
+    }
+
     public void ActivateSceneTransition()
     {
         StartCoroutine(LoadScene());
