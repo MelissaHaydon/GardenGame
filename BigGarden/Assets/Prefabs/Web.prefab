@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212177477052031706}
   - component: {fileID: 114222400981632678}
   - component: {fileID: 135119800019148690}
+  - component: {fileID: 114376378370580484}
   m_Layer: 0
   m_Name: Web
   m_TagString: Untagged
@@ -54,9 +55,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 1947209126132152, guid: 87c41c6dab8d4d24a92aa7453dce267a, type: 2}
-  itemName: Bee
+  itemName: Web
   audioManager: {fileID: 0}
   canTouch: 1
+--- !u!114 &114376378370580484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1925184960252434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135119800019148690
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -84,7 +96,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
