@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: c2d17203887da8a498492845ae1b6f59
+guid: 7acac4c5018f40c4a8dad129040a66a9
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Debug_FurnaceSheet_0
-    21300002: Debug_FurnaceSheet_1
+    21300000: Debug_FurnaceSheet_Fire02_0
+    21300002: Debug_FurnaceSheet_Fire02_1
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Debug_FurnaceSheet_0
+      name: Debug_FurnaceSheet_Fire02_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,13 +153,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0a6718d48d73a54c88ff5297c7fbd48
+      spriteID: 38a8b32588af0614aa7188c1e88902eb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Debug_FurnaceSheet_1
+      name: Debug_FurnaceSheet_Fire02_1
       rect:
         serializedVersion: 2
         x: 458
@@ -173,7 +173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cdc35417fd457b41ad44a299099e55a
+      spriteID: 0bdada0fe281354458f848bb5461cd07
       vertices: []
       indices: 
       edges: []
@@ -181,7 +181,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3f2d9b3ade6915c41bfea52e445df00f
+    spriteID: f1f5d5c7f0d2f6647ac8f12131e3495f
     vertices: []
     indices: 
     edges: []

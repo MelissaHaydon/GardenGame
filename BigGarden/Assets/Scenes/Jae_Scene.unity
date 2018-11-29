@@ -9088,20 +9088,27 @@ MonoBehaviour:
   - Beehive
   - Boombox
   - BoomboxAnts
+  - BugBarInspect
+  - Firefly
+  - Furnace
   - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
   - NotFinishedYet
-  - RandomCube
+  - PrayingMantis
+  - Silkworm
   - SlimePuddles
   - Snail
   - Spider
   - Tap
-  assignedIndex: 10
+  - TermiteDrowning
+  assignedIndex: 16
   assignedID: 74564
   assignedDialogue: Snail
   interactionCount: 0
   alias: Snail
   overrideStartNode: -1
-  defaultNPCSprite: {fileID: 21300000, guid: 2dec660a421dca54fb03b270a57e413f, type: 3}
+  defaultNPCSprite: {fileID: 21300004, guid: 5560fffbe6642ad4086bc68ccbe1dfdb, type: 3}
   defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,
     type: 3}
   targetManager: {fileID: 0}
@@ -51687,6 +51694,7 @@ MonoBehaviour:
   - LadyThugCronies
   - LadyThugLeader
   - NotFinishedYet
+  - PrayingMantis
   - Silkworm
   - SlimePuddles
   - Snail
@@ -57057,8 +57065,12 @@ MonoBehaviour:
   - BoomboxAnts
   - BugBarInspect
   - Firefly
+  - Furnace
   - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
   - NotFinishedYet
+  - PrayingMantis
   - Silkworm
   - SlimePuddles
   - Snail
