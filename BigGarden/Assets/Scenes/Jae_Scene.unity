@@ -49492,6 +49492,7 @@ GameObject:
   - component: {fileID: 1750900856}
   - component: {fileID: 1750900855}
   - component: {fileID: 1750900854}
+  - component: {fileID: 1750900859}
   m_Layer: 0
   m_Name: Silkworm_NPC
   m_TagString: Untagged
@@ -49532,17 +49533,19 @@ MonoBehaviour:
   - BoomboxAnts
   - BugBarInspect
   - Firefly
+  - Furnace
   - HoneyPot
   - LadyThugCronies
   - LadyThugLeader
   - NotFinishedYet
+  - PrayingMantis
   - Silkworm
   - SlimePuddles
   - Snail
   - Spider
   - Tap
   - TermiteDrowning
-  assignedIndex: 12
+  assignedIndex: 14
   assignedID: 78820
   assignedDialogue: Silkworm
   interactionCount: 0
@@ -49639,6 +49642,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1750900859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1750900852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711f80f4f864fe4488a8a80cb5ecd569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToSpawn: {fileID: 1010402010091824, guid: 8d32516c4bb68a9409d8e383a9848ee4,
+    type: 2}
+  spawnLocation: {x: 0, y: 0, z: 0}
+  audioManager: {fileID: 0}
+  playAudio: 1
+  soundName: Pop
+  spawnAtPlayer: 1
 --- !u!1 &1751191731
 GameObject:
   m_ObjectHideFlags: 0

@@ -105,6 +105,12 @@ public class Jae_GameManager : MonoBehaviour {
         RemoveCharacter();
     }
 
+    public void SilkwormBeGone()
+    {
+        charToClear = GameObject.Find("Silkworm_NPC");
+        RemoveCharacter();
+    }
+
     public void RemoveCharacter()
     {
         vanishPartSys.transform.position = charToClear.transform.position;

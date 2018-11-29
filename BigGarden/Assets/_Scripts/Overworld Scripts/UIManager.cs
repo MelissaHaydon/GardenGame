@@ -546,6 +546,7 @@ public class UIManager : MonoBehaviour
 
             if (dialogue.alias == "Nana Silkworm")
             {
+                audioSource.pitch = 1.2f;
                 checkName = "PickaxeHandle";
                 checkNum = 1;
                 if (dialogue.overrideStartNode == 1)
@@ -583,6 +584,7 @@ public class UIManager : MonoBehaviour
 
             if (dialogue.alias == "TermiteD") // Termite Drowning in puddle
             {
+                audioSource.pitch = 1.5f;
                 checkName = "Net";
                 checkNum = 1;
                 if (dialogue.overrideStartNode == 1)
@@ -606,6 +608,7 @@ public class UIManager : MonoBehaviour
 
             if (dialogue.alias == "Firefly")
             {
+                audioSource.pitch = 1.05f;
                 checkName = "DisguiseKit";
                 checkNum = 1;
                 if (dialogue.overrideStartNode == 1)
@@ -643,6 +646,25 @@ public class UIManager : MonoBehaviour
                         inventory.isFull[i] = false;
                         inventory.itemName[i] = null;
                         return false;
+                    }
+                }
+                if (dialogue.overrideStartNode == 7)
+                {
+                    checkName = "Silk";
+                    checkNum = 1;
+                    for (int i = 0; i < inventory.invSlot.Length; i++)
+                    {
+                        if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                        {
+                            dialogue.overrideStartNode = 6;
+                            GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                            inventory.itemNum[i] = 0;
+                            inventory.itemDict.Remove(inventory.itemName[i]);
+                            inventory.itemAmount[i].gameObject.SetActive(false);
+                            inventory.isFull[i] = false;
+                            inventory.itemName[i] = null;
+                            return false;
+                        }
                     }
                 }
             }
