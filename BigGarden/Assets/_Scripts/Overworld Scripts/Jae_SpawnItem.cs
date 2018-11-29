@@ -11,6 +11,8 @@ public class Jae_SpawnItem : MonoBehaviour {
     public bool playAudio;
     public string soundName;
 
+    public bool spawnAtPlayer;
+
 	// Use this for initialization
 	void Start () {
         audioManager = Jae_AudioManager.instance;
@@ -23,7 +25,13 @@ public class Jae_SpawnItem : MonoBehaviour {
 
     public void InstantiateItem()
     {
-        Instantiate(itemToSpawn, spawnLocation, Quaternion.identity);
+        if (spawnAtPlayer)
+        {
+            Instantiate(itemToSpawn, FindObjectOfType<Jae_VIDEPlayerScript>().transform.position, Quaternion.identity);
+        } else
+        {
+            Instantiate(itemToSpawn, spawnLocation, Quaternion.identity);
+        }
         if (playAudio)
         {
             audioManager.PlaySound(soundName);

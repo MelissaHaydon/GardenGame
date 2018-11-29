@@ -5699,6 +5699,7 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   playAudio: 0
   soundName: 
+  spawnAtPlayer: 0
 --- !u!114 &280393968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11028,14 +11029,20 @@ MonoBehaviour:
   - Boombox
   - BoomboxAnts
   - BugBarInspect
+  - Firefly
+  - Furnace
   - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
   - NotFinishedYet
-  - RandomCube
+  - PrayingMantis
+  - Silkworm
   - SlimePuddles
   - Snail
   - Spider
   - Tap
-  assignedIndex: 12
+  - TermiteDrowning
+  assignedIndex: 17
   assignedID: 28226
   assignedDialogue: Spider
   interactionCount: 0
@@ -11128,6 +11135,7 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   playAudio: 1
   soundName: Pop
+  spawnAtPlayer: 0
 --- !u!114 &515644213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42758,6 +42766,7 @@ GameObject:
   - component: {fileID: 1420836515}
   - component: {fileID: 1420836514}
   - component: {fileID: 1420836516}
+  - component: {fileID: 1420836517}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -42818,6 +42827,20 @@ MonoBehaviour:
   resolution: {fileID: 36273464}
   resLabel: {fileID: 835411198}
   fullScreen: {fileID: 265453315}
+--- !u!114 &1420836517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420836513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1537731ef478f44a181b8867b608c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charsToDespawn:
+  - {fileID: 384329850}
+  - {fileID: 515644206}
 --- !u!1 &1420941843
 GameObject:
   m_ObjectHideFlags: 0
@@ -52079,7 +52102,6 @@ GameObject:
   - component: {fileID: 1853347221}
   - component: {fileID: 1853347220}
   - component: {fileID: 1853347225}
-  - component: {fileID: 1853347226}
   m_Layer: 0
   m_Name: Furnace_NPC
   m_TagString: Untagged
@@ -52248,21 +52270,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemToSpawn: {fileID: 1010402010091824, guid: 88b370a7f894d244881abb2d5799acfd,
     type: 2}
-  spawnLocation: {x: 515, y: 0, z: 1}
+  spawnLocation: {x: 522, y: 0, z: 0}
   audioManager: {fileID: 0}
   playAudio: 1
   soundName: Pop
---- !u!114 &1853347226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1853347218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1537731ef478f44a181b8867b608c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  spawnAtPlayer: 1
 --- !u!1 &1853420802
 GameObject:
   m_ObjectHideFlags: 0
@@ -54222,13 +54234,20 @@ MonoBehaviour:
   - Beehive
   - Boombox
   - BoomboxAnts
+  - BugBarInspect
+  - Firefly
+  - Furnace
   - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
   - NotFinishedYet
-  - RandomCube
+  - PrayingMantis
+  - Silkworm
   - SlimePuddles
   - Snail
   - Spider
   - Tap
+  - TermiteDrowning
   assignedIndex: 1
   assignedID: 59439
   assignedDialogue: AntBabies
@@ -54275,6 +54294,7 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   playAudio: 0
   soundName: 
+  spawnAtPlayer: 0
 --- !u!4 &1919809412
 Transform:
   m_ObjectHideFlags: 0

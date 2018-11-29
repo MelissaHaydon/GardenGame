@@ -26,7 +26,8 @@ public class Options : MonoBehaviour
         }
         if (OptionsData.FullScreen == 1)
         {
-            fullScreen.isOn = true;
+            fullScreen.isOn = false;
+            Invoke("FullScreenToggle", 0.1f);
         }
         if (OptionsData.Resolution == 0)
         {
@@ -46,17 +47,9 @@ public class Options : MonoBehaviour
         }
     }
 
-    public void DoSetup()
+    public void FullScreenToggle()
     {
-        Invoke("Setup", 2);
-    }
-
-    void Setup()
-    {
-        volumeS = GameObject.Find("AudioSlider").GetComponent<Slider>();
-        volumeT = GameObject.Find("VolumeText").GetComponent<Text>();
-        resolution = GameObject.Find("DropdownRes").GetComponent<Dropdown>();
-        fullScreen = GameObject.Find("ToggleFull").GetComponent<Toggle>();
+        fullScreen.isOn = true;
     }
 
     // Update is called once per frame
