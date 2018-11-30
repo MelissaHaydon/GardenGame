@@ -75,6 +75,12 @@ public class Jae_SceneManager : MonoBehaviour {
         StartCoroutine(LoadScene());
     }
 
+    public void FinishFishingGame()
+    {
+        sceneName = "Jae_Scene";
+        StartCoroutine(LoadScene());
+    }
+
     public void ActivateSceneTransition()
     {
         StartCoroutine(LoadScene());
@@ -94,6 +100,10 @@ public class Jae_SceneManager : MonoBehaviour {
         else if (scene.name == "MainMenu")
         {
             sceneDelay = 0f;
+        }
+        else if (scene.name == "Fishing")
+        {
+            sceneDelay = 2f;
         }
 
         yield return new WaitForSeconds(sceneDelay);

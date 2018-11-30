@@ -92,6 +92,10 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log(transform.position);
+        }
         if (inTrigger == null)
         {
             attentionBubble.SetActive(false);

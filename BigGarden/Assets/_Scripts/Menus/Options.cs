@@ -20,15 +20,7 @@ public class Options : MonoBehaviour
     {
         volumeS.value = OptionsData.Volume;
         //print(Screen.currentResolution);
-        if (OptionsData.FullScreen == 0)
-        {
-            fullScreen.isOn = false;
-        }
-        if (OptionsData.FullScreen == 1)
-        {
-            fullScreen.isOn = false;
-            Invoke("FullScreenToggle", 0.1f);
-        }
+        
         if (OptionsData.Resolution == 0)
         {
             resolution.value = 0;
@@ -44,6 +36,15 @@ public class Options : MonoBehaviour
         if (OptionsData.Resolution == 3)
         {
             resolution.value = 3;
+        }
+        if (OptionsData.FullScreen == 0)
+        {
+            fullScreen.isOn = false;
+        }
+        if (OptionsData.FullScreen == 1)
+        {
+            fullScreen.isOn = false;
+            FullScreenToggle();
         }
     }
 

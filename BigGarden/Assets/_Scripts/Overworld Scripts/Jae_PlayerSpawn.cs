@@ -28,6 +28,10 @@ public class Jae_PlayerSpawn : MonoBehaviour {
         {
             SpawnAtBee();
         }
+        else if (gameManager.fishManager.finishedFishingBool == true)
+        {
+            SpawnAtTermites();
+        }
         else
         {
             SpawnAtStart();
@@ -48,6 +52,12 @@ public class Jae_PlayerSpawn : MonoBehaviour {
     {
         player.transform.position = spawnPointArray[1];
         player.lastMove = new Vector2(-1, -1);
+    }
+
+    public void SpawnAtTermites()
+    {
+        player.transform.position = spawnPointArray[6];
+        player.lastMove = new Vector2(-1, 1);
     }
 
     public void SpawnFromZone2()

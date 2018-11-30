@@ -9,9 +9,11 @@ public class Jae_GameManager : MonoBehaviour {
     public GameObject pauseMenu;
     public GameObject options;
     public GameManager mazeManager;
+    public FinishedFishing fishManager;
     public GameObject goodPresent;
     public GameObject badPresent;
     public bool mazeCleared;
+    public bool fishCleared;
     public GameObject spiderNPC;
     public GameObject charToClear;
     public ParticleSystem vanishPartSys;
@@ -24,11 +26,16 @@ public class Jae_GameManager : MonoBehaviour {
         {
             return;
         }
+        fishManager = FindObjectOfType<FinishedFishing>();
+        if (fishManager == null)
+        {
+            return;
+        }
     }
 
     // Use this for initialization
     void Start () {
-		if (mazeManager != null && mazeManager.clearedGame)
+        if (mazeManager != null && mazeManager.clearedGame)
         {
             mazeCleared = true;
             if (mazeManager.goodGift)
@@ -42,7 +49,12 @@ public class Jae_GameManager : MonoBehaviour {
                 //GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
             }
         }
-	}
+        if (fishManager != null && fishManager.finishedFishingBool)
+        {
+            fishCleared = true;
+            //Instantiate(goodPresent, new Vector3(-21.8f, 0, 9.8f), Quaternion.identity); //Instantiate Saved Termites
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {

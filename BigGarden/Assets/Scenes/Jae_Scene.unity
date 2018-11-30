@@ -42789,6 +42789,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 196158313}
   options: {fileID: 814727537}
   mazeManager: {fileID: 0}
+  fishManager: {fileID: 0}
   goodPresent: {fileID: 1675240963124000, guid: 63830c2fdf052364c95957854b98bfa2,
     type: 2}
   badPresent: {fileID: 1675240963124000, guid: ab51eda61529ad54ba91a4e25e5fc77d, type: 2}
@@ -45517,6 +45518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  fishManager: {fileID: 0}
   player: {fileID: 0}
   cameraTracker: {fileID: 0}
   spawnPointArray:
@@ -45525,7 +45527,8 @@ MonoBehaviour:
   - {x: 20, y: -0.06, z: 1.25}
   - {x: 490, y: 0.27, z: 6}
   - {x: 1071.4, y: 0.27, z: 3}
-  - {x: 520, y: 0.27, z: 3}
+  - {x: 510, y: 0.27, z: 3}
+  - {x: 491.5, y: 0.27, z: 9}
   transitionAnim: {fileID: 0}
   goTo: 0
   treeTransform: {fileID: 0}
@@ -55450,8 +55453,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1963985164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.92, z: -3.6}
-  m_LocalScale: {x: 98.33151, y: 1, z: 45.226078}
+  m_LocalPosition: {x: -23.1, y: -1.92, z: -3.6}
+  m_LocalScale: {x: 170.76721, y: 1, z: 45.226078}
   m_Children: []
   m_Father: {fileID: 1530304115}
   m_RootOrder: 3
