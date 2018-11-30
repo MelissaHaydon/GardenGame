@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SceneSetUp : MonoBehaviour {
 
+    public AntMovement[] antArray;
     public FinishedFishing fishingManager;
     private Animator furnaceAnim;
     public GameObject[] charsToDespawn;
@@ -21,9 +22,9 @@ public class SceneSetUp : MonoBehaviour {
     public void SetUp()
     {
         furnaceAnim = GameObject.Find("Furnace_NPC").GetComponent<Animator>();
-        Jae_StopAnts stopAnts = FindObjectOfType<Jae_StopAnts>();
+        antArray = FindObjectsOfType<AntMovement>();
         Jae_SpawnItem antField = GameObject.Find("AntField_NPC").GetComponent<Jae_SpawnItem>();
-        fishingManager = FindObjectOfType<FinishedFishing>();
+        fishingManager = GameObject.Find("ClearedFish").GetComponent<FinishedFishing>();
         if (fishingManager != null && fishingManager.finishedFishingBool)
         {
             furnaceAnim.SetTrigger("FireIncrease");
@@ -32,7 +33,10 @@ public class SceneSetUp : MonoBehaviour {
                 charsToDespawn[i].gameObject.SetActive(false);
                 //return;
             }
-            stopAnts.RunAway();
+            for (int i = 0; i < antArray.Length; i++)
+            {
+                antArray[i].gameObject.SetActive(false);
+            }
             antField.InstantiateItem();
         }
     }

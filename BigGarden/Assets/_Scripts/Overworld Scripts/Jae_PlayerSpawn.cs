@@ -24,11 +24,11 @@ public class Jae_PlayerSpawn : MonoBehaviour {
         treeTransform = GameObject.Find("TrunkTransform").GetComponent<Transform>();
         playerTransform = player.transform;
         transitionAnim = GameObject.Find("SceneTransition").GetComponent<Animator>();
-        if (gameManager.mazeCleared)
+        if (gameManager.mazeCleared && !gameManager.fishCleared)
         {
             SpawnAtBee();
         }
-        else if (gameManager.fishManager.finishedFishingBool == true)
+        else if (gameManager.mazeCleared && gameManager.fishCleared)
         {
             SpawnAtTermites();
         }

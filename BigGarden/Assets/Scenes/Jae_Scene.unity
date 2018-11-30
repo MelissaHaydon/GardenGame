@@ -7016,6 +7016,7 @@ Transform:
   m_Children:
   - {fileID: 1750900853}
   - {fileID: 1716090160}
+  - {fileID: 525164756}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11556,6 +11557,102 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &525164755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 525164756}
+  - component: {fileID: 525164758}
+  - component: {fileID: 525164757}
+  m_Layer: 0
+  m_Name: NetSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &525164756
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 525164755}
+  m_LocalRotation: {x: -0, y: -0, z: -0.038469695, w: 0.99925977}
+  m_LocalPosition: {x: 0, y: -0.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 329080382}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &525164757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 525164755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8b99d8a12e39e4b94d2d7162c7c978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diags:
+  - Ant
+  - AntBabies
+  - Bee
+  - Beehive
+  - Boombox
+  - BoomboxAnts
+  - BugBarInspect
+  - Firefly
+  - Furnace
+  - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
+  - NotFinishedYet
+  - PrayingMantis
+  - Silkworm
+  - SlimePuddles
+  - Snail
+  - Spider
+  - Tap
+  - TermiteDrowning
+  assignedIndex: -1
+  assignedID: 0
+  assignedDialogue: 
+  interactionCount: 0
+  alias: 
+  overrideStartNode: -1
+  defaultNPCSprite: {fileID: 0}
+  defaultPlayerSprite: {fileID: 0}
+  targetManager: {fileID: 0}
+  preload: 0
+  notuptodate: 0
+  startp: 0
+  loadtag: 
+  langs: []
+  S_playerDiags: []
+  S_actionNodes: []
+--- !u!114 &525164758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 525164755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711f80f4f864fe4488a8a80cb5ecd569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToSpawn: {fileID: 1672855110534812, guid: 5d29916ed58653f41bbdb1e759aa445f,
+    type: 2}
+  spawnLocation: {x: 0, y: 0, z: 0}
+  audioManager: {fileID: 0}
+  playAudio: 1
+  soundName: Pop
+  spawnAtPlayer: 1
 --- !u!1 &528823318
 GameObject:
   m_ObjectHideFlags: 0
@@ -42794,6 +42891,7 @@ MonoBehaviour:
     type: 2}
   badPresent: {fileID: 1675240963124000, guid: ab51eda61529ad54ba91a4e25e5fc77d, type: 2}
   mazeCleared: 0
+  fishCleared: 0
   spiderNPC: {fileID: 515644206}
   charToClear: {fileID: 0}
   vanishPartSys: {fileID: 1368031598}
@@ -42839,9 +42937,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1537731ef478f44a181b8867b608c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  antArray: []
+  fishingManager: {fileID: 0}
   charsToDespawn:
   - {fileID: 384329850}
   - {fileID: 515644206}
+  - {fileID: 413018112}
 --- !u!1 &1420941843
 GameObject:
   m_ObjectHideFlags: 0
@@ -45518,7 +45619,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  fishManager: {fileID: 0}
   player: {fileID: 0}
   cameraTracker: {fileID: 0}
   spawnPointArray:
@@ -60729,15 +60829,19 @@ MonoBehaviour:
   - BoomboxAnts
   - BugBarInspect
   - Firefly
+  - Furnace
   - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
   - NotFinishedYet
+  - PrayingMantis
   - Silkworm
   - SlimePuddles
   - Snail
   - Spider
   - Tap
   - TermiteDrowning
-  assignedIndex: 15
+  assignedIndex: 19
   assignedID: 7405
   assignedDialogue: TermiteDrowning
   interactionCount: 0

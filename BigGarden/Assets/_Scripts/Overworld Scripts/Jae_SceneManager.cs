@@ -69,6 +69,12 @@ public class Jae_SceneManager : MonoBehaviour {
         StartCoroutine(LoadScene());
     }
 
+    public void GoToFishingGame()
+    {
+        sceneName = "Fishing";
+        StartCoroutine(LoadScene());
+    }
+
     public void GoToMainMenu()
     {
         sceneName = "MainMenu";
