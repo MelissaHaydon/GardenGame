@@ -7,6 +7,7 @@ public class Jae_PlayerSpawn : MonoBehaviour {
     public Jae_GameManager gameManager;
     public Jae_VIDEPlayerScript player;
     public Jae_CameraTracker cameraTracker;
+    public SceneSetUp sceneSetUp;
     public Vector3[] spawnPointArray;
     public Animator transitionAnim;
     public int goTo;
@@ -31,6 +32,7 @@ public class Jae_PlayerSpawn : MonoBehaviour {
         else if (gameManager.mazeCleared && gameManager.fishCleared)
         {
             SpawnAtTermites();
+            sceneSetUp.SetUp();
         }
         else
         {

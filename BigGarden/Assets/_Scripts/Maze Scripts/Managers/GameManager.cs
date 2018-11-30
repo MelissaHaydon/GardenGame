@@ -11,9 +11,9 @@ public class GameManager : MonoBehaviour {
 	public static GameState gameState;
 
     private GameObject pacman;
-    private GameObject blinky;
+    //private GameObject blinky;
     private GameObject pinky;
-    private GameObject inky;
+    //private GameObject inky;
     private GameObject clyde;
     private GameGUINavigation gui;
 
@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour {
 
     public bool goodGift;
     public bool clearedGame;
+
+    public bool finishedFishing;
 
     private static GameManager _instance;
 
@@ -87,15 +89,15 @@ public class GameManager : MonoBehaviour {
         CalmGhosts();
 
 		pacman.transform.position = new Vector3(15f, 11f, 0f);
-		blinky.transform.position = new Vector3(15f, 20f, 0f);
+		//blinky.transform.position = new Vector3(15f, 20f, 0f);
 		pinky.transform.position = new Vector3(14.5f, 17f, 0f);
-		inky.transform.position = new Vector3(16.5f, 17f, 0f);
+		//inky.transform.position = new Vector3(16.5f, 17f, 0f);
 		clyde.transform.position = new Vector3(12.5f, 17f, 0f);
 
 		pacman.GetComponent<PlayerController>().ResetDestination();
-		blinky.GetComponent<GhostMove>().InitializeGhost();
+		//blinky.GetComponent<GhostMove>().InitializeGhost();
 		pinky.GetComponent<GhostMove>().InitializeGhost();
-		inky.GetComponent<GhostMove>().InitializeGhost();
+		//inky.GetComponent<GhostMove>().InitializeGhost();
 		clyde.GetComponent<GhostMove>().InitializeGhost();
 
         gameState = GameState.Init;  
@@ -112,9 +114,9 @@ public class GameManager : MonoBehaviour {
 	public void ScareGhosts()
 	{
 		scared = true;
-		blinky.GetComponent<GhostMove>().Frighten();
+		//blinky.GetComponent<GhostMove>().Frighten();
 		pinky.GetComponent<GhostMove>().Frighten();
-		inky.GetComponent<GhostMove>().Frighten();
+		//inky.GetComponent<GhostMove>().Frighten();
 		clyde.GetComponent<GhostMove>().Frighten();
 		_timeToCalm = Time.time + scareLength;
 
@@ -124,9 +126,9 @@ public class GameManager : MonoBehaviour {
 	public void CalmGhosts()
 	{
 		scared = false;
-		blinky.GetComponent<GhostMove>().Calm();
+		//blinky.GetComponent<GhostMove>().Calm();
 		pinky.GetComponent<GhostMove>().Calm();
-		inky.GetComponent<GhostMove>().Calm();
+		//inky.GetComponent<GhostMove>().Calm();
 		clyde.GetComponent<GhostMove>().Calm();
 	    PlayerController.killstreak = 0;
     }
@@ -136,8 +138,8 @@ public class GameManager : MonoBehaviour {
         // find and assign ghosts
         clyde = GameObject.Find("clyde");
         pinky = GameObject.Find("pinky");
-        inky = GameObject.Find("inky");
-        blinky = GameObject.Find("blinky");
+        //inky = GameObject.Find("inky");
+        //blinky = GameObject.Find("blinky");
         pacman = GameObject.Find("bee");
 
 
@@ -153,5 +155,10 @@ public class GameManager : MonoBehaviour {
 
         score = 0;
         Destroy(GameObject.Find("Game Manager"));
+    }
+
+    public void FinishedFishingBool()
+    {
+        finishedFishing = true;
     }
 }

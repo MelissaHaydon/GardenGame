@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bee Maze.unity
     guid: 4460642ebedfa2145a83e44071a38b68
+  - enabled: 1
+    path: Assets/Scenes/Fishing.unity
+    guid: 349cb40a95d4f6b49a767f6148c3edee
   m_configObjects: {}

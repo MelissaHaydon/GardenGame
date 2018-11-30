@@ -294,47 +294,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224831845497569794, guid: d1e25a9be23f2da4983b3e94eaf66917,
     type: 2}
   m_PrefabInternal: {fileID: 987511979}
---- !u!1 &239369864
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 239369866}
-  - component: {fileID: 239369865}
-  m_Layer: 0
-  m_Name: ClearedFish
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &239369865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 239369864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f94817078360ad48b60a2bd92ae2ddb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  finishedFishingBool: 0
---- !u!4 &239369866
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 239369864}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &445950571
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,7 +950,7 @@ MonoBehaviour:
   termMissed: 0
   missedTerms: {fileID: 450095112}
   sceneManager: {fileID: 0}
-  finishedFishing: {fileID: 239369865}
+  finishedFishing: {fileID: 0}
   gameOver: 0
 --- !u!4 &832058880
 Transform:
@@ -1906,3 +1865,47 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1969802253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1969802255}
+  - component: {fileID: 1969802254}
+  m_Layer: 0
+  m_Name: MazeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1969802254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1969802253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a69aa6a4121ee1429846b7e049dc8fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scareLength: 0
+  goodGift: 0
+  clearedGame: 1
+  finishedFishing: 0
+--- !u!4 &1969802255
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1969802253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1075.2583, y: 1.4902709, z: 2.758391}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

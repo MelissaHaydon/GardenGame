@@ -19,7 +19,6 @@ public class Jae_SceneManager : MonoBehaviour {
         if (scene.name == "Jae_Scene")
         {
             player = GameObject.Find("Player_Sprite").GetComponent<Jae_VIDEPlayerScript>();
-            antTarget = GameObject.Find("AntTransformPoint").transform;
             playerTransform = player.transform;
             jaeCamera = FindObjectOfType<Jae_CameraTracker>();
         }
@@ -34,6 +33,7 @@ public class Jae_SceneManager : MonoBehaviour {
 
     public void ChangeAntCamera()
     {
+        antTarget = GameObject.Find("AntTransformPoint").transform;
         jaeCamera.target = antTarget;
         jaeCamera.lookAt = true;
     }
@@ -72,6 +72,7 @@ public class Jae_SceneManager : MonoBehaviour {
     public void GoToFishingGame()
     {
         sceneName = "Fishing";
+        Destroy(GameObject.Find("Game Manager"));
         StartCoroutine(LoadScene());
     }
 

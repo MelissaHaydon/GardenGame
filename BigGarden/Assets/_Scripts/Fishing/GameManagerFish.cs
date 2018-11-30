@@ -21,7 +21,7 @@ public class GameManagerFish : MonoBehaviour {
     public Text missedTerms;
 
     public Jae_SceneManager sceneManager;
-    public FinishedFishing finishedFishing;
+    public GameManager finishedFishing;
 
     public bool gameOver;
 
@@ -29,6 +29,7 @@ public class GameManagerFish : MonoBehaviour {
 	void Start () {
         InvokeRepeating("SpawnTermite", 5, 1f);
         sceneManager = FindObjectOfType<Jae_SceneManager>();
+        finishedFishing = FindObjectOfType<GameManager>();
 	}
 	
 	// Update is called once per frame
@@ -44,7 +45,7 @@ public class GameManagerFish : MonoBehaviour {
         {
             timerF = 0;
             timerInt = 0;
-            finishedFishing.finishedFishingBool = true;
+            finishedFishing.finishedFishing = true;
             sceneManager.FinishFishingGame();
             timeUpText.gameObject.SetActive(true);
         }

@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour {
             bee = GameObject.Find("bee");
             pollenCount = GameObject.Find("pollen total").GetComponent<Text>();
             message = GameObject.Find("message").GetComponent<Text>();
-            timeUp = GameObject.Find("time up").GetComponent<Text>();
+            //timeUp = GameObject.Find("time up").GetComponent<Text>();
             heldAnimator = GameObject.Find("message").GetComponent<Animator>();
             audioManager = Jae_AudioManager.instance;
         }

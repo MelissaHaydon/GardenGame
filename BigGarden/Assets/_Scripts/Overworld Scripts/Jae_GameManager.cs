@@ -9,12 +9,10 @@ public class Jae_GameManager : MonoBehaviour {
     public GameObject pauseMenu;
     public GameObject options;
     public GameManager mazeManager;
-    public FinishedFishing fishManager;
     public GameObject goodPresent;
     public GameObject badPresent;
     public bool mazeCleared;
     public bool fishCleared;
-    public GameObject spiderNPC;
     public GameObject charToClear;
     public ParticleSystem vanishPartSys;
     public Jae_AudioManager audioManager;
@@ -26,11 +24,6 @@ public class Jae_GameManager : MonoBehaviour {
         {
             return;
         }
-        fishManager = FindObjectOfType<FinishedFishing>();
-        if (fishManager == null)
-        {
-            return;
-        }
     }
 
     // Use this for initialization
@@ -38,18 +31,18 @@ public class Jae_GameManager : MonoBehaviour {
         if (mazeManager != null && mazeManager.clearedGame)
         {
             mazeCleared = true;
-            if (mazeManager.goodGift)
+            if (mazeManager.goodGift && !mazeManager.finishedFishing)
             {
                 //GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
                 Instantiate(goodPresent, new Vector3(-21.8f, 0, 9.8f), Quaternion.identity);
             }
-            else
+            else if (!mazeManager.goodGift && !mazeManager.finishedFishing)
             {
                 Instantiate(badPresent, new Vector3(-21.8f, -0.8f, 9.8f), Quaternion.identity);
                 //GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
             }
         }
-        if (fishManager != null && fishManager.finishedFishingBool)
+        if (mazeManager != null && mazeManager.finishedFishing)
         {
             fishCleared = true;
             //Instantiate(goodPresent, new Vector3(-21.8f, 0, 9.8f), Quaternion.identity); //Instantiate Saved Termites
