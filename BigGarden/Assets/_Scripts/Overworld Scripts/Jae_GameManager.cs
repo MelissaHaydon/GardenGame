@@ -104,6 +104,12 @@ public class Jae_GameManager : MonoBehaviour {
         RemoveCharacter();
     }
 
+    public void WaspBeGone()
+    {
+        charToClear = GameObject.Find("Wasp_NPC");
+        RemoveCharacter();
+    }
+
     public void FireflyBeGone()
     {
         charToClear = GameObject.Find("Firefly_NPC");
@@ -116,6 +122,30 @@ public class Jae_GameManager : MonoBehaviour {
         RemoveCharacter();
     }
 
+    public void StinkbugBeGone()
+    {
+        charToClear = GameObject.Find("StinkbugJacob_NPC");
+        RemoveCharacter();
+        charToClear = GameObject.Find("StinkbugMatt_NPC");
+        RemoveCharacter();
+    }
+
+    public void LadyThugsBeGone()
+    {
+        charToClear = GameObject.Find("LadyThugLeader_NPC");
+        RemoveCharacter();
+        charToClear = GameObject.Find("LadyThugFile_NPC");
+        RemoveCharacter();
+        charToClear = GameObject.Find("LadyThugRead_NPC");
+        RemoveCharacter();
+    }
+
+    public void PrayingMantisBeGone()
+    {
+        charToClear = GameObject.Find("PrayingMantis_NPC");
+        RemoveCharacter();
+    }
+
     public void RemoveCharacter()
     {
         vanishPartSys.transform.position = charToClear.transform.position;
@@ -124,5 +154,19 @@ public class Jae_GameManager : MonoBehaviour {
         audioManager.PlaySound("Poof");
         charToClear.SetActive(false);
 
+    }
+
+    public void RemoveTermites()
+    {
+        GameObject[] termiteArray;
+        termiteArray = GameObject.FindGameObjectsWithTag("Termite");
+        vanishPartSys.transform.position = termiteArray[0].transform.position;
+        vanishPartSys.Play();
+        audioManager = Jae_AudioManager.instance;
+        audioManager.PlaySound("Poof");
+        for (int i = 0; i < termiteArray.Length; i++)
+        {
+            termiteArray[i].gameObject.SetActive(false);
+        }
     }
 }
