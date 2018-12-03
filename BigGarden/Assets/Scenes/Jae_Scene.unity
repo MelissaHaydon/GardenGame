@@ -477,10 +477,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 23194777}
   m_LocalRotation: {x: -0, y: -0, z: -0.1073262, w: 0.9942239}
-  m_LocalPosition: {x: 1.731, y: -0.051, z: 0.511}
+  m_LocalPosition: {x: 2.0009875, y: -0.21200001, z: 0.39099967}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
-  m_Father: {fileID: 94362078}
+  m_Father: {fileID: 655790288}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.3220005}
 --- !u!114 &23194779
@@ -642,7 +642,7 @@ Transform:
   m_LocalScale: {x: 2.10797, y: 16.83296, z: 5.68563}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &30108943
 BoxCollider:
@@ -2150,11 +2150,8 @@ Transform:
   m_LocalPosition: {x: 490.43, y: -0.89, z: 11.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2122788039}
-  - {fileID: 749474200}
-  - {fileID: 23194778}
-  - {fileID: 843378509}
-  - {fileID: 1893188796}
+  - {fileID: 655790288}
+  - {fileID: 1541520025}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3210,6 +3207,91 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &147216284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 147216285}
+  - component: {fileID: 147216288}
+  - component: {fileID: 147216287}
+  - component: {fileID: 147216286}
+  m_Layer: 0
+  m_Name: Cube (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147216285
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147216284}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 34.285, y: -3.253, z: 0.95}
+  m_LocalScale: {x: 2.7173805, y: 16.832962, z: 1.7457333}
+  m_Children: []
+  m_Father: {fileID: 745741953}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &147216286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147216284}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &147216287
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147216284}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: f090550783312354388d3e0b99bef929, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &147216288
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147216284}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &149200453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3447,6 +3529,105 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &151751067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 151751068}
+  - component: {fileID: 151751071}
+  - component: {fileID: 151751070}
+  - component: {fileID: 151751069}
+  m_Layer: 0
+  m_Name: Termite_NPC_A (5)
+  m_TagString: Termite
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &151751068
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151751067}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.2, y: -0.34999996, z: -0.56}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_Children: []
+  m_Father: {fileID: 1541520025}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &151751069
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151751067}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.91, y: 2.96, z: 0.5}
+  m_Center: {x: -0.1, y: 0, z: 0}
+--- !u!114 &151751070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151751067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &151751071
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151751067}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.7, y: 2.96}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &157689526
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,6 +4627,105 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 6.02, y: 6.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!1 &205825627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 205825628}
+  - component: {fileID: 205825631}
+  - component: {fileID: 205825630}
+  - component: {fileID: 205825629}
+  m_Layer: 0
+  m_Name: Termite_NPC_A (4)
+  m_TagString: Termite
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &205825628
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205825627}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.95, y: -0.34999996, z: -0.88}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_Children: []
+  m_Father: {fileID: 1541520025}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &205825629
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205825627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.91, y: 2.96, z: 0.5}
+  m_Center: {x: -0.1, y: 0, z: 0}
+--- !u!114 &205825630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205825627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &205825631
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205825627}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.7, y: 2.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5838,6 +6118,7 @@ GameObject:
   - component: {fileID: 283207950}
   - component: {fileID: 283207949}
   - component: {fileID: 283207948}
+  - component: {fileID: 283207953}
   m_Layer: 0
   m_Name: Wasp_NPC
   m_TagString: Untagged
@@ -5989,6 +6270,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &283207953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283207946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711f80f4f864fe4488a8a80cb5ecd569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToSpawn: {fileID: 0}
+  spawnLocation: {x: 0, y: 0, z: 0}
+  audioManager: {fileID: 0}
+  playAudio: 1
+  soundName: Pop
+  spawnAtPlayer: 1
 --- !u!1 &283564200
 GameObject:
   m_ObjectHideFlags: 0
@@ -7149,7 +7447,7 @@ Transform:
   m_LocalScale: {x: 6.841586, y: 6.841587, z: 9.165048}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -25.373001, z: 0}
 --- !u!1 &329080381
 GameObject:
@@ -8654,14 +8952,21 @@ MonoBehaviour:
   - BoomboxAnts
   - BugBarInspect
   - Firefly
+  - Furnace
   - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
   - NotFinishedYet
+  - PrayingMantis
   - Silkworm
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
+  - Termite
   - TermiteDrowning
+  - Wasp
   assignedIndex: 0
   assignedID: 68597
   assignedDialogue: Ant
@@ -8749,7 +9054,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 384329850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.41999817, y: -0.7110001, z: -2.7599998}
+  m_LocalPosition: {x: 1.387, y: -0.7110001, z: -2.7599998}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 648612873}
@@ -8801,8 +9106,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.02, y: 3.37, z: 3.66}
-  m_Center: {x: 1.86, y: 0, z: 0}
+  m_Size: {x: 9.02, y: 3.37, z: 4.47}
+  m_Center: {x: 1.86, y: 0, z: 0.53}
 --- !u!1 &384438084 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1717977260114718, guid: edd3ae1fa5e074846b1974422b655ec1,
@@ -9225,7 +9530,7 @@ Transform:
   m_LocalScale: {x: 1.4996295, y: 16.83296, z: 13.8189535}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &418682983
 GameObject:
@@ -9658,7 +9963,7 @@ Transform:
   m_LocalScale: {x: 19.436604, y: 6.84159, z: 2.9595406}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 122.037, z: 0}
 --- !u!65 &440273951
 BoxCollider:
@@ -10651,7 +10956,7 @@ Transform:
   - {fileID: 1545782715}
   - {fileID: 1159159487}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484705466
 GameObject:
@@ -11817,8 +12122,10 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
   - TermiteDrowning
+  - Wasp
   assignedIndex: -1
   assignedID: 0
   assignedDialogue: 
@@ -17647,17 +17954,21 @@ MonoBehaviour:
   - BoomboxAnts
   - BugBarInspect
   - Firefly
+  - Furnace
   - HoneyPot
   - LadyThugCronies
   - LadyThugLeader
   - NotFinishedYet
+  - PrayingMantis
   - Silkworm
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
   - TermiteDrowning
-  assignedIndex: 10
+  - Wasp
+  assignedIndex: 11
   assignedID: 24555
   assignedDialogue: LadyThugLeader
   interactionCount: 0
@@ -19186,6 +19497,39 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1886122198}
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!1 &655790287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 655790288}
+  m_Layer: 0
+  m_Name: TermiteGroup_Drowning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &655790288
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655790287}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.27, y: 0.16100001, z: 0.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2122788039}
+  - {fileID: 749474200}
+  - {fileID: 23194778}
+  - {fileID: 843378509}
+  - {fileID: 1893188796}
+  m_Father: {fileID: 94362078}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &658738949
 GameObject:
   m_ObjectHideFlags: 0
@@ -19649,6 +19993,105 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e123ead8521e65c4c9f2ea9fb0401395, type: 3}
+--- !u!1 &688093232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 688093233}
+  - component: {fileID: 688093236}
+  - component: {fileID: 688093235}
+  - component: {fileID: 688093234}
+  m_Layer: 0
+  m_Name: Termite_NPC_A (1)
+  m_TagString: Termite
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &688093233
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688093232}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.42, y: -0.35, z: -1.32}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_Children: []
+  m_Father: {fileID: 1541520025}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &688093234
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688093232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.91, y: 2.96, z: 0.5}
+  m_Center: {x: -0.1, y: 0, z: 0}
+--- !u!114 &688093235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688093232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &688093236
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688093232}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.7, y: 2.96}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &693210528
 GameObject:
   m_ObjectHideFlags: 0
@@ -20606,6 +21049,7 @@ Transform:
   - {fileID: 2042059248}
   - {fileID: 1110981856}
   - {fileID: 940118695}
+  - {fileID: 147216285}
   - {fileID: 1996073394}
   - {fileID: 418560209}
   - {fileID: 1277187021}
@@ -20642,10 +21086,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749474199}
   m_LocalRotation: {x: -0, y: -0, z: -0.046855208, w: 0.9989018}
-  m_LocalPosition: {x: -2.101, y: -0.083, z: 0.88}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalPosition: {x: -1.8310132, y: -0.24400002, z: 0.7600001}
+  m_LocalScale: {x: 0.39999995, y: 0.39999995, z: 0.4}
   m_Children: []
-  m_Father: {fileID: 94362078}
+  m_Father: {fileID: 655790288}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.3710003}
 --- !u!114 &749474201
@@ -20972,7 +21416,7 @@ Transform:
   - {fileID: 272753203}
   - {fileID: 1426280271}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763663093
 GameObject:
@@ -22115,7 +22559,7 @@ Transform:
   m_LocalScale: {x: 1.49963, y: 16.83296, z: 13.81895}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &817338070
 BoxCollider:
@@ -22722,10 +23166,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 843378508}
   m_LocalRotation: {x: -0, y: -0, z: 0.10088496, w: 0.9948981}
-  m_LocalPosition: {x: -1.038, y: 0.012, z: -0.274}
-  m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
+  m_LocalPosition: {x: -0.7679944, y: -0.14899999, z: -0.39400017}
+  m_LocalScale: {x: 0.40000004, y: 0.40000004, z: 0.39999998}
   m_Children: []
-  m_Father: {fileID: 94362078}
+  m_Father: {fileID: 655790288}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 11.580001}
 --- !u!114 &843378510
@@ -23248,6 +23692,105 @@ Transform:
   m_PrefabParentObject: {fileID: 4450724989636144, guid: edd3ae1fa5e074846b1974422b655ec1,
     type: 2}
   m_PrefabInternal: {fileID: 1318033226}
+--- !u!1 &877642258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 877642259}
+  - component: {fileID: 877642262}
+  - component: {fileID: 877642261}
+  - component: {fileID: 877642260}
+  m_Layer: 0
+  m_Name: Termite_NPC_A (6)
+  m_TagString: Termite
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &877642259
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 877642258}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.54, y: -0.34999996, z: 0.15}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_Children: []
+  m_Father: {fileID: 1541520025}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &877642260
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 877642258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.91, y: 2.96, z: 0.5}
+  m_Center: {x: -0.1, y: 0, z: 0}
+--- !u!114 &877642261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 877642258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &877642262
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 877642258}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.7, y: 2.96}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &879537322
 GameObject:
   m_ObjectHideFlags: 0
@@ -24013,6 +24556,105 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.82, y: 3.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!1 &906259192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 906259193}
+  - component: {fileID: 906259196}
+  - component: {fileID: 906259195}
+  - component: {fileID: 906259194}
+  m_Layer: 0
+  m_Name: Termite_NPC_A (3)
+  m_TagString: Termite
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &906259193
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 906259192}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.86, y: -0.34999996, z: -0.09}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_Children: []
+  m_Father: {fileID: 1541520025}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &906259194
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 906259192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.91, y: 2.96, z: 0.5}
+  m_Center: {x: -0.1, y: 0, z: 0}
+--- !u!114 &906259195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 906259192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &906259196
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 906259192}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.7, y: 2.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -36045,7 +36687,7 @@ Transform:
   m_LocalScale: {x: 1.4996295, y: 16.83296, z: 13.8189535}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1295701982
 GameObject:
@@ -42179,7 +42821,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
 --- !u!1 &1375986828
 GameObject:
@@ -42910,7 +43552,7 @@ Transform:
   m_LocalScale: {x: 8.231546, y: 6.84159, z: 2.9595406}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 135.733, z: 0}
 --- !u!65 &1403188962
 BoxCollider:
@@ -43431,6 +44073,7 @@ MonoBehaviour:
   charToClear: {fileID: 0}
   vanishPartSys: {fileID: 1368031598}
   audioManager: {fileID: 1227625394}
+  furnaceHot: 0
 --- !u!4 &1420836515
 Transform:
   m_ObjectHideFlags: 0
@@ -43479,6 +44122,8 @@ MonoBehaviour:
   - {fileID: 413018112}
   - {fileID: 247854777}
   - {fileID: 387389132}
+  termiteGroup: {fileID: 1541520024}
+  drowningTermites: {fileID: 0}
 --- !u!1 &1420941843
 GameObject:
   m_ObjectHideFlags: 0
@@ -45854,8 +46499,10 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
   - TermiteDrowning
+  - Wasp
   assignedIndex: 10
   assignedID: 68561
   assignedDialogue: LadyThugCronies
@@ -46414,7 +47061,7 @@ Transform:
   - {fileID: 445467783}
   - {fileID: 1853347219}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1530972749
 GameObject:
@@ -46759,6 +47406,41 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1541520024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1541520025}
+  m_Layer: 0
+  m_Name: TermiteGroup_Alive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1541520025
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541520024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.53, y: 0.56, z: 3.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2098889282}
+  - {fileID: 688093233}
+  - {fileID: 2081513849}
+  - {fileID: 906259193}
+  - {fileID: 205825628}
+  - {fileID: 151751068}
+  - {fileID: 877642259}
+  m_Father: {fileID: 94362078}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1545782714
 GameObject:
   m_ObjectHideFlags: 0
@@ -48878,7 +49560,7 @@ Transform:
   - {fileID: 1929836388}
   - {fileID: 1239193881}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1646286881
 GameObject:
@@ -49142,7 +49824,7 @@ Transform:
   - {fileID: 644391150}
   - {fileID: 2003617881}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 39.708, z: 0}
 --- !u!1 &1688558157
 GameObject:
@@ -50301,8 +50983,10 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
   - TermiteDrowning
+  - Wasp
   assignedIndex: 14
   assignedID: 78820
   assignedDialogue: Silkworm
@@ -53161,7 +53845,7 @@ Transform:
   - {fileID: 745741953}
   - {fileID: 1054956096}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1870407925
 GameObject:
@@ -53502,7 +54186,7 @@ Transform:
   m_LocalScale: {x: 4.13689, y: 16.83296, z: 1.35478}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1876269444
 BoxCollider:
@@ -54345,10 +55029,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1893188795}
   m_LocalRotation: {x: -0, y: -0, z: 0.09343057, w: 0.9956258}
-  m_LocalPosition: {x: -0.087, y: -0.19, z: 0.8800001}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.39999998}
+  m_LocalPosition: {x: 0.1829944, y: -0.35099995, z: 0.7600001}
+  m_LocalScale: {x: 0.39999995, y: 0.39999995, z: 0.39999998}
   m_Children: []
-  m_Father: {fileID: 94362078}
+  m_Father: {fileID: 655790288}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.722}
 --- !u!114 &1893188797
@@ -55111,8 +55795,10 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
   - TermiteDrowning
+  - Wasp
   assignedIndex: 1
   assignedID: 59439
   assignedDialogue: AntBabies
@@ -57483,7 +58169,7 @@ Transform:
   m_LocalScale: {x: 1.4739419, y: 16.83296, z: 17.295189}
   m_Children: []
   m_Father: {fileID: 745741953}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2000630125
 GameObject:
@@ -60345,6 +61031,105 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &2081513848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2081513849}
+  - component: {fileID: 2081513852}
+  - component: {fileID: 2081513851}
+  - component: {fileID: 2081513850}
+  m_Layer: 0
+  m_Name: Termite_NPC_A (2)
+  m_TagString: Termite
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2081513849
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2081513848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.28, y: -0.34999996, z: -0.7}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_Children: []
+  m_Father: {fileID: 1541520025}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2081513850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2081513848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.91, y: 2.96, z: 0.5}
+  m_Center: {x: -0.1, y: 0, z: 0}
+--- !u!114 &2081513851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2081513848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &2081513852
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2081513848}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.7, y: 2.96}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &2086434141
 GameObject:
   m_ObjectHideFlags: 0
@@ -60736,8 +61521,10 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
   - TermiteDrowning
+  - Wasp
   assignedIndex: 9
   assignedID: 3065
   assignedDialogue: HoneyPot
@@ -61090,6 +61877,189 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.82, y: 3.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!1 &2098889281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2098889282}
+  - component: {fileID: 2098889288}
+  - component: {fileID: 2098889287}
+  - component: {fileID: 2098889286}
+  - component: {fileID: 2098889285}
+  - component: {fileID: 2098889284}
+  - component: {fileID: 2098889283}
+  m_Layer: 0
+  m_Name: Termite_NPC_A
+  m_TagString: Termite
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2098889282
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098889281}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.22, z: -2.05}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 1541520025}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2098889283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098889281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711f80f4f864fe4488a8a80cb5ecd569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToSpawn: {fileID: 0}
+  spawnLocation: {x: 0, y: 0, z: 0}
+  audioManager: {fileID: 0}
+  playAudio: 1
+  soundName: Pop
+  spawnAtPlayer: 1
+--- !u!135 &2098889284
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098889281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.58
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &2098889285
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098889281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.91, y: 2.96, z: 0.5}
+  m_Center: {x: -0.1, y: 0, z: 0}
+--- !u!114 &2098889286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098889281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8b99d8a12e39e4b94d2d7162c7c978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diags:
+  - Ant
+  - AntBabies
+  - Bee
+  - Beehive
+  - Boombox
+  - BoomboxAnts
+  - BugBarInspect
+  - Firefly
+  - Furnace
+  - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
+  - NotFinishedYet
+  - PrayingMantis
+  - Silkworm
+  - SlimePuddles
+  - Snail
+  - Spider
+  - Stinkbugs
+  - Tap
+  - Termite
+  - TermiteDrowning
+  - Wasp
+  assignedIndex: 20
+  assignedID: 73100
+  assignedDialogue: Termite
+  interactionCount: 0
+  alias: Termite
+  overrideStartNode: -1
+  defaultNPCSprite: {fileID: 21300000, guid: e070d707536ad354985f8a40e04d76a1, type: 3}
+  defaultPlayerSprite: {fileID: 21300000, guid: ba8d4ab427a725947a158abf74b781e9,
+    type: 3}
+  targetManager: {fileID: 0}
+  preload: 0
+  notuptodate: 0
+  startp: 0
+  loadtag: 
+  langs: []
+  S_playerDiags: []
+  S_actionNodes: []
+--- !u!114 &2098889287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098889281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a1cff38e8b5cd4b9493c697e8183da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &2098889288
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098889281}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 4ce658de31fa274418cf1efa382574c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.7, y: 2.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -61597,11 +62567,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2122788038}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.161, z: -1.001}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.27, y: 0, z: -1.1210004}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 94362078}
+  m_Father: {fileID: 655790288}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2122788040
@@ -61679,9 +62649,12 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
+  - Termite
   - TermiteDrowning
-  assignedIndex: 19
+  - Wasp
+  assignedIndex: 21
   assignedID: 7405
   assignedDialogue: TermiteDrowning
   interactionCount: 0

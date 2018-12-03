@@ -580,6 +580,25 @@ public class UIManager : MonoBehaviour
                         }
                     }
                 }
+                else if (dialogue.overrideStartNode == 4)
+                {
+                    checkName = "Drink";
+                    checkNum = 1;
+                    for (int i = 0; i < inventory.invSlot.Length; i++)
+                    {
+                        if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                        {
+                            dialogue.overrideStartNode = 7;
+                            GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                            inventory.itemNum[i] = 0;
+                            inventory.itemDict.Remove(inventory.itemName[i]);
+                            inventory.itemAmount[i].gameObject.SetActive(false);
+                            inventory.isFull[i] = false;
+                            inventory.itemName[i] = null;
+                            return false;
+                        }
+                    }
+                }
             }
 
             if (dialogue.alias == "TermiteD") // Termite Drowning in puddle
@@ -594,6 +613,30 @@ public class UIManager : MonoBehaviour
                         if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
                         {
                             dialogue.overrideStartNode = 4;
+                            GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                            inventory.itemNum[i] = 0;
+                            inventory.itemDict.Remove(inventory.itemName[i]);
+                            inventory.itemAmount[i].gameObject.SetActive(false);
+                            inventory.isFull[i] = false;
+                            inventory.itemName[i] = null;
+                            return false;
+                        }
+                    }
+                }
+            }
+
+            if (dialogue.alias == "Wasp")
+            {
+                audioSource.pitch = 0.95f;
+                checkName = "HoneyPot";
+                checkNum = 1;
+                if (dialogue.overrideStartNode == 4 || dialogue.overrideStartNode == 5)
+                {
+                    for (int i = 0; i < inventory.invSlot.Length; i++)
+                    {
+                        if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                        {
+                            dialogue.overrideStartNode = 8;
                             GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
                             inventory.itemNum[i] = 0;
                             inventory.itemDict.Remove(inventory.itemName[i]);
@@ -627,6 +670,24 @@ public class UIManager : MonoBehaviour
                             return false;
                         }
                     }
+                }
+            }
+
+            if (dialogue.alias == "Lady Thug")
+            {
+                audioSource.pitch = 1.25f;
+                if (gameManager.furnaceHot && dialogue.overrideStartNode == 1)
+                {
+                    dialogue.overrideStartNode = 3;
+                }
+            }
+
+            if (dialogue.alias == "Lady Thugs")
+            {
+                audioSource.pitch = 1.23f;
+                if (gameManager.furnaceHot && dialogue.overrideStartNode == 2)
+                {
+                    dialogue.overrideStartNode = 3;
                 }
             }
 

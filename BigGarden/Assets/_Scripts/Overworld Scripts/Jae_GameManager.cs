@@ -16,6 +16,7 @@ public class Jae_GameManager : MonoBehaviour {
     public GameObject charToClear;
     public ParticleSystem vanishPartSys;
     public Jae_AudioManager audioManager;
+    public bool furnaceHot;
 
     private void Awake()
     {
@@ -65,6 +66,11 @@ public class Jae_GameManager : MonoBehaviour {
                 GoToPauseButton();
             }
         }
+    }
+
+    public void FurnaceHot()
+    {
+        furnaceHot = true;
     }
 
     public void GoToPauseButton()
@@ -153,7 +159,6 @@ public class Jae_GameManager : MonoBehaviour {
         audioManager = Jae_AudioManager.instance;
         audioManager.PlaySound("Poof");
         charToClear.SetActive(false);
-
     }
 
     public void RemoveTermites()
