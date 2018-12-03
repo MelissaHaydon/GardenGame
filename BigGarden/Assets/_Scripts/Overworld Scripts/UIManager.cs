@@ -652,7 +652,7 @@ public class UIManager : MonoBehaviour
             if (dialogue.alias == "Firefly")
             {
                 audioSource.pitch = 1.05f;
-                checkName = "DisguiseKit";
+                checkName = "Disguise";
                 checkNum = 1;
                 if (dialogue.overrideStartNode == 1)
                 {

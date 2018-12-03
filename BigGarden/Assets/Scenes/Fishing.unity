@@ -807,7 +807,7 @@ Prefab:
     - target: {fileID: 114626394194248800, guid: 26f70d57cf79eb245ab2703a1bf9898e,
         type: 2}
       propertyPath: m_Color.a
-      value: 0.6
+      value: 0.29803923
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26f70d57cf79eb245ab2703a1bf9898e, type: 2}
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.29803923}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

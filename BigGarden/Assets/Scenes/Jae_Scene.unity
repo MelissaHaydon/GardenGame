@@ -42879,17 +42879,22 @@ MonoBehaviour:
   - BoomboxAnts
   - BugBarInspect
   - Firefly
+  - Furnace
   - HoneyPot
   - LadyThugCronies
   - LadyThugLeader
   - NotFinishedYet
+  - PrayingMantis
   - Silkworm
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
+  - Termite
   - TermiteDrowning
-  assignedIndex: 16
+  - Wasp
+  assignedIndex: 19
   assignedID: 881
   assignedDialogue: Tap
   interactionCount: 0
@@ -59207,8 +59212,11 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
+  - Termite
   - TermiteDrowning
+  - Wasp
   assignedIndex: 7
   assignedID: 49013
   assignedDialogue: Firefly
@@ -61928,7 +61936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711f80f4f864fe4488a8a80cb5ecd569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToSpawn: {fileID: 0}
+  itemToSpawn: {fileID: 1675240963124000, guid: f147fdaaad2f50c4193af2000285570a,
+    type: 2}
   spawnLocation: {x: 0, y: 0, z: 0}
   audioManager: {fileID: 0}
   playAudio: 1
