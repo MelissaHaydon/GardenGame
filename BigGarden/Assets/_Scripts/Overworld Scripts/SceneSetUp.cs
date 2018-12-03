@@ -8,6 +8,7 @@ public class SceneSetUp : MonoBehaviour {
     private Animator furnaceAnim;
     public GameObject[] charsToDespawn;
     public GameObject[] termiteGroup;
+    public GameObject puddleNPC;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,7 @@ public class SceneSetUp : MonoBehaviour {
         {
             termiteGroup[ii].gameObject.SetActive(false);
         }
+        puddleNPC.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -40,5 +42,6 @@ public class SceneSetUp : MonoBehaviour {
         }
         antField.InstantiateItem();
         Destroy(GameObject.Find("Pickaxe"));
+        puddleNPC.SetActive(true);
     }
 }

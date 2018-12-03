@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour {
     public GameObject bee;
     public Text pollenCount;
     public Text message;
-    public Text timeUp;
+    public GameObject timeUp;
     public Animator heldAnimator;
     int pollenTotal = 0;
     int pollenHeld;
@@ -83,6 +83,7 @@ public class GameController : MonoBehaviour {
             bee.GetComponent<PlayerController>().speed = 0;
             audioManager = Jae_AudioManager.instance;
             audioManager.PlaySound("Whistle");
+            timeUp = GameObject.Find("time up");
             timeUp.gameObject.SetActive(true);
             gameManager.clearedGame = true;
             created = false;

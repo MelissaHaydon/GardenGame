@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 84643641eb7e15d4d8f46ca64863d191,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -1044,7 +1045,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   termiteL: {fileID: 1971835690724114, guid: 47380fe6f293f944391739d75c1e4d4a, type: 2}
   termiteR: {fileID: 1255786904722500, guid: 76fe4bd3c8f6e70489298d29f912f660, type: 2}
-  obstacle: {fileID: 1595238935118446, guid: 451a55338120cb74989e14cfa575f127, type: 2}
+  obstacle:
+  - {fileID: 1595238935118446, guid: 451a55338120cb74989e14cfa575f127, type: 2}
+  - {fileID: 1776085555274738, guid: 49fafd3d6fa880e47899e5004426774b, type: 2}
+  - {fileID: 1619008218830628, guid: 17804038e2d731f4b8f23b952e86491f, type: 2}
+  - {fileID: 1198619155387204, guid: 97206390872345c4684d553cf249bb8d, type: 2}
+  - {fileID: 1609573077358072, guid: ae90d9ba80b60ef4eadac4e1a3798067, type: 2}
+  obstacleNo: 0
   termChoose: 0
   termScore: 0
   score: {fileID: 692286839}

@@ -88,6 +88,12 @@ public class Jae_SceneManager : MonoBehaviour {
         StartCoroutine(LoadScene());
     }
 
+    public void BeatTheGame()
+    {
+        sceneName = "The End";
+        StartCoroutine(LoadScene());
+    }
+
     public void ActivateSceneTransition()
     {
         StartCoroutine(LoadScene());

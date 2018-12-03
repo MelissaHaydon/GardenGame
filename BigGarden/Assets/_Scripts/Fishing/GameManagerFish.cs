@@ -7,7 +7,8 @@ public class GameManagerFish : MonoBehaviour {
 
     public GameObject termiteL;
     public GameObject termiteR;
-    public GameObject obstacle;
+    public GameObject[] obstacle;
+    public int obstacleNo;
     public int termChoose;
     private float termheight;
     public int termScore;
@@ -74,8 +75,9 @@ public class GameManagerFish : MonoBehaviour {
         }
         if (termChoose == 2)
         {
+            obstacleNo = Random.Range(0, 5);
             termheight = Random.Range(-4f, 4f);
-            Instantiate(obstacle, new Vector3(10, termheight, 0), Quaternion.identity);
+            Instantiate(obstacle[obstacleNo], new Vector3(10, termheight, 0), Quaternion.identity);
         }
     }
 }
