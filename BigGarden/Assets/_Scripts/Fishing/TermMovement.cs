@@ -52,7 +52,12 @@ public class TermMovement : MonoBehaviour {
         {
             if (!gm.gameOver)
             {
-                gm.termScore -= 2;
+                if (!catcher.damageBoost)
+                {
+                    gm.termScore -= 2;
+                    catcher.ParticlePlay();
+                    catcher.NetHit();
+                }
             }
         }
     }

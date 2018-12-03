@@ -5841,8 +5841,11 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
+  - Termite
   - TermiteDrowning
+  - Wasp
   assignedIndex: 2
   assignedID: 40325
   assignedDialogue: Bee

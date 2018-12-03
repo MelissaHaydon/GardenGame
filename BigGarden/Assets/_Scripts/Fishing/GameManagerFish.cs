@@ -15,7 +15,7 @@ public class GameManagerFish : MonoBehaviour {
     public float timerF;
     public int timerInt;
     public Text timer;
-    public Text timeUpText;
+    public GameObject timeUpText;
 
     public int termMissed;
     public Text missedTerms;

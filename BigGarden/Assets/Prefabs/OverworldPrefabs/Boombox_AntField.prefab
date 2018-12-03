@@ -83,15 +83,27 @@ MonoBehaviour:
   - Ant
   - AntBabies
   - Bee
+  - Beehive
   - Boombox
   - BoomboxAnts
+  - BugBarInspect
+  - Firefly
+  - Furnace
+  - HoneyPot
+  - LadyThugCronies
+  - LadyThugLeader
   - NotFinishedYet
-  - RandomCube
+  - PrayingMantis
+  - Silkworm
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
-  assignedIndex: 4
+  - Termite
+  - TermiteDrowning
+  - Wasp
+  assignedIndex: 5
   assignedID: 98544
   assignedDialogue: BoomboxAnts
   interactionCount: 0
@@ -178,5 +190,5 @@ SpriteRenderer:
   m_Size: {x: 4.07, y: 2.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0

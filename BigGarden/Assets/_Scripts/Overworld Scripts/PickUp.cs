@@ -54,6 +54,7 @@ public class PickUp : MonoBehaviour {
 
     public void PickUpItem()
     {
+        audioManager.PlaySound("Pop");
         for (int i = 0; i < inventory.invSlot.Length; i++)
         {
             if (inventory.isFull[i] == false && inventory.itemDict.ContainsKey(itemName) == false)

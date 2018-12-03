@@ -7,8 +7,10 @@ public class TermCatch : MonoBehaviour {
     public float speed;
     public bool canMove;
     private Rigidbody _rb;
+    public ParticleSystem termParts;
 
     public bool catching;
+    public bool damageBoost;
 
 	// Use this for initialization
 	void Start () {
@@ -22,19 +24,19 @@ public class TermCatch : MonoBehaviour {
         {
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
-                transform.position += new Vector3(0, speed, 0);
+                transform.position += new Vector3(0, speed * Time.deltaTime, 0);
             }
             if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             {
-                transform.position += new Vector3(0, -speed, 0);
+                transform.position += new Vector3(0, -speed * Time.deltaTime, 0);
             }
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
-                transform.position += new Vector3(-speed, 0, 0);
+                transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
             }
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
-                transform.position += new Vector3(speed, 0, 0);
+                transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
             }
         }
         Vector3 playerpos = transform.position;
@@ -57,11 +59,31 @@ public class TermCatch : MonoBehaviour {
         Invoke("ResetMove", 0.5f);
         _rb.velocity = Vector3.zero;
         _rb.angularVelocity = Vector3.zero;
+        Invoke("DamageBoostOff", 2);
     }
 
     void ResetMove()
     {
         canMove = true;
         catching = false;
+    }
+
+    public void ParticlePlay()
+    {
+        termParts.Play();
+    }
+
+    public void NetHit()
+    {
+        damageBoost = true;
+        Animator netAnim = GameObject.Find("FishingNet_Null").GetComponent<Animator>();
+        netAnim.SetTrigger("Hit");
+        canMove = false;
+        Movement();
+    }
+
+    public void DamageBoostOff()
+    {
+        damageBoost = false;
     }
 }
