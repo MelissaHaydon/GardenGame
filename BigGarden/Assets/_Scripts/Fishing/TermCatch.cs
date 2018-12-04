@@ -8,6 +8,7 @@ public class TermCatch : MonoBehaviour {
     public bool canMove;
     private Rigidbody _rb;
     public ParticleSystem termParts;
+    public Jae_AudioManager audioManager;
 
     public bool catching;
     public bool damageBoost;
@@ -16,6 +17,7 @@ public class TermCatch : MonoBehaviour {
 	void Start () {
         canMove = true;
         _rb = this.GetComponent<Rigidbody>();
+        audioManager = FindObjectOfType<Jae_AudioManager>();
 	}
 	
 	// Update is called once per frame
@@ -51,6 +53,7 @@ public class TermCatch : MonoBehaviour {
             netAnim.SetTrigger("Swing");
             catching = true;
             Movement();
+            audioManager.PlaySound("Swing");
         }
     }
 
@@ -80,6 +83,7 @@ public class TermCatch : MonoBehaviour {
         netAnim.SetTrigger("Hit");
         canMove = false;
         Movement();
+        audioManager.PlaySound("Punch");
     }
 
     public void DamageBoostOff()

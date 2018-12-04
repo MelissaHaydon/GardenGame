@@ -10,12 +10,14 @@ public class TermMovement : MonoBehaviour {
     public float speed;
     public GameManagerFish gm;
     public TermCatch catcher;
+    public Jae_AudioManager audioManager;
 
 	// Use this for initialization
 	void Start () {
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerFish>();
         catcher = GameObject.FindGameObjectWithTag("Player").GetComponent<TermCatch>();
         speed = Random.Range(0.03f, 0.1f);
+        audioManager = FindObjectOfType<Jae_AudioManager>();
     }
 
     private void Update()
@@ -42,6 +44,7 @@ public class TermMovement : MonoBehaviour {
                 catcher.canMove = false;
                 catcher.Movement();
                 Destroy(gameObject);
+                audioManager.PlaySound("Plop");
             }
         }
     }

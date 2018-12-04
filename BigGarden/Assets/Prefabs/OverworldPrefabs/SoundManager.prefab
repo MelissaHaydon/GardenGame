@@ -192,7 +192,25 @@ MonoBehaviour:
     randomPitch: 0
   - name: Poof
     clip: {fileID: 8300000, guid: c6e1f93f7e4e193498a385a0c2ec8320, type: 3}
-    volume: 0.5
+    volume: 1
     pitch: 1
     randomVolume: 0
     randomPitch: 0
+  - name: Plop
+    clip: {fileID: 8300000, guid: a20c599215767ba4ea38b437dea09828, type: 3}
+    volume: 0.5
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.1
+  - name: Swing
+    clip: {fileID: 8300000, guid: cbbd1fabd7e3f374cbf7f38cda0f745e, type: 3}
+    volume: 0.5
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.2
+  - name: BubblePop
+    clip: {fileID: 8300000, guid: dfcc5372a56b73343b9685acad41992d, type: 3}
+    volume: 0.5
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.1
