@@ -54,6 +54,7 @@ public class UIManager : MonoBehaviour
     public bool antsCounted = false;
     public bool beeGone = false;
     public bool allBugsGone;
+    public int furnaceStartNode = 0;
 
     #endregion
 
@@ -682,15 +683,36 @@ public class UIManager : MonoBehaviour
                 if (gameManager.furnaceHot && dialogue.overrideStartNode == 1)
                 {
                     dialogue.overrideStartNode = 3;
+                    allBugsGone = true;
                 }
             }
 
             if (dialogue.alias == "Lady Thugs")
             {
                 audioSource.pitch = 1.23f;
-                if (gameManager.furnaceHot && dialogue.overrideStartNode == 2)
+                if (gameManager.furnaceHot)
                 {
                     dialogue.overrideStartNode = 3;
+                }
+            }
+
+            if (dialogue.alias == "Bartenders")
+            {
+                checkName = "GlassFull";
+                checkNum = 1;
+                for (int i = 0; i < inventory.invSlot.Length; i++)
+                {
+                    if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                    {
+                        dialogue.overrideStartNode = 8;
+                        GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                        inventory.itemNum[i] = 1;
+                        inventory.itemDict.Remove(inventory.itemName[i]);
+                        inventory.itemAmount[i].gameObject.SetActive(false);
+                        inventory.isFull[i] = false;
+                        inventory.itemName[i] = null;
+                        return false;
+                    }
                 }
             }
 
@@ -702,7 +724,7 @@ public class UIManager : MonoBehaviour
                 {
                     if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
                     {
-                        dialogue.overrideStartNode = 0;
+                        dialogue.overrideStartNode = 1;
                         GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
                         inventory.itemNum[i] = 1;
                         inventory.itemDict.Remove(inventory.itemName[i]);
@@ -732,6 +754,10 @@ public class UIManager : MonoBehaviour
                         return false;
                     }
                 }
+                if (furnaceStartNode == 7)
+                {
+                    dialogue.overrideStartNode = 7;
+                }
                 if (dialogue.overrideStartNode == 7)
                 {
                     checkName = "Silk";
@@ -742,6 +768,7 @@ public class UIManager : MonoBehaviour
                         {
                             dialogue.overrideStartNode = 6;
                             GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                            gameManager.furnaceHot = true;
                             inventory.itemNum[i] = 0;
                             inventory.itemDict.Remove(inventory.itemName[i]);
                             inventory.itemAmount[i].gameObject.SetActive(false);
@@ -753,7 +780,7 @@ public class UIManager : MonoBehaviour
                 }
             }
 
-            if (dialogue.alias == "PrayingMantis")
+            if (dialogue.alias == "Praying Mantis")
             {
                 if (allBugsGone)
                 {
@@ -883,9 +910,9 @@ public class UIManager : MonoBehaviour
         antStartNode = 7;
     }
 
-    public void FinalBugGone()
+    public void SetFurnaceNode()
     {
-        allBugsGone = true;
+        furnaceStartNode = 7;
     }
 
     #endregion
