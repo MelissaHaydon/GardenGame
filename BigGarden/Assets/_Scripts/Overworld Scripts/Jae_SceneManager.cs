@@ -79,6 +79,7 @@ public class Jae_SceneManager : MonoBehaviour {
     public void GoToMainMenu()
     {
         sceneName = "MainMenu";
+        Destroy(GameObject.FindObjectOfType<GameManagerDance>());
         StartCoroutine(LoadScene());
     }
 
@@ -91,6 +92,7 @@ public class Jae_SceneManager : MonoBehaviour {
     public void BeatTheGame()
     {
         sceneName = "The End";
+        Destroy(GameObject.FindObjectOfType<GameManagerDance>());
         StartCoroutine(LoadScene());
     }
 

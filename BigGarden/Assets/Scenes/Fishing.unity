@@ -327,7 +327,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4811701373931384, guid: 3f0bb119562767b4b9ec742a63204059, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114264376559286554, guid: 3f0bb119562767b4b9ec742a63204059,
         type: 2}
@@ -342,6 +342,65 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224831845497569794, guid: d1e25a9be23f2da4983b3e94eaf66917,
     type: 2}
   m_PrefabInternal: {fileID: 987511979}
+--- !u!1 &192651862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 192651864}
+  - component: {fileID: 192651863}
+  m_Layer: 0
+  m_Name: DanceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &192651863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192651862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ad555f0ec97974e9453156fcff9048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theMusic: {fileID: 0}
+  audioManager: {fileID: 0}
+  startPlaying: 0
+  theBS: {fileID: 0}
+  cameraShake: {fileID: 0}
+  screenFlash: {fileID: 0}
+  timeUpText: {fileID: 0}
+  currentScore: 0
+  scorePerNote: 100
+  currentMultiplier: 0
+  multiplierTracker: 0
+  multiplierThresholds: 
+  scoreText: {fileID: 0}
+  multiText: {fileID: 0}
+  danceScript: {fileID: 0}
+  danceScript2: {fileID: 0}
+  sceneManager: {fileID: 0}
+  clearedGame: 1
+  finishedFishing: 0
+--- !u!4 &192651864
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192651862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &445950571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,6 +1265,7 @@ MonoBehaviour:
   timerInt: 0
   timer: {fileID: 30475890}
   timeUpText: {fileID: 1948548999}
+  audioManager: {fileID: 0}
   termMissed: 0
   missedTerms: {fileID: 450095112}
   sceneManager: {fileID: 0}
@@ -6711,47 +6771,3 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224971054097377126, guid: 7450d4eb528b6ee4a875b60ea907354a,
     type: 2}
   m_PrefabInternal: {fileID: 570544101}
---- !u!1 &1969802253
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1969802255}
-  - component: {fileID: 1969802254}
-  m_Layer: 0
-  m_Name: MazeManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1969802254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1969802253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a69aa6a4121ee1429846b7e049dc8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scareLength: 0
-  goodGift: 0
-  clearedGame: 1
-  finishedFishing: 0
---- !u!4 &1969802255
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1969802253}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1075.2583, y: 1.4902709, z: 2.758391}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
