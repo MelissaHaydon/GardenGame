@@ -17,8 +17,8 @@ public class TermCatch : MonoBehaviour {
 	void Start () {
         canMove = true;
         _rb = this.GetComponent<Rigidbody>();
-        audioManager = FindObjectOfType<Jae_AudioManager>();
-	}
+        audioManager = Jae_AudioManager.instance;
+    }
 	
 	// Update is called once per frame
 	void Update () {

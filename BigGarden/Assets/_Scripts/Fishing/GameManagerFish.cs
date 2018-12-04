@@ -17,6 +17,7 @@ public class GameManagerFish : MonoBehaviour {
     public int timerInt;
     public Text timer;
     public GameObject timeUpText;
+    public Jae_AudioManager audioManager;
 
     public int termMissed;
     public Text missedTerms;
@@ -31,7 +32,8 @@ public class GameManagerFish : MonoBehaviour {
         InvokeRepeating("SpawnTermite", 5, 1f);
         sceneManager = FindObjectOfType<Jae_SceneManager>();
         finishedFishing = FindObjectOfType<GameManagerDance>();
-	}
+        audioManager = Jae_AudioManager.instance;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -49,6 +51,7 @@ public class GameManagerFish : MonoBehaviour {
             finishedFishing.finishedFishing = true;
             sceneManager.FinishFishingGame();
             timeUpText.gameObject.SetActive(true);
+            audioManager.PlaySound("Whistle");
         }
 
         score.text = "Score: " + termScore;

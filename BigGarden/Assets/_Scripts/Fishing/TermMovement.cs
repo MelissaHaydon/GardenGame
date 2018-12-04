@@ -17,7 +17,7 @@ public class TermMovement : MonoBehaviour {
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerFish>();
         catcher = GameObject.FindGameObjectWithTag("Player").GetComponent<TermCatch>();
         speed = Random.Range(0.03f, 0.1f);
-        audioManager = FindObjectOfType<Jae_AudioManager>();
+        audioManager = Jae_AudioManager.instance;
     }
 
     private void Update()

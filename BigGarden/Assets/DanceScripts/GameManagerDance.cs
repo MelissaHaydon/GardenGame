@@ -18,6 +18,8 @@ public class GameManagerDance : MonoBehaviour {
 
     public CameraShake cameraShake;
 
+    public GameObject timeUpText;
+
     public int currentScore = 0;
     public int scorePerNote = 100;
 
@@ -58,7 +60,8 @@ public class GameManagerDance : MonoBehaviour {
 
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
-	}
+        audioManager = Jae_AudioManager.instance;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -109,6 +112,8 @@ public class GameManagerDance : MonoBehaviour {
     public void EndGame()
     {
         clearedGame = true;
+        timeUpText.SetActive(true);
+        audioManager.PlaySound("Whistle");
         sceneManager.GoToZoneOne();
     }
 }

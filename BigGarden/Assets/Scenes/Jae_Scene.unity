@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 23194778}
   - component: {fileID: 23194780}
   - component: {fileID: 23194779}
+  - component: {fileID: 23194781}
   m_Layer: 0
   m_Name: Termite (1)
   m_TagString: Untagged
@@ -529,7 +530,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86573783e617c294e96a3e36706c64c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -539,6 +540,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!95 &23194781
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23194777}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 907a39f536315fb4580acd526795effa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &28794812
 GameObject:
   m_ObjectHideFlags: 0
@@ -12138,8 +12157,11 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
+  - Termite
   - TermiteDrowning
+  - Wasp
   assignedIndex: 17
   assignedID: 28226
   assignedDialogue: Spider
@@ -19896,6 +19918,7 @@ GameObject:
   - component: {fileID: 644391153}
   - component: {fileID: 644391152}
   - component: {fileID: 644391156}
+  - component: {fileID: 644391157}
   m_Layer: 0
   m_Name: StinkbugJacob_NPC
   m_TagString: Untagged
@@ -19951,7 +19974,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 71a9b9ef89b1c7d4694bdee9a894ac5d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0a14a01f054feb54ea4937afa335a3c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20066,6 +20089,24 @@ MonoBehaviour:
   playAudio: 1
   soundName: Pop
   spawnAtPlayer: 1
+--- !u!95 &644391157
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644391149}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4cc443d8ef927144a900702d839926e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &644531428
 GameObject:
   m_ObjectHideFlags: 0
@@ -21950,6 +21991,7 @@ GameObject:
   - component: {fileID: 749474200}
   - component: {fileID: 749474202}
   - component: {fileID: 749474201}
+  - component: {fileID: 749474203}
   m_Layer: 0
   m_Name: Termite
   m_TagString: Untagged
@@ -22016,7 +22058,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86573783e617c294e96a3e36706c64c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -22026,6 +22068,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!95 &749474203
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749474199}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 907a39f536315fb4580acd526795effa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &752950851
 GameObject:
   m_ObjectHideFlags: 0
@@ -24146,6 +24206,7 @@ GameObject:
   - component: {fileID: 843378509}
   - component: {fileID: 843378511}
   - component: {fileID: 843378510}
+  - component: {fileID: 843378512}
   m_Layer: 0
   m_Name: Termite (2)
   m_TagString: Untagged
@@ -24212,7 +24273,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86573783e617c294e96a3e36706c64c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -24222,6 +24283,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!95 &843378512
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 843378508}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 907a39f536315fb4580acd526795effa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &851665224
 GameObject:
   m_ObjectHideFlags: 0
@@ -39774,6 +39853,65 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackToGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 114754566290899346, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224976175549176578, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224976175549176578, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409081563878536, guid: ca07dd60b8a174b4ab478ff8c6f9689b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224852984717068756, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224852984717068756, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224852984717068756, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114754566290899346, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224674654983928344, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.15577917
+      objectReference: {fileID: 0}
+    - target: {fileID: 224674654983928344, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224674654983928344, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224674654983928344, guid: ca07dd60b8a174b4ab478ff8c6f9689b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.8281445
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca07dd60b8a174b4ab478ff8c6f9689b, type: 2}
@@ -57032,6 +57170,7 @@ GameObject:
   - component: {fileID: 1893188796}
   - component: {fileID: 1893188798}
   - component: {fileID: 1893188797}
+  - component: {fileID: 1893188799}
   m_Layer: 0
   m_Name: Termite (3)
   m_TagString: Untagged
@@ -57098,7 +57237,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86573783e617c294e96a3e36706c64c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -57108,6 +57247,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!95 &1893188799
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1893188795}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 907a39f536315fb4580acd526795effa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1900992118
 GameObject:
   m_ObjectHideFlags: 0
@@ -60497,6 +60654,7 @@ GameObject:
   - component: {fileID: 2003617882}
   - component: {fileID: 2003617884}
   - component: {fileID: 2003617883}
+  - component: {fileID: 2003617885}
   m_Layer: 0
   m_Name: StinkbugMatt_NPC
   m_TagString: Untagged
@@ -60585,6 +60743,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.6800005, y: 4.85, z: 2}
   m_Center: {x: 0.000061035156, y: 0, z: 0.000061035156}
+--- !u!95 &2003617885
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2003617880}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddcfa797f5d0adb46a4c1d6c231d45ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2004675320
 GameObject:
   m_ObjectHideFlags: 0
@@ -61173,6 +61349,8 @@ GameObject:
   - component: {fileID: 2024638955}
   - component: {fileID: 2024638954}
   - component: {fileID: 2024638959}
+  - component: {fileID: 2024638961}
+  - component: {fileID: 2024638960}
   m_Layer: 0
   m_Name: Firefly_NPC
   m_TagString: Untagged
@@ -61315,7 +61493,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fdac51caea4b8474abd8607b37229205, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bcad35ed31b1a6c46935819e9f183fdb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -61343,6 +61521,37 @@ MonoBehaviour:
   playAudio: 1
   soundName: Pop
   spawnAtPlayer: 0
+--- !u!114 &2024638960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024638952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d00f3c4c3405654a839123d27d7ecc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  playerDirection: 0
+--- !u!95 &2024638961
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024638952}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aa46485b727be584eafedd5abccd6d98, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2025075465
 GameObject:
   m_ObjectHideFlags: 0
@@ -64595,6 +64804,7 @@ GameObject:
   - component: {fileID: 2122788042}
   - component: {fileID: 2122788041}
   - component: {fileID: 2122788043}
+  - component: {fileID: 2122788044}
   m_Layer: 0
   m_Name: Termite_NPC
   m_TagString: Untagged
@@ -64650,7 +64860,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3c4d3a64d399e744b84871f4a7a702b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86573783e617c294e96a3e36706c64c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -64735,6 +64945,24 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.67
   m_Center: {x: 0, y: 0, z: -0.62}
+--- !u!95 &2122788044
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2122788038}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 907a39f536315fb4580acd526795effa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2127828303
 GameObject:
   m_ObjectHideFlags: 0
