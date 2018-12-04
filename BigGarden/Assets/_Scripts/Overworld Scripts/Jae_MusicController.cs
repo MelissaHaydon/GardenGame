@@ -46,7 +46,7 @@ public class Jae_MusicController : MonoBehaviour {
 
     public void SwitchTrack(int newTrack)
     {
-        if (!musicTracks[currentTrack].isPlaying)
+        if (newTrack != currentTrack)
         {
             musicTracks[currentTrack].Stop();
             currentTrack = newTrack;
