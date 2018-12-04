@@ -84,6 +84,7 @@ public class UIManager : MonoBehaviour
         if (!VD.isActive)
         {
             Begin(dialogue);
+            player.canPlay = false;
         }
         else
         {
@@ -289,6 +290,7 @@ public class UIManager : MonoBehaviour
         audioSource.Stop();
         VD.SaveState("VIDEDEMOScene1", true); //Saves VIDE stuff related to EVs and override start nodes
         //QuestChartDemo.SaveProgress(); //saves OUR custom game data
+        player.canPlay = true;
     }
 
     void OnDisable()

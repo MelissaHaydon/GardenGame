@@ -41,6 +41,8 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
 
     public Jae_CameraTracker playerCamera;
 
+    public bool canPlay;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag != "Obstacle")
@@ -145,74 +147,76 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
         //Only allow player to move and turn if there are no dialogs loaded
         if (!VD.isActive)
         {
-            if (Input.GetKey(upKey))
+            if (canPlay)
             {
-                z = Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime;
-                transform.Translate(0, 0, z);
-                moving = true;
-            }
-            if (Input.GetKey(downKey))
-            {
-                z = Input.GetAxisRaw("Vertical") * -moveSpeed * Time.deltaTime;
-                transform.Translate(0, 0, -z);
-                moving = true;
-            }
-            if (Input.GetKey(leftKey))
-            {
-                x = Input.GetAxisRaw("Horizontal") * -moveSpeed * Time.deltaTime;
-                transform.Translate(-x, 0, 0);
-                moving = true;
-            }
-            if (Input.GetKey(rightKey))
-            {
-                x = Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime;
-                transform.Translate(x, 0, 0);
-                moving = true;
-            }
-
-            if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
-            {
-                lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), lastMove.y);
-            }
-
-            if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
-            {
-                lastMove = new Vector2(lastMove.x, Input.GetAxisRaw("Vertical"));
-            }
-
-            if (!Input.GetKey(upKey) && !Input.GetKey(downKey) && !Input.GetKey(leftKey) && !Input.GetKey(rightKey))
-            {
-                moving = false;
-            }
-
-            if (Input.GetKey(runKey) && moving)
-            {
-                moveSpeed = 9;
-                anim.speed = 2;
-                playerCamera.defaultDistance.z = -9;
-                dustParts.gameObject.SetActive(true);
-                if (lastMove.x == 1 && Input.GetKey(rightKey))
+                if (Input.GetKey(upKey))
                 {
-                    playerCamera.defaultDistance.x = 2;
+                    z = Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime;
+                    transform.Translate(0, 0, z);
+                    moving = true;
                 }
-                else if (lastMove.x == -1 && Input.GetKey(leftKey))
+                if (Input.GetKey(downKey))
                 {
-                    playerCamera.defaultDistance.x = -2;
+                    z = Input.GetAxisRaw("Vertical") * -moveSpeed * Time.deltaTime;
+                    transform.Translate(0, 0, -z);
+                    moving = true;
+                }
+                if (Input.GetKey(leftKey))
+                {
+                    x = Input.GetAxisRaw("Horizontal") * -moveSpeed * Time.deltaTime;
+                    transform.Translate(-x, 0, 0);
+                    moving = true;
+                }
+                if (Input.GetKey(rightKey))
+                {
+                    x = Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime;
+                    transform.Translate(x, 0, 0);
+                    moving = true;
+                }
+
+                if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+                {
+                    lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), lastMove.y);
+                }
+
+                if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
+                {
+                    lastMove = new Vector2(lastMove.x, Input.GetAxisRaw("Vertical"));
+                }
+
+                if (!Input.GetKey(upKey) && !Input.GetKey(downKey) && !Input.GetKey(leftKey) && !Input.GetKey(rightKey))
+                {
+                    moving = false;
+                }
+
+                if (Input.GetKey(runKey) && moving)
+                {
+                    moveSpeed = 9;
+                    anim.speed = 2;
+                    playerCamera.defaultDistance.z = -9;
+                    dustParts.gameObject.SetActive(true);
+                    if (lastMove.x == 1 && Input.GetKey(rightKey))
+                    {
+                        playerCamera.defaultDistance.x = 2;
+                    }
+                    else if (lastMove.x == -1 && Input.GetKey(leftKey))
+                    {
+                        playerCamera.defaultDistance.x = -2;
+                    }
+                    else
+                    {
+                        playerCamera.defaultDistance.x = 0;
+                    }
                 }
                 else
                 {
+                    moveSpeed = 5;
+                    anim.speed = 1;
+                    dustParts.gameObject.SetActive(false);
+                    playerCamera.defaultDistance.z = -8;
                     playerCamera.defaultDistance.x = 0;
                 }
             }
-            else
-            {
-                moveSpeed = 5;
-                anim.speed = 1;
-                dustParts.gameObject.SetActive(false);
-                playerCamera.defaultDistance.z = -8;
-                playerCamera.defaultDistance.x = 0;
-            }
-
         }
 
         //Interact with NPCs when pressing E
@@ -258,6 +262,7 @@ public class Jae_VIDEPlayerScript : MonoBehaviour
     {
         inTrigger = null;
         attentionBubble.SetActive(false);
+        canPlay = true;
     }
 
     //Casts a ray to see if we hit an NPC and, if so, we interact

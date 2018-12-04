@@ -77,7 +77,7 @@ public class Jae_GameManager : MonoBehaviour {
     public void GoToPauseButton()
     {
         pauseMenu.SetActive(true);
-        //player.canMove = false;
+        player.canPlay = false;
     }
 
     public void ToControls()
@@ -90,7 +90,7 @@ public class Jae_GameManager : MonoBehaviour {
     {
         pauseMenu.SetActive(false);
         options.SetActive(false);
-        //player.canMove = true;
+        player.canPlay = true;
     }
 
     public void FurnaceFireUpgrade()
