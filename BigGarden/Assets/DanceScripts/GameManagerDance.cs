@@ -17,6 +17,7 @@ public class GameManagerDance : MonoBehaviour {
     public BeatScroller theBS;
 
     public CameraShake cameraShake;
+    public GameObject screenFlash;
 
     public GameObject timeUpText;
 
@@ -97,6 +98,7 @@ public class GameManagerDance : MonoBehaviour {
         currentScore += scorePerNote * currentMultiplier;
         scoreText.text = "Score: " + currentScore;
         cameraShake.shakeDuration = 0.2f;
+        screenFlash.GetComponent<Animator>().SetTrigger("Flash");
     }
 
     public void NoteMissed()
