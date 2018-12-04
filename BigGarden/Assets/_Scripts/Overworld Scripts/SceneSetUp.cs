@@ -9,6 +9,8 @@ public class SceneSetUp : MonoBehaviour {
     public GameObject[] charsToDespawn;
     public GameObject[] termiteGroup;
     public GameObject puddleNPC;
+    public GameObject snailNPC;
+    public UIManager uiMan;
 
 	// Use this for initialization
 	void Start () {
@@ -43,5 +45,9 @@ public class SceneSetUp : MonoBehaviour {
         antField.InstantiateItem();
         Destroy(GameObject.Find("Pickaxe"));
         puddleNPC.SetActive(true);
+        if (uiMan.snailGone)
+        {
+            snailNPC.SetActive(false);
+        }
     }
 }

@@ -53,6 +53,7 @@ public class UIManager : MonoBehaviour
     public bool spiderGone = false;
     public bool antsCounted = false;
     public bool beeGone = false;
+    public bool snailGone = false;
     public bool allBugsGone;
     public int furnaceStartNode = 0;
 
@@ -494,6 +495,14 @@ public class UIManager : MonoBehaviour
                 audioSource.pitch = 0.6f;
             }
 
+            if (dialogue.alias == "SlimePuddle")
+            {
+                if (snailGone)
+                {
+                    dialogue.overrideStartNode = 1;
+                }
+            }
+
             if (dialogue.alias == "Spider")
             {
                 audioSource.pitch = 1.6f;
@@ -788,7 +797,7 @@ public class UIManager : MonoBehaviour
 
             if (dialogue.alias == "Praying Mantis")
             {
-                if (allBugsGone)
+                if (allBugsGone && snailGone)
                 {
                     dialogue.overrideStartNode = 3;
                 }
@@ -914,6 +923,11 @@ public class UIManager : MonoBehaviour
     public void SetAntRun()
     {
         antStartNode = 7;
+    }
+
+    public void SnailGone()
+    {
+        snailGone = true;
     }
 
     public void SetFurnaceNode()
