@@ -780,6 +780,10 @@ public class UIManager : MonoBehaviour
                         }
                     }
                 }
+                if (gameManager.furnaceHot)
+                {
+                    dialogue.overrideStartNode = 8;
+                }
             }
 
             if (dialogue.alias == "Praying Mantis")
