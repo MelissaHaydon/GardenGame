@@ -441,17 +441,17 @@ public class UIManager : MonoBehaviour
             if (dialogue.alias == "Bee")
             {
                 audioSource.pitch = 1.3f;
-                if (player.gameManager.mazeCleared && dialogue.overrideStartNode != 13)
+                if (player.gameManager.danceCleared && dialogue.overrideStartNode != 13)
                 {
-                    if (gameManager.mazeManager.goodGift)
-                    {
+                    //if (gameManager.danceManager.goodGift)
+                    //{
                         dialogue.overrideStartNode = 6;
-                    } else if (!gameManager.mazeManager.goodGift)
-                    {
-                        dialogue.overrideStartNode = 17;
-                    }
+                    //} else if (!gameManager.danceManager.goodGift)
+                    //{
+                    //   dialogue.overrideStartNode = 17;
+                    //}
                 }
-                else if (player.gameManager.mazeCleared)
+                else if (player.gameManager.danceCleared)
                 {
                     
                     dialogue.overrideStartNode = 13;
@@ -495,7 +495,7 @@ public class UIManager : MonoBehaviour
             if (dialogue.alias == "Spider")
             {
                 audioSource.pitch = 1.6f;
-                if (gameManager.mazeManager != null && gameManager.mazeManager.goodGift)
+                if (gameManager.danceManager != null /*&& gameManager.danceManager.goodGift*/)
                 {
                     checkName = "GoodPresent";
                     checkNum = 1;
@@ -518,29 +518,29 @@ public class UIManager : MonoBehaviour
                         }
                     }
                 }
-                else if (gameManager.mazeCleared && !gameManager.mazeManager.goodGift)
-                {
-                    checkName = "BadPresent";
-                    checkNum = 1;
-                    if (dialogue.overrideStartNode == 4)
-                    {
-                        for (int i = 0; i < inventory.invSlot.Length; i++)
-                        {
-                            if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
-                            {
-                                dialogue.overrideStartNode = 10;
-                                spiderGone = true;
-                                GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
-                                inventory.itemNum[i] = 0;
-                                inventory.itemDict.Remove(inventory.itemName[i]);
-                                inventory.itemAmount[i].gameObject.SetActive(false);
-                                inventory.isFull[i] = false;
-                                inventory.itemName[i] = null;
-                                return false;
-                            }
-                        }
-                    }
-                }
+                //else if (gameManager.danceCleared && !gameManager.danceManager.goodGift)
+                //{
+                //    checkName = "BadPresent";
+                //    checkNum = 1;
+                //    if (dialogue.overrideStartNode == 4)
+                //    {
+                //        for (int i = 0; i < inventory.invSlot.Length; i++)
+                //        {
+                //            if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                //            {
+                //                dialogue.overrideStartNode = 10;
+                //                spiderGone = true;
+                //                GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                //                inventory.itemNum[i] = 0;
+                //                inventory.itemDict.Remove(inventory.itemName[i]);
+                //                inventory.itemAmount[i].gameObject.SetActive(false);
+                //                inventory.isFull[i] = false;
+                //                inventory.itemName[i] = null;
+                //                return false;
+                //            }
+                //        }
+                //    }
+                //}
             }
 
             if (dialogue.alias == "Nana Silkworm")

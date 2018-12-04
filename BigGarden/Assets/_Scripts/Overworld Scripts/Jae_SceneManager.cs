@@ -65,7 +65,7 @@ public class Jae_SceneManager : MonoBehaviour {
 
     public void GoToBeeGame()
     {
-        sceneName = "Bee Maze";
+        sceneName = "RhythmMiniGamev2";
         StartCoroutine(LoadScene());
     }
 
@@ -106,7 +106,7 @@ public class Jae_SceneManager : MonoBehaviour {
         {
             sceneDelay = 0f;
         }
-        else if (scene.name == "Bee Maze")
+        else if (scene.name == "Bee Maze" || scene.name == "RhythmMiniGamev2")
         {
             sceneDelay = 3f;
         }

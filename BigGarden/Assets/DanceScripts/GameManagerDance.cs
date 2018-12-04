@@ -5,7 +5,12 @@ using UnityEngine.UI;
 
 public class GameManagerDance : MonoBehaviour {
 
+    private static bool created = false;
+    public static GameManagerDance instance = null;
+
     public AudioSource theMusic;
+
+    public Jae_AudioManager audioManager;
 
     public bool startPlaying;
 
@@ -26,10 +31,29 @@ public class GameManagerDance : MonoBehaviour {
     public BeeDance danceScript;
     public BeeDance2 danceScript2;
 
-    public static GameManagerDance instance;
+    public Jae_SceneManager sceneManager;
+    public bool clearedGame;
+    public bool finishedFishing;
 
-	// Use this for initialization
-	void Start () {
+    void Awake()
+    {
+        if (!created)
+        {
+            DontDestroyOnLoad(gameObject);
+            created = true;
+        }
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
         instance = this;
 
         scoreText.text = "Score: 0";
@@ -80,5 +104,11 @@ public class GameManagerDance : MonoBehaviour {
         multiplierTracker = 0;
 
         multiText.text = "Multiplier: x" + currentMultiplier;
+    }
+
+    public void EndGame()
+    {
+        clearedGame = true;
+        sceneManager.GoToZoneOne();
     }
 }

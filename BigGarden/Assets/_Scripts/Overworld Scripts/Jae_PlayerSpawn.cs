@@ -7,6 +7,8 @@ public class Jae_PlayerSpawn : MonoBehaviour {
     public Jae_GameManager gameManager;
     public Jae_VIDEPlayerScript player;
     public Jae_CameraTracker cameraTracker;
+    public Jae_MusicSwitcher musicSwitcher;
+    public bool toggleClubTracks;
     public SceneSetUp sceneSetUp;
     public Vector3[] spawnPointArray;
     public Animator transitionAnim;
@@ -25,11 +27,11 @@ public class Jae_PlayerSpawn : MonoBehaviour {
         treeTransform = GameObject.Find("TrunkTransform").GetComponent<Transform>();
         playerTransform = player.transform;
         transitionAnim = GameObject.Find("SceneTransition").GetComponent<Animator>();
-        if (gameManager.mazeCleared && !gameManager.fishCleared)
+        if (gameManager.danceCleared && !gameManager.fishCleared)
         {
             SpawnAtBee();
         }
-        else if (gameManager.mazeCleared && gameManager.fishCleared)
+        else if (gameManager.danceCleared && gameManager.fishCleared)
         {
             SpawnAtTermites();
             sceneSetUp.SetUp();
@@ -65,18 +67,21 @@ public class Jae_PlayerSpawn : MonoBehaviour {
     public void SpawnFromZone2()
     {
         goTo = 2;
+        toggleClubTracks = false;
         StartCoroutine(MovePlayer());
     }
 
     public void SpawnFromZone1()
     {
         goTo = 3;
+        toggleClubTracks = false;
         StartCoroutine(MovePlayer());
     }
 
     public void SpawnAtZone3()
     {
         goTo = 4;
+        toggleClubTracks = true;
         StartCoroutine(MovePlayer());
         changeToTreeCam = true;
     }
@@ -84,6 +89,7 @@ public class Jae_PlayerSpawn : MonoBehaviour {
     public void From3To2()
     {
         goTo = 5;
+        toggleClubTracks = true;
         StartCoroutine(MovePlayer());
         changeToTreeCam = false;
     }
@@ -94,12 +100,20 @@ public class Jae_PlayerSpawn : MonoBehaviour {
         transitionAnim.SetTrigger("end");
         yield return new WaitForSeconds(1);
         player.transform.position = spawnPointArray[goTo];
-        if (changeToTreeCam)
+        if (toggleClubTracks)
         {
-            //cameraTracker.target = treeTransform;
+            if (musicSwitcher.newTrack == 0)
+            {
+                musicSwitcher.newTrack = 2;
+            }
+            else if (musicSwitcher.newTrack == 2)
+            {
+                musicSwitcher.newTrack = 0;
+            }
+            musicSwitcher.SwitchTracks();
         } else
         {
-            cameraTracker.target = playerTransform;
+            //cameraTracker.target = playerTransform;
         }
         yield return new WaitForSeconds(0.5f);
         transitionAnim.SetTrigger("reset");

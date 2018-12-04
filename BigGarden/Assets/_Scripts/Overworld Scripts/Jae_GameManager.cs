@@ -8,10 +8,10 @@ public class Jae_GameManager : MonoBehaviour {
     public Jae_VIDEPlayerScript player;
     public GameObject pauseMenu;
     public GameObject options;
-    public GameManager mazeManager;
+    public GameManagerDance danceManager;
     public GameObject goodPresent;
     public GameObject badPresent;
-    public bool mazeCleared;
+    public bool danceCleared;
     public bool fishCleared;
     public GameObject charToClear;
     public ParticleSystem vanishPartSys;
@@ -20,8 +20,8 @@ public class Jae_GameManager : MonoBehaviour {
 
     private void Awake()
     {
-        mazeManager = FindObjectOfType<GameManager>();
-        if (mazeManager == null)
+        danceManager = FindObjectOfType<GameManagerDance>();
+        if (danceManager == null)
         {
             return;
         }
@@ -29,21 +29,22 @@ public class Jae_GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        if (mazeManager != null && mazeManager.clearedGame)
+        if (danceManager != null && danceManager.clearedGame)
         {
-            mazeCleared = true;
-            if (mazeManager.goodGift && !mazeManager.finishedFishing)
+            danceCleared = true;
+            if (/*danceManager.goodGift &&*/ !danceManager.finishedFishing)
             {
                 //GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
                 Instantiate(goodPresent, new Vector3(-21.8f, 0, 9.8f), Quaternion.identity);
+                audioManager.PlaySound("Hackbeat");
             }
-            else if (!mazeManager.goodGift && !mazeManager.finishedFishing)
-            {
-                Instantiate(badPresent, new Vector3(-21.8f, -0.8f, 9.8f), Quaternion.identity);
-                //GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
-            }
+            //else if (!danceManager.goodGift && !danceManager.finishedFishing)
+            //{
+            //    Instantiate(badPresent, new Vector3(-21.8f, -0.8f, 9.8f), Quaternion.identity);
+            //    //GameObject.Find("Bee_NPC").GetComponent<Jae_SpawnItem>().InstantiateItem();
+            //}
         }
-        if (mazeManager != null && mazeManager.finishedFishing)
+        if (danceManager != null && danceManager.finishedFishing)
         {
             fishCleared = true;
             //Instantiate(goodPresent, new Vector3(-21.8f, 0, 9.8f), Quaternion.identity); //Instantiate Saved Termites

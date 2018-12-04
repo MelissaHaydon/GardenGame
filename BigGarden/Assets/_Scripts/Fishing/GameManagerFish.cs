@@ -22,7 +22,7 @@ public class GameManagerFish : MonoBehaviour {
     public Text missedTerms;
 
     public Jae_SceneManager sceneManager;
-    public GameManager finishedFishing;
+    public GameManagerDance finishedFishing;
 
     public bool gameOver;
 
@@ -30,7 +30,7 @@ public class GameManagerFish : MonoBehaviour {
 	void Start () {
         InvokeRepeating("SpawnTermite", 5, 1f);
         sceneManager = FindObjectOfType<Jae_SceneManager>();
-        finishedFishing = FindObjectOfType<GameManager>();
+        finishedFishing = FindObjectOfType<GameManagerDance>();
 	}
 	
 	// Update is called once per frame

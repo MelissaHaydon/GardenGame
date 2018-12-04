@@ -10,6 +10,8 @@ public class BeeDance : MonoBehaviour {
     int timerConverted;
     public bool playing;
 
+    public GameManagerDance gm;
+
     void Start () {
         playing = false;
         timerConverted = 0;
@@ -71,6 +73,7 @@ public class BeeDance : MonoBehaviour {
             else if (timerConverted == 74)
             {
                 beeAnim.SetBool("Playing", false);
+                gm.EndGame();
             }
         }
     }
