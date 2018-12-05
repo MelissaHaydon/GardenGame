@@ -27,8 +27,11 @@ public class BeeDance : MonoBehaviour {
         {
             timer += Time.deltaTime;
             timerConverted = (int)timer;
-            beeAnim.SetBool("Playing", true);
-            if (timerConverted == 9)
+            if (timerConverted == 1)
+            {
+                beeAnim.SetBool("Playing", true);
+            }
+            else if (timerConverted == 9)
             {
                 beeAnim.SetBool("Round", true);
             }
