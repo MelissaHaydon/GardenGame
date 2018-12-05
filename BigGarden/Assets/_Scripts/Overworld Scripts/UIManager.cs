@@ -592,6 +592,34 @@ public class UIManager : MonoBehaviour
                 }
                 else if (dialogue.overrideStartNode == 4)
                 {
+                    checkName = "GlassFull";
+                    checkNum = 1;
+                    for (int i = 0; i < inventory.invSlot.Length; i++)
+                    {
+                        if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                        {
+                            dialogue.overrideStartNode = 11;
+                            //return false;
+                        }
+                    }
+                    checkName = "GlassDrink";
+                    checkNum = 1;
+                    for (int i = 0; i < inventory.invSlot.Length; i++)
+                    {
+                        if (inventory.itemName[i] == checkName && inventory.itemNum[i] >= checkNum)
+                        {
+                            dialogue.overrideStartNode = 7;
+                            GameObject.Destroy(inventory.invSlot[i].transform.GetChild(0).gameObject);
+                            inventory.itemNum[i] = 0;
+                            inventory.itemDict.Remove(inventory.itemName[i]);
+                            inventory.itemAmount[i].gameObject.SetActive(false);
+                            inventory.isFull[i] = false;
+                            inventory.itemName[i] = null;
+                            return false;
+                        }
+                    }
+                } else if (dialogue.overrideStartNode == 11)
+                {
                     checkName = "GlassDrink";
                     checkNum = 1;
                     for (int i = 0; i < inventory.invSlot.Length; i++)
