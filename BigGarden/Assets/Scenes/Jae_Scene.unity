@@ -55066,6 +55066,8 @@ GameObject:
   - component: {fileID: 1750900855}
   - component: {fileID: 1750900854}
   - component: {fileID: 1750900859}
+  - component: {fileID: 1750900861}
+  - component: {fileID: 1750900860}
   m_Layer: 0
   m_Name: Silkworm_NPC
   m_TagString: Untagged
@@ -55236,6 +55238,37 @@ MonoBehaviour:
   playAudio: 1
   soundName: Pop
   spawnAtPlayer: 1
+--- !u!114 &1750900860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1750900852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d00f3c4c3405654a839123d27d7ecc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  playerDirection: 0
+--- !u!95 &1750900861
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1750900852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1065dc034fa36041bb04a777d7f0632, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1751191731
 GameObject:
   m_ObjectHideFlags: 0
