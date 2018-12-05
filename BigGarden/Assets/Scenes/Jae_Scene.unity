@@ -10500,8 +10500,11 @@ MonoBehaviour:
   - SlimePuddles
   - Snail
   - Spider
+  - Stinkbugs
   - Tap
+  - Termite
   - TermiteDrowning
+  - Wasp
   assignedIndex: 16
   assignedID: 74564
   assignedDialogue: Snail
@@ -50991,6 +50994,7 @@ MonoBehaviour:
   - {x: 491.5, y: 0.27, z: 9}
   transitionAnim: {fileID: 0}
   goTo: 0
+  uiMan: {fileID: 1530972750}
   treeTransform: {fileID: 0}
   playerTransform: {fileID: 0}
 --- !u!1 &1523211226

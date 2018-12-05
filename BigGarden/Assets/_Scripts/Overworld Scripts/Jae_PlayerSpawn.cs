@@ -13,6 +13,7 @@ public class Jae_PlayerSpawn : MonoBehaviour {
     public Vector3[] spawnPointArray;
     public Animator transitionAnim;
     public int goTo;
+    public UIManager uiMan;
 
     public Transform treeTransform;
     public Transform playerTransform;
@@ -75,6 +76,10 @@ public class Jae_PlayerSpawn : MonoBehaviour {
     {
         goTo = 3;
         toggleClubTracks = false;
+        if (uiMan.snailGone)
+        {
+            GameObject.Find("Snail_NPC").SetActive(false);
+        }
         StartCoroutine(MovePlayer());
     }
 
