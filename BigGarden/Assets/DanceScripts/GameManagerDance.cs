@@ -27,12 +27,23 @@ public class GameManagerDance : MonoBehaviour {
     public int currentMultiplier;
     public int multiplierTracker;
     public int[] multiplierThresholds;
+    public int multiplierLevel;
 
     public Text scoreText;
     public Text multiText;
+    public Text resultText;
+    public Text resultMessage;
 
     public BeeDance danceScript;
     public BeeDance2 danceScript2;
+
+    float notesHit;
+    float notesMissed;
+    float percentageScore;
+    int percentRounded;
+    public GameObject goodCombo;
+    public GameObject greatCombo;
+    public GameObject amazingCombo;
 
     public Jae_SceneManager sceneManager;
     public bool clearedGame;
@@ -58,9 +69,15 @@ public class GameManagerDance : MonoBehaviour {
     // Use this for initialization
     void Start () {
         instance = this;
-
+        notesHit = 0f;
+        notesMissed = 0f;
+        percentageScore = 0f;
+        percentRounded = 0;
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
+        multiplierLevel = 0;
+        resultText.text = "";
+        resultMessage.text = "";
         audioManager = Jae_AudioManager.instance;
     }
 	
@@ -82,8 +99,6 @@ public class GameManagerDance : MonoBehaviour {
 
     public void NoteHit()
     {
-        Debug.Log("Hit On Time");
-
         if (currentMultiplier - 1 < multiplierThresholds.Length)
         {
             multiplierTracker++;
@@ -92,6 +107,26 @@ public class GameManagerDance : MonoBehaviour {
             {
                 multiplierTracker = 0;
                 currentMultiplier++;
+                multiplierLevel++;
+                if(multiplierLevel == 1)
+                {
+                    amazingCombo.SetActive(false);
+                    greatCombo.SetActive(false);
+                    goodCombo.SetActive(true);
+                    goodCombo.GetComponent<Animator>().SetTrigger("Activate");
+                }
+                else if (multiplierLevel == 2)
+                {
+                    goodCombo.SetActive(false);
+                    greatCombo.SetActive(true);
+                    greatCombo.GetComponent<Animator>().SetTrigger("Activate");
+                }
+                else if (multiplierLevel == 3)
+                {
+                    greatCombo.SetActive(false);
+                    amazingCombo.SetActive(true);
+                    amazingCombo.GetComponent<Animator>().SetTrigger("Activate");
+                }
             }
         }
         multiText.text = "Multiplier: x" + currentMultiplier;
@@ -99,15 +134,15 @@ public class GameManagerDance : MonoBehaviour {
         scoreText.text = "Score: " + currentScore;
         cameraShake.shakeDuration = 0.2f;
         screenFlash.GetComponent<Animator>().SetTrigger("Flash");
+        notesHit++;
     }
 
     public void NoteMissed()
     {
-        Debug.Log("Missed Note");
-
         currentMultiplier = 1;
+        multiplierLevel = 0;
         multiplierTracker = 0;
-
+        notesMissed++;
         multiText.text = "Multiplier: x" + currentMultiplier;
     }
 
@@ -115,6 +150,21 @@ public class GameManagerDance : MonoBehaviour {
     {
         clearedGame = true;
         timeUpText.SetActive(true);
+        percentageScore = (notesHit / (notesMissed + notesHit)) * 100;
+        percentRounded = (int)percentageScore;
+        resultText.text = "You got " + percentRounded + "% of notes!";
+        if(percentRounded == 100)
+        {
+            resultMessage.text = "Perfect Score!";
+        }
+        else if (percentRounded > 50)
+        {
+            resultMessage.text = "Great Job!";
+        }
+        else
+        {
+            resultMessage.text = "Good try!";
+        }
         audioManager.PlaySound("Whistle");
         sceneManager.GoToZoneOne();
     }
