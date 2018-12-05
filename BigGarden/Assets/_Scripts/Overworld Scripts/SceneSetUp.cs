@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SceneSetUp : MonoBehaviour {
     
-    public GameManager fishingManager;
+    public GameManagerDance fishingManager;
     private Animator furnaceAnim;
     public GameObject[] charsToDespawn;
     public GameObject[] termiteGroup;
