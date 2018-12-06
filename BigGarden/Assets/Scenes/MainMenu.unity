@@ -2092,7 +2092,7 @@ Prefab:
     - target: {fileID: 224831845497569794, guid: d1e25a9be23f2da4983b3e94eaf66917,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224831845497569794, guid: d1e25a9be23f2da4983b3e94eaf66917,
         type: 2}
@@ -4742,7 +4742,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d9a14383000c4b5439176c7fe90c37b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85710c9c03921404083d2eaa3f3c141d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -7368,7 +7368,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 55e6e801d6530094f8476b9ff11b05c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9cf711a0d56021a41b16ffdc5a8f485b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
