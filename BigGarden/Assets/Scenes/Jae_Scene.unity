@@ -1826,6 +1826,7 @@ MonoBehaviour:
   - LadyThugCronies
   - LadyThugLeader
   - NotFinishedYet
+  - PeanutClock
   - PrayingMantis
   - Silkworm
   - SlimePuddles
@@ -1836,7 +1837,7 @@ MonoBehaviour:
   - Termite
   - TermiteDrowning
   - Wasp
-  assignedIndex: 19
+  assignedIndex: 20
   assignedID: 881
   assignedDialogue: Tap
   interactionCount: 0
@@ -15475,6 +15476,7 @@ MonoBehaviour:
   - LadyThugCronies
   - LadyThugLeader
   - NotFinishedYet
+  - PeanutClock
   - PrayingMantis
   - Silkworm
   - SlimePuddles
@@ -15482,6 +15484,7 @@ MonoBehaviour:
   - Spider
   - Stinkbugs
   - Tap
+  - Termite
   - TermiteDrowning
   - Wasp
   assignedIndex: -1
@@ -24075,7 +24078,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 685412797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 5.12, z: 8.22}
+  m_LocalPosition: {x: 11, y: 5.08, z: 8.22}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 63201163}
@@ -24095,8 +24098,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 14.17, y: 8.7, z: 2}
-  m_Center: {x: 0, y: 0, z: 0.7}
+  m_Size: {x: 12.2, y: 8.7, z: 2}
+  m_Center: {x: -0.4, y: 0, z: 0.7}
 --- !u!114 &685412800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54294,6 +54297,7 @@ MonoBehaviour:
   transitionAnim: {fileID: 0}
   goTo: 0
   uiMan: {fileID: 1530972750}
+  snailNPC: {fileID: 763663093}
   treeTransform: {fileID: 0}
   playerTransform: {fileID: 0}
 --- !u!1 &1523211226
