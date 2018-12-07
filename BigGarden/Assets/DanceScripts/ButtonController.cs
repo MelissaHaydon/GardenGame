@@ -9,6 +9,7 @@ public class ButtonController : MonoBehaviour {
     public Sprite pressedImage;
 
     public KeyCode keyToPress;
+    public KeyCode secondKey;
 
 	// Use this for initialization
 	void Start () {
@@ -17,12 +18,12 @@ public class ButtonController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(keyToPress))
+        if (Input.GetKeyDown(keyToPress) || Input.GetKeyDown(secondKey))
         {
             mySR.sprite = pressedImage;
             transform.localScale = new Vector3(0.35f, 0.35f, 0.35f);
         }
-        if (Input.GetKeyUp(keyToPress))
+        if (Input.GetKeyUp(keyToPress) || Input.GetKeyUp(secondKey))
         {
             mySR.sprite = defaultImage;
             transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);

@@ -8,6 +8,7 @@ public class NoteObject : MonoBehaviour {
     private bool canBePressed;
 
     public KeyCode keyToPress;
+    public KeyCode secondKey;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,7 +16,8 @@ public class NoteObject : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(keyToPress)) {
+        if (Input.GetKeyDown(keyToPress) || Input.GetKeyDown(secondKey))
+        {
             if (canBePressed)
             {
                 gameObject.SetActive(false);

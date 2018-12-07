@@ -109,6 +109,7 @@ public class Jae_PlayerSpawn : MonoBehaviour {
 
     IEnumerator MovePlayer()
     {
+        player.canPlay = false;
         player.moveSpeed = 0;
         transitionAnim.SetTrigger("end");
         yield return new WaitForSeconds(1);
@@ -131,6 +132,8 @@ public class Jae_PlayerSpawn : MonoBehaviour {
         yield return new WaitForSeconds(0.5f);
         transitionAnim.SetTrigger("reset");
         player.moveSpeed = 5;
+        yield return new WaitForSeconds(0.5f);
+        player.canPlay = true;
 
     }
 }
